@@ -23,12 +23,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.AddMiddlewares();
 
-//add for testing in docker compose(doesn't work)
-using (var serviceScope = app.Services.CreateScope())
-{
-    // Takes all of our migrations files and apply them against the database in case they are not implemented
-    serviceScope.ServiceProvider.GetService<AppDbContext>()?.Database.Migrate();
-}
+
 
 app.MapGet("/history/{count}",
     async (HttpContext context, IMessageRepository messageRepository, int count) =>
