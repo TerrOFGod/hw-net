@@ -52,10 +52,9 @@ public static class IServiceCollectionExtensions
             o.AddPolicy("CorsPolicy", builder =>
             {
                 builder
-                    .WithOrigins("http://localhost:3000")
+                    .AllowAnyOrigin()
                     .AllowAnyMethod()
-                    .AllowAnyHeader()
-                    .AllowCredentials();
+                    .AllowAnyHeader();
             }));
         services.AddSignalR(options => 
         { 
