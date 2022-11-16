@@ -45,8 +45,8 @@ const App = () => {
 
     useEffect(() => {
         setHubConnection( createHubConnection());
-        console.log(messages);
-    }, [ messages]);
+        /*console.log(messages);*/
+    }, [ ]);
 
     const minNameLength = 5;
     useEffectOnce(() => {
