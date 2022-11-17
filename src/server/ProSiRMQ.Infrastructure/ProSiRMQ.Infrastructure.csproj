@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MassTransit" Version="7.3.1" />
+      <PackageReference Include="MassTransit" Version="8.0.9-develop.658" />
       <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
       <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />

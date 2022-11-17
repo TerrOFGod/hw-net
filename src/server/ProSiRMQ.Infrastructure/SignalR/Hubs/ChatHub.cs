@@ -1,5 +1,4 @@
 ﻿using MassTransit;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using ProSiRMQ.Infrastructure.Dto;

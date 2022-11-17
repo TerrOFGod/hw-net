@@ -5,24 +5,45 @@ using ProSiRMQ.DB.Repositories;
 using ProSiRMQ.Infrastructure.Services;
 using ProSiRMQ.Infrastructure.SignalR.Consumers;
 
-namespace Microsoft.AspNetCore.Builder;
+namespace ProSiRMQ.API.Extensions;
 
-public static class IServiceCollectionExtensions
+public static class ApiServiceCollectionExtensions
 {
     public static IServiceCollection AddCustomMassTransit(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddMassTransit(config =>
         {
-            config.AddConsumer<PublishedConsumer>();
-            config.UsingInMemory((context, configurator) =>
+            var host = configuration["RABBITMQ_HOST"];
+            if (host is null)
             {
-                configurator.Host();
-                configurator.ReceiveEndpoint(new TemporaryEndpointDefinition(), x =>
+                throw new ArgumentNullException(nameof(host), "Host for RabbitMq is not provided");
+            }
+
+            config.AddConsumer<PublishedConsumer>();
+            config.UsingRabbitMq((registrationContext, factory) =>
+            {
+                factory.Host(host, "/", h =>
                 {
-                    x.ConfigureConsumer<PublishedConsumer>(context);
+                    h.Username("guest");
+                    h.Password("guest");
                 });
-                configurator.ConfigureEndpoints(context);
+                factory.ReceiveEndpoint(e =>
+                {
+                    e.Bind("amq.fanout");
+                    e.ConfigureConsumer<PublishedConsumer>(registrationContext);
+                });
+                factory.ConfigureEndpoints(registrationContext);
             });
+            // config.AddConsumer<PublishedConsumer>();
+            // config.UsingInMemory((context, configurator) =>
+            // {
+            //     configurator.Host();
+            //     configurator.ReceiveEndpoint(new TemporaryEndpointDefinition(), x =>
+            //     {
+            //         x.ConfigureConsumer<PublishedConsumer>(context);
+            //     });
+            //     configurator.ConfigureEndpoints(context);
+            // });
         });
         return services;
     }
@@ -39,7 +60,7 @@ public static class IServiceCollectionExtensions
     
     public static IServiceCollection AddDI(this IServiceCollection services)
     {
-        services.AddScoped<PublishedConsumer>();
+        //services.AddScoped<PublishedConsumer>();
         services.AddScoped<IMessageRepository, MessageRepository>();
         return services;
     }

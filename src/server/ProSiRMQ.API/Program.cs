@@ -1,7 +1,5 @@
 using System.Text.Json;
-using MassTransit;
-using Microsoft.EntityFrameworkCore;
-using ProSiRMQ.DB;
+using ProSiRMQ.API.Extensions;
 using ProSiRMQ.Infrastructure.Dto;
 using ProSiRMQ.Infrastructure.Services;
 
@@ -16,7 +14,7 @@ builder.Services.AddControllers().AddJsonOptions(json =>
 
 services.AddServices(cfg);
 
-services.AddMassTransitHostedService();
+//services.AddMassTransitHostedService();
 
 var app = builder.Build();
 
