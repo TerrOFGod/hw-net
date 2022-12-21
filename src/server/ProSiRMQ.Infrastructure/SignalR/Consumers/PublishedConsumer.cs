@@ -1,5 +1,6 @@
 using MassTransit;
 using Microsoft.Extensions.Logging;
+using ProSiRMQ.Infrastructure.Interfaces;
 using ProSiRMQ.Infrastructure.Models;
 using ProSiRMQ.Infrastructure.Services;
 
@@ -22,7 +23,8 @@ public class PublishedConsumer: IConsumer<MessagePublished>
         {
             _logger.LogInformation("Requested saving message: {Content} from: {From}", 
                 context.Message.Content, context.Message.Sender);
-            var message = await _repository.CreateMessageAsync(context.Message.Sender, context.Message.Content);
+            var message = await _repository.CreateMessageAsync(context.Message.Sender, context.Message.Content, 
+                context.Message.FileKey);
             await _repository.AddMessageAsync(message, context.CancellationToken);
         }
         catch (Exception e)

@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProSiRMQ.Infrastructure.Dto;
+using ProSiRMQ.Infrastructure.Interfaces;
 using ProSiRMQ.Infrastructure.Services;
 
-namespace ProSiRMQ.API.Controllers;
+namespace ProSiRMQ.Message.API.Controllers;
 
 [ApiController]
-[Route("api")]
+[Route("[controller]")]
 public class MessageController : Controller
 {
     private readonly IMessageRepository _messageRepository;

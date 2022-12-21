@@ -1,7 +1,8 @@
 ﻿using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using ProSiRMQ.DB.Extensions;
+using ProSiRMQ.DB.Mappers;
+using ProSiRMQ.Infrastructure.Interfaces;
 using ProSiRMQ.Infrastructure.Models;
 using ProSiRMQ.Infrastructure.Services;
 
@@ -28,7 +29,7 @@ public class MessageRepository : IMessageRepository
                 .OrderBy(msg => msg.Published)
                 .ToListAsync(token);
             return listByDesc
-                .Select(message => new Message(message.Sender, message.Content))
+                .Select(message => new Message(message.Sender, message.Content, message.FileKey))
                 .ToList();
         }
         catch (DbException ex)
@@ -38,15 +39,15 @@ public class MessageRepository : IMessageRepository
         }
     }
     
-    public Task<Message> CreateMessageAsync(string? sender, string content)
+    public Task<Message> CreateMessageAsync(string? sender, string content, Guid? key)
     {
-        var message = new Message(DateTime.UtcNow, sender, content);
-        return Task.FromResult(new Message(message.Id, message.Published, message.Sender, message.Content));
+        var message = new Message(DateTime.UtcNow, sender, content, key);
+        return Task.FromResult(message);
     }
 
     public async Task AddMessageAsync(Message message, CancellationToken token = default)
     {
-        var dbMessage = message.ToModel();
+        var dbMessage = message.ToDbModel();
         await _context.AddAsync(dbMessage, token);
         await _context.SaveChangesAsync(token);
     }
@@ -58,7 +59,7 @@ public class MessageRepository : IMessageRepository
 
     public Guid AddAsync(Message item)
     {
-        var dbMessage = item.ToModel();
+        var dbMessage = item.ToDbModel();
         _context.Messages.AddAsync(dbMessage);
         _context.SaveChangesAsync();
         return dbMessage!.Id;

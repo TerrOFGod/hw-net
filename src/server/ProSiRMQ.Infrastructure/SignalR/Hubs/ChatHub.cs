@@ -21,7 +21,8 @@ public class ChatHub : Hub
     
     public async Task SendMessage(ReadMessageDto message)
     {
-        var publish = _bus.Publish(new MessagePublished {Sender = message.Sender, Content = message.Content});
+        var publish = _bus.Publish(new MessagePublished {Sender = message.Sender, Content = message.Content, 
+            FileKey = string.IsNullOrEmpty(message.FileKey) ? null : Guid.Parse((ReadOnlySpan<char>) message.FileKey)});
         var send = Clients.All.SendAsync(PublishMessageMethodName, message);
         await Task.WhenAll(publish, send);
     }

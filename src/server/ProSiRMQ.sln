@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.API", "ProSiRMQ.API\ProSiRMQ.API.csproj", "{ED83527F-6449-4541-96D5-6CCA3604FF9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.Message.API", "ProSiRMQ.Message.API\ProSiRMQ.Message.API.csproj", "{ED83527F-6449-4541-96D5-6CCA3604FF9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.DB", "ProSiRMQ.DB\ProSiRMQ.DB.csproj", "{3509B555-E8AF-4463-B037-7BF7036CD724}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.Infrastructure", "ProSiRMQ.Infrastructure\ProSiRMQ.Infrastructure.csproj", "{AB6A7CE3-DD6A-4496-A01B-0DDE199627F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.Message.Listener", "ProSiRMQ.Message.Listener\ProSiRMQ.Message.Listener.csproj", "{8E295BA0-2B31-44B2-925E-AB95F71ADEC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.File.API", "ProSiRMQ.File.API\ProSiRMQ.File.API.csproj", "{94110448-B548-4AAF-B28C-9597DB35FEFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,5 +38,13 @@ Global
 		{C123DF41-19C5-496F-8D46-4C2090D42281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C123DF41-19C5-496F-8D46-4C2090D42281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C123DF41-19C5-496F-8D46-4C2090D42281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E295BA0-2B31-44B2-925E-AB95F71ADEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E295BA0-2B31-44B2-925E-AB95F71ADEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E295BA0-2B31-44B2-925E-AB95F71ADEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E295BA0-2B31-44B2-925E-AB95F71ADEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

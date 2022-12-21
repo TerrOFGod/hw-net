@@ -8,10 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
+      <PackageReference Include="AWSSDK.S3" Version="3.7.101.22" />
       <PackageReference Include="MassTransit" Version="8.0.9-develop.658" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.9-develop.658" />
       <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
       <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
 </Project>

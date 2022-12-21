@@ -1,8 +1,10 @@
-﻿using ProSiRMQ.Infrastructure.SignalR.Hubs;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+using ProSiRMQ.Infrastructure.SignalR.Hubs;
 
-namespace Microsoft.AspNetCore.Builder;
+namespace ProSiRMQ.Infrastructure.Extensions;
 
-public static class WebApplicationExtensions
+public static class MiddlewareExtensions
 {
     public static WebApplication UseDevelopment(this WebApplication app)
     {
@@ -39,18 +41,6 @@ public static class WebApplicationExtensions
     public static WebApplication UseMapHub(this WebApplication app)
     {
         app.MapHub<ChatHub>("/chat");
-        return app;
-    }
-
-    public static WebApplication AddMiddlewares(this WebApplication app)
-    {
-        app.UseDevelopment()
-            .UseCors()
-            .UseRedirection()
-            .UseCustomAuthorization()
-            .UseMapControllers()
-            .UseMapHub();
-
         return app;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace ProSiRMQ.Infrastructure.Services;
+﻿namespace ProSiRMQ.Infrastructure.Interfaces;
 
 public interface IRepository<TItem> where TItem: class
 {

@@ -5,6 +5,7 @@ import {IHistoryProps} from "./IHistoryProps";
 
 const History  : FC<IHistoryProps> = ({messages, message}) => {
     var t = 0;
+    console.log(messages)
 
     function createMessageRecord(message: Message, i: number) {
         const name = (<b>
@@ -16,10 +17,15 @@ const History  : FC<IHistoryProps> = ({messages, message}) => {
 
         return (<div key={i}>
             {name}: {contents}
+            {message.fileKey && (
+                <div>
+                    <a href={process.env.REACT_APP_FILE_SERVER_URL + "/file" + `/${message.fileKey}`}>
+                        Скачать файл
+                    </a>
+                </div>
+            )}
         </div>)
     }
-
-
 
     return (
         <div className={'h-100 mh-30 b-history'}>

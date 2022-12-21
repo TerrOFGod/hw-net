@@ -5,35 +5,40 @@ import Chat from "../../components/Chat/Chat";
 import History from "../../components/History/History";
 import {HubConnection, HubConnectionBuilder} from "@microsoft/signalr";
 import {Message} from "../../models/message";
-import {Forum} from "../../services/forum";
 import axios from "axios";
 
 const App = () => {
-    const url = process.env.REACT_APP_SERVER_URL/*"https://localhost:7039"*/ ;
-    if (!url) {
+    const messageUrl = process.env.REACT_APP_SERVER_URL/*"https://localhost:7039"*/ ;
+    if (!messageUrl) {
         throw new Error('Server url is not provided');
     }
-    const [chat,] = useState(new Forum(`${url}`));
+
+    const fileUrl = process.env.REACT_APP_FILE_SERVER_URL/*"https://localhost:7039"*/ ;
+    if (!fileUrl) {
+        throw new Error('Server url is not provided');
+    }
+
+
     const [username, setUsername] = useState('');
     const [hubConnection, setHubConnection] = useState<HubConnection>();
     const [messages, setMessages] = useState<Message[]>([]);
-    const [msg, setMsg] = useState<Message>({sender: "",content: ""});
+    const [msg] = useState<Message>({sender: "",content: "",fileKey: ""});
 
     useEffectOnce(() => {
-        axios.get<Message[]>(url + '/history/15')
+        axios.get<Message[]>(messageUrl + '/messages/15')
             .then(value => {
                 setMessages(value.data);
             });
     });
 
     const createHubConnection = () =>{
-        const connection = new HubConnectionBuilder().withUrl(url + "/chat").build();
+        const connection = new HubConnectionBuilder().withUrl(messageUrl + "/chat").build();
         try{
             connection.start().then(() => {
                 connection.on('PublishMessage', (message: Message) => {
                     setMessages((ms) => [...ms, message]);
                 });
-            }).catch(function (e) {});
+            }).catch(function () {});
         }
         catch(e){
             console.log(e);
@@ -70,7 +75,7 @@ const App = () => {
         <div className={'mse-auto w-80 container-lg h-100'}>
             <div className={'h-100 chat-page'}>
                 <History messages={messages} message={msg}/>
-                <Chat sender={username} hub={hubConnection}/>
+                <Chat sender={username} fileUrl={fileUrl} hub={hubConnection} />
             </div>
         </div>
     );
