@@ -8,11 +8,9 @@ services:
       args:
         server_url: http://localhost:8081
         file_server_url: http://localhost:8083
+        metadata_server_url: http:/localhost:8084
     ports:
       - '8080:80'
-    depends_on:
-      - message-api
-      - file-api
 
   message-api:
     build:
@@ -23,6 +21,7 @@ services:
     depends_on:
       - rabbit
       - database
+      - cache
     environment:
       - RABBITMQ_HOST=rabbit
 
@@ -31,6 +30,10 @@ services:
       - DB_USERNAME=postgres
       - DB_PASSWORD=postgres
       - DB_DATABASE=postgres
+
+      - CACHE_SETTINGS__HOST=cache
+      - CACHE_SETTINGS__PORT=6379
+      - CACHE_SETTINGS__PASSWORD=Password
 
   message-listener:
     build:
@@ -56,16 +59,92 @@ services:
       dockerfile: ProSiRMQ.File.API/Dockerfile
     ports:
       - '8083:80'
+    depends_on:
+      - minio
     environment:
+      S3__HOST: http://minio:9000
+      S3__USER: minio_user
+      S3__PASSWORD: minio_password
+      S3__TEMPORARY: "temp"
+      S3__PERSISTENT: "persistent"
+
+
+      CACHE_SETTINGS__HOST: cache
+      CACHE_SETTINGS__PORT: 6379
+      CACHE_SETTINGS__PASSWORD: Password
+
+      RABBITMQ_HOST: rabbit
+
+  metadata-api:
+    build:
+      context: src/server
+      dockerfile: ProSiRMQ.Metadata.API/Dockerfile
+    ports:
+      - '8084:80'
+    depends_on:
+      - rabbit
+      - mongo
+      - cache
+    environment:
+      RABBITMQ_HOST: rabbit
+
+      CACHE_SETTINGS__HOST: cache
+      CACHE_SETTINGS__PORT: 6379
+      CACHE_SETTINGS__PASSWORD: Password
+
+      MONGO_HOST: mongo
+      MONGO_PORT: 27017
+      MONGO_USERNAME: User
+      MONGO_PASSWORD: Password
+      MONGO_DATABASE: Metadata
+
+  metadata-listener:
+    build:
+      context: src/server
+      dockerfile: ProSiRMQ.Message.Listener/Dockerfile
+    ports:
+      - '8085:80'
+    depends_on:
+      - rabbit
+      - mongo
+      - cache
+    environment:
+      RABBITMQ_HOST: rabbit
+
       S3__HOST: http://minio:9000
       S3__USER: minio_user
       S3__PASSWORD: minio_password
       S3__BUCKET: "user-files"
 
-      S3_SECRET: minio_user
-      S3_PASSWORD: minio_password
-      S3_BUCKET: "user-files"
-      S3_HOST: http://minio:9000
+      CACHE_SETTINGS__HOST: cache
+      CACHE_SETTINGS__PORT: 6379
+      CACHE_SETTINGS__PASSWORD: Password
+
+      MONGO_HOST: mongo
+      MONGO_PORT: 27017
+      MONGO_USERNAME: User
+      MONGO_PASSWORD: Password
+      MONGO_DATABASE: Metadata
+
+  cache:
+    image: bitnami/redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ~/cache/data:/bitnami/redis/data
+    environment:
+      REDIS_PASSWORD: Password
+      REDIS_DISABLE_COMMANDS: FLUSHDB,FLUSHALL
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ~/metadata-db/data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: User
+      MONGO_INITDB_ROOT_PASSWORD: Password
 
   minio:
     image: minio/minio
@@ -96,6 +175,25 @@ services:
       - ~/broker/data:/var/lib/rabbitmq
       - ~/broker/logs:/var/log/rabbitmq
 
+  collect-it:
+    build:
+      context: src/collect-it/src
+      dockerfile: CollectIt.MVC/CollectIt.MVC.View/Dockerfile
+    ports:
+      - '8086:80'
+    environment:
+      ConnectionStrings:Postgresql:Development: 'Host=localhost;User ID=postgres;Password=postgres;Port=5433;Database=postgres;'
+  
+  database-collect-it:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USERNAME: postgres
+    ports:
+      - '5433:5432'
+    volumes:
+      - collect-it-db:/var/lib/postgresql/data
+
   database:
     image: postgres:14-alpine
     environment:
@@ -116,4 +214,6 @@ volumes:
   pglog_1:
     driver: local
   minio-storage:
+    driver: local
+  collect-it-db:
     driver: local

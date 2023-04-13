@@ -44,7 +44,8 @@ public static class ApiServiceCollectionExtensions
         services.AddCustomSignalR();
         services.AddDbContext(configuration);
         services.AddRepos();
-        services.AddPublisher(configuration);
+        services.AddFileConsumer(configuration);
+        //services.AddPublisher(configuration);
 
         return services;
     }

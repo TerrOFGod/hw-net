@@ -18,10 +18,15 @@ const App = () => {
         throw new Error('Server url is not provided');
     }
 
+    const metadataUrl = process.env.REACT_APP_METADATA_SERVER_URL/*"https://localhost:7039"*/ ;
+    if (!metadataUrl) {
+        throw new Error('Server url is not provided');
+    }
 
     const [username, setUsername] = useState('');
     const [hubConnection, setHubConnection] = useState<HubConnection>();
     const [messages, setMessages] = useState<Message[]>([]);
+    const [fileKey, setFileKey] = useState('');
     const [msg] = useState<Message>({sender: "",content: "",fileKey: ""});
 
     useEffectOnce(() => {
@@ -37,6 +42,10 @@ const App = () => {
             connection.start().then(() => {
                 connection.on('PublishMessage', (message: Message) => {
                     setMessages((ms) => [...ms, message]);
+                });
+                connection.on('ReceiveFileUploaded', (key: string) => {
+                    console.log("Receive file: " + key);
+                    setFileKey(key);
                 });
             }).catch(function () {});
         }
@@ -75,7 +84,7 @@ const App = () => {
         <div className={'mse-auto w-80 container-lg h-100'}>
             <div className={'h-100 chat-page'}>
                 <History messages={messages} message={msg}/>
-                <Chat sender={username} fileUrl={fileUrl} hub={hubConnection} />
+                <Chat sender={username} fileUrl={fileUrl} hub={hubConnection} metadataUrl={metadataUrl} fileKey={fileKey}/>
             </div>
         </div>
     );

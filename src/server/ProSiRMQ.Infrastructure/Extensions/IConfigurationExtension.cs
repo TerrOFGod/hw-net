@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using ProSiRMQ.Infrastructure.Interfaces;
 
 namespace ProSiRMQ.Infrastructure.Extensions;
 
@@ -14,5 +15,14 @@ public static class IConfigurationExtension
             .Bind(obj);
         
         return obj;
+    }
+    
+    public static TSettings GetSettings<TSettings>(this IConfiguration configuration)
+        where TSettings : ISettings
+    {
+        return configuration
+                   .GetRequiredSection(TSettings.SectionName)
+                   .Get<TSettings>()
+               ?? throw new InvalidOperationException($"Couldn't create setting {nameof(TSettings)} by section name {TSettings.SectionName}");
     }
 }

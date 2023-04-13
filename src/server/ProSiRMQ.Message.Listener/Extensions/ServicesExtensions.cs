@@ -1,9 +1,7 @@
-﻿using MassTransit;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ProSiRMQ.DB;
 using ProSiRMQ.DB.Repositories;
 using ProSiRMQ.Infrastructure.Interfaces;
-using ProSiRMQ.Infrastructure.Services;
 using ProSiRMQ.Infrastructure.SignalR.Consumers;
 
 namespace ProSiRMQ.Message.Listener.Extensions;

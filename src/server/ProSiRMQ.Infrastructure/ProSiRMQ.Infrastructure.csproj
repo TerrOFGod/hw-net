@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>ProSiRMQ.Infrastructure</RootNamespace>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -15,6 +16,9 @@
       <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
       <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+      <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+      <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+      <PackageReference Include="StackExchange.Redis" Version="2.6.86" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 

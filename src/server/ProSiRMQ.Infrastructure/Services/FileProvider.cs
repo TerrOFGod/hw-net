@@ -1,7 +1,5 @@
-﻿using Amazon.Runtime.Internal.Util;
-using Amazon.S3;
+﻿using Amazon.S3;
 using Amazon.S3.Model;
-using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -16,20 +14,20 @@ public class FileProvider : IFileProvider
 {
     private readonly ILogger<FileProvider> logger;
     private readonly IAmazonS3 _amazonS3;
-    private readonly FileServerSettings _fileServerConfigs;
+    private readonly FileServerSettings _fileServerSettings;
 
     public FileProvider(IAmazonS3 amazonS3, IOptions<FileServerSettings> fileServerSettingsOptions, ILogger<FileProvider> logger)
     {
         _amazonS3 = amazonS3;
         this.logger = logger;
-        _fileServerConfigs = fileServerSettingsOptions.Value;
+        _fileServerSettings = fileServerSettingsOptions.Value;
     }
     
     public async Task<CustomFile> FindFileAsync(string key, CancellationToken token = new())
     {
         var request =  new GetObjectRequest()
         {
-            BucketName = _fileServerConfigs.Bucket,//"user-files",
+            BucketName = _fileServerSettings.PersistenceBucketName,//"user-files",
             Key = key
         };
         
@@ -55,7 +53,7 @@ public class FileProvider : IFileProvider
         var stream = file.OpenReadStream();
         var request = new PutObjectRequest
         {
-            BucketName = _fileServerConfigs.Bucket,//"user-files",
+            BucketName = _fileServerSettings.TemporaryBucketName,//"user-files",
             Key = key,
             InputStream = file.OpenReadStream(),
             ContentType = file.ContentType
@@ -68,7 +66,9 @@ public class FileProvider : IFileProvider
         if (!response.IsSuccess())
             throw new BadHttpRequestException(
                 $"Request to S3 storage was not success. Status code {response.HttpStatusCode}");
+        
         logger.LogWarning("File successfully saved.");
+        
         var result = new CustomFileInfo(key);
 
         return result;

@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
+using ProSiRMQ.Infrastructure.Interfaces;
 
 namespace ProSiRMQ.Infrastructure.Configs;
 
-public class FileServerSettings
+public class FileServerSettings : ISettings
 {
-    public const string SectionName = "S3";
+    public static string SectionName => "S3";
 
     [ConfigurationKeyName("PASSWORD")]
     public string Password { get; set; } = default!;
@@ -17,4 +18,10 @@ public class FileServerSettings
 
     [ConfigurationKeyName("BUCKET")] 
     public string Bucket { get; set; } = default!;
+    
+    [ConfigurationKeyName("TEMPORARY")] 
+    public string TemporaryBucketName { get; set; } = default!;
+    
+    [ConfigurationKeyName("PERSISTENT")] 
+    public string PersistenceBucketName { get; set; } = default!;
 }

@@ -1,10 +1,4 @@
-﻿using MassTransit;
-using Microsoft.EntityFrameworkCore;
-using ProSiRMQ.DB;
-using ProSiRMQ.DB.Repositories;
-using ProSiRMQ.Infrastructure.Extensions;
-using ProSiRMQ.Infrastructure.Services;
-using ProSiRMQ.Infrastructure.SignalR.Consumers;
+﻿using ProSiRMQ.Infrastructure.Extensions;
 
 namespace ProSiRMQ.Message.Listener.Extensions;
 
@@ -17,7 +11,7 @@ public static class ApiServiceCollectionExtensions
             var configuration = ctx.Configuration;
             services.AddDbContext(configuration);
             services.AddDI();
-            services.AddConsumer(configuration);
+            services.AddMassageConsumer(configuration);
         });
 
         return host;

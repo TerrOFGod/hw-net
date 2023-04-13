@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.Message.Listener",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.File.API", "ProSiRMQ.File.API\ProSiRMQ.File.API.csproj", "{94110448-B548-4AAF-B28C-9597DB35FEFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.Metadata.API", "ProSiRMQ.Metadata.API\ProSiRMQ.Metadata.API.csproj", "{CCCEBE27-2D9C-41C5-9184-B539D04C10F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProSiRMQ.Metadata.Listener", "ProSiRMQ.Metadata.Listener\ProSiRMQ.Metadata.Listener.csproj", "{53BE7D0D-D9F7-463F-87CD-ECC10B65AC2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,5 +50,13 @@ Global
 		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94110448-B548-4AAF-B28C-9597DB35FEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCEBE27-2D9C-41C5-9184-B539D04C10F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCEBE27-2D9C-41C5-9184-B539D04C10F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCEBE27-2D9C-41C5-9184-B539D04C10F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCEBE27-2D9C-41C5-9184-B539D04C10F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BE7D0D-D9F7-463F-87CD-ECC10B65AC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BE7D0D-D9F7-463F-87CD-ECC10B65AC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BE7D0D-D9F7-463F-87CD-ECC10B65AC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BE7D0D-D9F7-463F-87CD-ECC10B65AC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
