@@ -1,0 +1,200 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CollectIt.MVC.View
+build_property.RootNamespace = CollectIt.MVC.View
+build_property.ProjectDir = C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Pages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/MyResources.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNeVJlc291cmNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/Resources.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNvdXJjZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/Subscribtions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWJzY3JpYnRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/TechSupportTab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUZWNoU3VwcG9ydFRhYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/UploadResource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGxvYWRSZXNvdXJjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/_ProfileLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfUHJvZmlsZUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Images/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Images/Images.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXEltYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Images/UploadImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXFVwbG9hZEltYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Musics/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Musics/Musics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXE11c2ljcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Musics/UploadMusic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXFVwbG9hZE11c2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Payment/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Payment/PaymentResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50UmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Payment/Subscriptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxTdWJzY3JpcHRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Payment/_SubscriptionsLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxfU3Vic2NyaXB0aW9uc0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/ImageCards/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSW1hZ2VDYXJkc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/ImageCard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSW1hZ2VDYXJkXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/MusicCards/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTXVzaWNDYXJkc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/SearchBar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VhcmNoQmFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/SubscriptionCards/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3Vic2NyaXB0aW9uQ2FyZHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/SubscriptionCard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3Vic2NyaXB0aW9uQ2FyZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/VideoCards/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVmlkZW9DYXJkc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/VideoCard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVmlkZW9DYXJkXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/PaymentResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBheW1lbnRSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Videos/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9zXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Videos/UploadVideo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9zXFVwbG9hZFZpZGVvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Videos/Videos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9zXFZpZGVvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-u6hdqyd4q5
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Images/Image.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VzXEltYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-qyjhwqv9lh
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Musics/Music.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXE11c2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-x0iidcviw2
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/Components/MusicCard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTXVzaWNDYXJkXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0ptvbioj31
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/_ImagesLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbWFnZXNMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-duyqci2pkl
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2nb4hujae5
+
+[C:/Users/LordVT/Desktop/dotnet/hw-net/src/collect-it/src/CollectIt.MVC/CollectIt.MVC.View/Views/Videos/Video.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9zXFZpZGVvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-t3crk9nb26

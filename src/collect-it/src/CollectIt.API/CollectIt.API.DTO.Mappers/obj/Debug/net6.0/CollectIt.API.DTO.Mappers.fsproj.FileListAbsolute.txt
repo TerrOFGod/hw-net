@@ -1,0 +1,17 @@
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.Mappers.deps.json
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.Mappers.dll
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.Mappers.pdb
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.Mappers.xml
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.dll
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.Database.Entities.dll
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.Database.Entities.pdb
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.pdb
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\bin\Debug\net6.0\CollectIt.API.DTO.xml
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.fsproj.AssemblyReference.cache
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.AssemblyInfoInputs.cache
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.AssemblyInfo.fs
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.fsproj.CoreCompileInputs.cache
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.fsproj.CopyComplete
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.dll
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.xml
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO.Mappers\obj\Debug\net6.0\CollectIt.API.DTO.Mappers.pdb
