@@ -1,0 +1,136 @@
+schema {
+    query: Queries
+}
+
+type Queries {
+    readImages(where: ImageGQLTypeFilterInput): [ImageGQLType!]!
+    readVideos(where: VideoGQLTypeFilterInput): [VideoGQLType!]!
+    readMusic(where: MusicGQLTypeFilterInput): [MusicGQLType!]!
+}
+
+input ImageGQLTypeFilterInput {
+    and: [ImageGQLTypeFilterInput!]
+    or: [ImageGQLTypeFilterInput!]
+    id: IntOperationFilterInput
+    ownerId: IntOperationFilterInput
+    name: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    extension: StringOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input VideoGQLTypeFilterInput {
+    and: [VideoGQLTypeFilterInput!]
+    or: [VideoGQLTypeFilterInput!]
+    duration: IntOperationFilterInput
+    id: IntOperationFilterInput
+    ownerId: IntOperationFilterInput
+    name: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    extension: StringOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input MusicGQLTypeFilterInput {
+    and: [MusicGQLTypeFilterInput!]
+    or: [MusicGQLTypeFilterInput!]
+    duration: IntOperationFilterInput
+    id: IntOperationFilterInput
+    ownerId: IntOperationFilterInput
+    name: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    extension: StringOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input IntOperationFilterInput {
+    eq: Int
+    neq: Int
+    in: [Int]
+    nin: [Int]
+    gt: Int
+    ngt: Int
+    gte: Int
+    ngte: Int
+    lt: Int
+    nlt: Int
+    lte: Int
+    nlte: Int
+}
+
+input StringOperationFilterInput {
+    and: [StringOperationFilterInput!]
+    or: [StringOperationFilterInput!]
+    eq: String
+    neq: String
+    contains: String
+    ncontains: String
+    in: [String]
+    nin: [String]
+    startsWith: String
+    nstartsWith: String
+    endsWith: String
+    nendsWith: String
+}
+
+input ListStringOperationFilterInput {
+    all: StringOperationFilterInput
+    none: StringOperationFilterInput
+    some: StringOperationFilterInput
+    any: Boolean
+}
+
+input DateTimeOperationFilterInput {
+    eq: DateTime
+    neq: DateTime
+    in: [DateTime]
+    nin: [DateTime]
+    gt: DateTime
+    ngt: DateTime
+    gte: DateTime
+    ngte: DateTime
+    lt: DateTime
+    nlt: DateTime
+    lte: DateTime
+    nlte: DateTime
+}
+
+"""
+The `DateTime` scalar represents an ISO-8601 compliant date time type.
+"""
+scalar DateTime
+
+type ImageGQLType {
+    id: Int!
+    ownerId: Int!
+    name: String!
+    fileName: String!
+    extension: String!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+type VideoGQLType {
+    duration: Int!
+    id: Int!
+    ownerId: Int!
+    name: String!
+    fileName: String!
+    extension: String!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+type MusicGQLType {
+    duration: Int!
+    id: Int!
+    ownerId: Int!
+    name: String!
+    fileName: String!
+    extension: String!
+    tags: [String!]!
+    uploadDate: DateTime!
+}

@@ -45,7 +45,7 @@ fun HomeScreen(navController: NavHostController) {
                 items(20) {
                     BasicImageComponent.BasicImage(
                         onClick = {navController.navigate("${NavRoute.Image.path}{${NavRoute.Image.id}}")},
-                        url = "//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                        url = "abstract_img.jpg",
                         title = "Bacon ipsum",
                         date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),
                         modifier = Modifier.padding(16.dp)

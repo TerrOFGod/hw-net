@@ -1,21 +1,31 @@
 package com.example.collectit.ui.components.basics
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.os.Environment
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
+import com.example.collectit.R
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberAsyncImagePainter
+import coil.compose.rememberImagePainter
 import com.example.collectit.navigation.NavRoute
 import com.example.collectit.ui.theme.CollectItTheme
 import com.google.accompanist.flowlayout.FlowRow
 import com.google.accompanist.flowlayout.SizeMode
+import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -30,6 +40,17 @@ class BasicImageComponent {
             title: String,
             date: String
         ){
+            url.replace('-', '_')
+            val name = url.subSequence(0, url.length - 4).toString()
+            val context = LocalContext.current
+            val drawableId = remember(name) {
+                context.resources.getIdentifier(
+                    name,
+                    "drawable",
+                    context.packageName
+                )
+            }
+
             Card(
                 modifier = modifier,
                 colors = CardDefaults.cardColors(
@@ -41,7 +62,7 @@ class BasicImageComponent {
             ){
                 Image(
                     painter = rememberAsyncImagePainter(
-                        model = url
+                        model = drawableId
                     ),
                     contentDescription = null,
                     modifier = Modifier

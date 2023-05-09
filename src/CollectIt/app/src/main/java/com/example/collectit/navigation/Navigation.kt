@@ -5,11 +5,11 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.example.collectit.R
-import com.example.collectit.navigation.destination.*
 import com.example.collectit.navigation.destination.account.add
 import com.example.collectit.navigation.destination.account.login
 import com.example.collectit.navigation.destination.account.profile
 import com.example.collectit.navigation.destination.account.signup
+import com.example.collectit.navigation.destination.home
 import com.example.collectit.navigation.destination.resources.images.image
 import com.example.collectit.navigation.destination.resources.images.images
 import com.example.collectit.navigation.destination.resources.music.music

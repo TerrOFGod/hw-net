@@ -1,6 +1,5 @@
 package com.example.collectit.screens.resources.music
 
-import android.provider.MediaStore.Audio
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -17,7 +16,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import com.example.collectit.ui.components.CustomTagComponent
 import com.example.collectit.ui.components.CustomTagComponent.Companion.CustomTag
 import com.example.collectit.ui.theme.CollectItTheme
 import com.google.accompanist.flowlayout.FlowRow

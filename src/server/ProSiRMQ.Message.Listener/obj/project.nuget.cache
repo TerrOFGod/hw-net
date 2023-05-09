@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MDMfxElXB+3HTcuHv4mcMETnpd7jUy818f6IRITSLCryOIeR1LKmL/kF2bP4pDEnWL0DB/K0sQg5GhT/bKEbsg==",
+  "dgSpecHash": "5AoWZh4tr7BSccTHBq4H+zFeUCVAEcjuyaqmiiKDdpEo293a6OEq+RpfEJCPzYXiyk/5bVn7hWFnGA29G3A5Gg==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\server\\ProSiRMQ.Message.Listener\\ProSiRMQ.Message.Listener.csproj",
   "expectedPackageFiles": [

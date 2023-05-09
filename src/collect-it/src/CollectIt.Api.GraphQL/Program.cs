@@ -11,10 +11,26 @@ namespace CollectIt.Api.GraphQL
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            
+            builder.Services.AddCors(o =>
+                o.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                }));
+            
+            builder.Services
+                .AddGraphQLServer()
+                .AddQueryType<Queries>()
+                .AddProjections()
+                .AddFiltering();
 
             // Add services to the container.
 
             builder.Services.AddControllers();
+            
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -30,12 +46,6 @@ namespace CollectIt.Api.GraphQL
                 options.UseOpenIddict<int>();
             });
 
-            builder.Services
-                .AddGraphQLServer()
-                .AddQueryType<Queries>()
-                .AddProjections()
-                .AddFiltering();
-               
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -45,13 +55,17 @@ namespace CollectIt.Api.GraphQL
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("CorsPolicy");
+
             app.UseRouting();
-            app.UseHttpsRedirection();
+
+            app.MapBananaCakePop();
 
             app.UseAuthorization();
 
             app.MapControllers();
-            app.MapGraphQL("/graphql");
+            app.MapGraphQL();
+            
 
             app.Run();
         }

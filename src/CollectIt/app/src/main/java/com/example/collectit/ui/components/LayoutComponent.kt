@@ -1,14 +1,18 @@
 package com.example.collectit.ui.components
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.*
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.BottomAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.collectit.navigation.CollectItNavHost
 import com.example.collectit.navigation.NavRoute
+import com.example.collectit.ui.components.navigation.NavButtonWithIconComponent.Companion.NavButtonWithIcon
+import com.example.collectit.ui.components.navigation.NavButtonWithoutIconComponent.Companion.NavButtonWithoutIcon
 
 class LayoutComponent {
     companion object {
@@ -18,17 +22,33 @@ class LayoutComponent {
             navController: NavHostController,
             routes: Array<NavRoute>
         ) {
-            Scaffold(bottomBar = {
-                BottomAppBar {
-                    routes.forEach {
-                        Button(onClick = { navController.navigate(it.path) }) {
-                            Text(text = it.title)
+            Scaffold(
+                bottomBar = {
+                    BottomAppBar(
+                        contentPadding = PaddingValues(20.dp, 0.dp)
+                    ) {
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            modifier = Modifier.fillMaxWidth()
+                                .wrapContentHeight()
+                        ) {
+                            Row(
+
+                            ){
+                                routes.forEach {
+                                    if (it.icon != null){
+                                        NavButtonWithIcon(navController, it)
+                                    }else{
+                                        NavButtonWithoutIcon(navController, it)
+                                    }
+                                }
+                            }
                         }
+
+
                     }
-                }
-            }) {padd ->
-                Box(modifier = Modifier.padding(padd)){
-                    val i = padd
+                }) {innerPadding ->
+                Box(modifier = Modifier.padding(innerPadding)){
                     CollectItNavHost(navController)
                 }
             }

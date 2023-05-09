@@ -22,7 +22,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.ui.theme.CollectItTheme
-import androidx.compose.material3.Text as Text
 
 @Composable
 fun LoginScreen(navController: NavHostController) {

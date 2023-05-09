@@ -5,7 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.example.collectit.navigation.NavRoute
-import com.example.collectit.screens.resources.images.ImagesScreen
+import com.example.collectit.screens.resources.images.list.ImagesScreen
 
 @ExperimentalMaterial3Api
 fun NavGraphBuilder.images(

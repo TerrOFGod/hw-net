@@ -16,6 +16,7 @@ class NavButtonWithoutIconComponent {
             NavRoute: NavRoute
 
         ){
+
             AssistChip(
                 onClick = {
                     navController.navigate(NavRoute.path) {

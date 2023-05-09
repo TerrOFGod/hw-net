@@ -183,12 +183,30 @@ services:
       - '8086:80'
     environment:
       ConnectionStrings:Postgresql:Development: 'Host=localhost;User ID=postgres;Password=postgres;Port=5433;Database=postgres;'
+
+  graphql:
+    build:
+      context: src/collect-it/src
+      dockerfile: CollectIt.Api.GraphQL/Dockerfile
+    ports:
+      - '8087:80'
+    depends_on:
+      - database-collect-it
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=localhost;Port=5433;Username=postgres;Password=postgres;Database=postgres
+      - DB_HOST=database-collect-it
+      - DB_PORT=5433
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+      - DB_DATABASE=postgres
+
   
   database-collect-it:
     image: postgres:14-alpine
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USERNAME: postgres
+      POSTGRES_DB: collect
     ports:
       - '5433:5432'
     volumes:
