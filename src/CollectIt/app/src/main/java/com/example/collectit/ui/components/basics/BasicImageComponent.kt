@@ -40,8 +40,8 @@ class BasicImageComponent {
             title: String,
             date: String
         ){
-            url.replace('-', '_')
-            val name = url.subSequence(0, url.length - 4).toString()
+            var temp = url.replace('-', '_')
+            val name = temp.subSequence(0, url.length - 4).toString().lowercase()
             val context = LocalContext.current
             val drawableId = remember(name) {
                 context.resources.getIdentifier(

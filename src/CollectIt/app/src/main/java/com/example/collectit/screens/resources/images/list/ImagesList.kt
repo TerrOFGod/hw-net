@@ -30,7 +30,7 @@ fun ImagesScreen(
     navController: NavHostController,
     viewModel: ImagesListViewModel = hiltViewModel()
 ) {
-    Log.v("MusicList", "music list")
+    Log.v("ImagesList", "images list")
     if (!viewModel.imagesList.value!!.any()) {
         viewModel.getImages()
     }
