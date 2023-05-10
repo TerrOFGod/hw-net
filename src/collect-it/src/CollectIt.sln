@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectIt.API.WebAPI", "Col
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CollectIt.API.Tests.Integration.FSharp", "CollectIt.API\CollectIt.API.Tests.Integration.FSharp\CollectIt.API.Tests.Integration.FSharp.fsproj", "{86D18128-6094-4D6B-A0B9-472F7A316704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectIt.Api.GraphQL", "CollectIt.Api.GraphQL\CollectIt.Api.GraphQL.csproj", "{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{86D18128-6094-4D6B-A0B9-472F7A316704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D18128-6094-4D6B-A0B9-472F7A316704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D18128-6094-4D6B-A0B9-472F7A316704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

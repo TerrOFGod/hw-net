@@ -29,6 +29,7 @@ public static class ApiServiceCollectionExtensions
 
     public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
     {
+        
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();

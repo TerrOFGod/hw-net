@@ -1,0 +1,34 @@
+.image-action-btn[b-qyjhwqv9lh] {
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 2px;
+    
+}
+
+.image-action-btn:last-of-type[b-qyjhwqv9lh] {
+    margin-right: 0;
+}
+
+.image-action-btn:first-of-type[b-qyjhwqv9lh] {
+    margin-left: 0;
+}
+
+.main-img[b-qyjhwqv9lh] {
+    object-position: center;
+    object-fit: fill;
+    max-width: 70%;
+    max-height: 400px;
+}
+
+.mah-1[b-qyjhwqv9lh]{
+    max-height: 50px;
+}
+
+.btn-color[b-qyjhwqv9lh]{
+    background: #bbbbbb;
+}
+
+.btn-color:hover[b-qyjhwqv9lh]{
+    background: #9a9a9a;
+}

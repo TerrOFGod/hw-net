@@ -1,0 +1,23 @@
+.image-action-btn[b-x0iidcviw2] {
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 2px;
+
+}
+
+.image-action-btn:last-of-type[b-x0iidcviw2] {
+    margin-right: 0;
+}
+
+.image-action-btn:first-of-type[b-x0iidcviw2] {
+    margin-left: 0;
+}
+
+.btn-color[b-x0iidcviw2]{
+    background: #bbbbbb;
+}
+
+.btn-color:hover[b-x0iidcviw2]{
+    background: #9a9a9a;
+}
