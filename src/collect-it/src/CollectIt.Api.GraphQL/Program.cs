@@ -1,7 +1,11 @@
 using CollectIt.Api.GraphQL.GraphQL;
 using CollectIt.Database.Abstractions.Resources;
+using CollectIt.Database.Entities.Account;
 using CollectIt.Database.Infrastructure;
+using CollectIt.Database.Infrastructure.Account.Data;
 using CollectIt.Database.Infrastructure.Resources.Managers;
+using CollectIt.MVC.Infrastructure.Account;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CollectIt.Api.GraphQL
@@ -35,8 +39,33 @@ namespace CollectIt.Api.GraphQL
                 .AddQueryType<Queries>()
                 .AddProjections()
                 .AddFiltering();
-               
+
+            builder.Services.AddIdentity<User, Role>(config =>
+            {
+                config.User = new UserOptions { RequireUniqueEmail = true, };
+                config.Password = new PasswordOptions
+                {
+                    RequireDigit = true,
+                    RequiredLength = 6,
+                    RequireLowercase = false,
+                    RequireUppercase = false,
+                    RequiredUniqueChars = 1,
+                    RequireNonAlphanumeric = false,
+                };
+                config.SignIn = new SignInOptions
+                {
+                    RequireConfirmedEmail = false,
+                    RequireConfirmedAccount = false,
+                    RequireConfirmedPhoneNumber = false,
+                };
+            })
+        .AddEntityFrameworkStores<PostgresqlCollectItDbContext>()
+        .AddUserManager<UserManager>()
+        .AddDefaultTokenProviders()
+        .AddErrorDescriber<RussianLanguageIdentityErrorDescriber>();
+
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -46,9 +75,6 @@ namespace CollectIt.Api.GraphQL
             }
 
             app.UseRouting();
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
 
             app.MapControllers();
             app.MapGraphQL("/graphql");
