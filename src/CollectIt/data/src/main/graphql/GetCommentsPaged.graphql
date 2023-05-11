@@ -1,0 +1,26 @@
+query GetCommentsPaged ($offset: Int, $cursor: String) {
+    readCommentsPaged (first: $offset, after: $cursor) {
+        edges{
+            node{
+                commentId,
+                ownerId,
+                content,
+                uploadDate,
+                targetId,
+                target {
+                    ownerId,
+                    name,
+                    fileName,
+                    extension,
+                    tags,
+                    uploadDate
+                }
+            }
+            cursor
+        }
+        pageInfo {
+            hasNextPage,
+            endCursor
+        }
+    }
+}

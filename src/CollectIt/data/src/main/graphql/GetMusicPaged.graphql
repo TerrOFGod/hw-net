@@ -1,0 +1,21 @@
+query GetMusicPaged ($offset: Int, $cursor: String) {
+    readMusicPaged (first: $offset, after: $cursor) {
+        edges{
+            node{
+                id,
+                ownerId,
+                name,
+                fileName,
+                extension,
+                tags,
+                uploadDate,
+                duration
+            }
+            cursor
+        }
+        pageInfo {
+            hasNextPage,
+            endCursor
+        }
+    }
+}

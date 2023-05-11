@@ -109,5 +109,54 @@ namespace CollectIt.Api.GraphQL.GraphQL
                 UploadDate = i.UploadDate
             });
         }
+
+        [UseProjection]
+        [UseFiltering]
+        public IQueryable<CommentGQLType> ReadComments([Service] PostgresqlCollectItDbContext context)
+        {
+            return context.Comments.Select(i => new CommentGQLType()
+            {
+                CommentId = i.CommentId,
+                OwnerId = i.OwnerId,
+                Content = i.Content,
+                UploadDate = i.UploadDate,
+                TargetId = i.TargetId,
+                Target = new ResourceGQLType()
+                {
+                    Id = i.TargetId,
+                    OwnerId = i.OwnerId,
+                    Name = i.Target.Name,
+                    FileName = i.Target.FileName,
+                    Extension = i.Target.Extension,
+                    Tags = i.Target.Tags,
+                    UploadDate = i.Target.UploadDate
+                }
+            });
+        }
+
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        public IQueryable<CommentGQLType> ReadCommentsPaged([Service] PostgresqlCollectItDbContext context)
+        {
+            return context.Comments.Select(i => new CommentGQLType()
+            {
+                CommentId = i.CommentId,
+                OwnerId = i.OwnerId,
+                Content = i.Content,
+                UploadDate = i.UploadDate,
+                TargetId = i.TargetId,
+                Target = new ResourceGQLType()
+                {
+                    Id = i.TargetId,
+                    OwnerId = i.OwnerId,
+                    Name = i.Target.Name,
+                    FileName = i.Target.FileName,
+                    Extension = i.Target.Extension,
+                    Tags = i.Target.Tags,
+                    UploadDate = i.Target.UploadDate
+                }
+            });
+        }
     }
 }

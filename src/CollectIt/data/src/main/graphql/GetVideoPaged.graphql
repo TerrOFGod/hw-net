@@ -1,0 +1,21 @@
+query GetVideoPaged ($offset: Int, $cursor: String) {
+    readVideosPaged (first: $offset, after: $cursor) {
+        edges{
+            node{
+                id,
+                ownerId,
+                name,
+                fileName,
+                extension,
+                tags,
+                uploadDate,
+                duration
+            }
+            cursor
+        }
+        pageInfo {
+            hasNextPage,
+            endCursor
+        }
+    }
+}

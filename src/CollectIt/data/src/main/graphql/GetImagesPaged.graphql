@@ -1,0 +1,20 @@
+query GetImagesPaged ($offset: Int, $cursor: String) {
+    readImagesPaged (first: $offset, after: $cursor) {
+        edges{
+            node{
+                id,
+                ownerId,
+                name,
+                fileName,
+                extension,
+                tags,
+                uploadDate
+            }
+            cursor
+        }
+        pageInfo {
+            hasNextPage,
+            endCursor
+        }
+    }
+}
