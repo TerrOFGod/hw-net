@@ -24,11 +24,11 @@ namespace CollectIt.Api.GraphQL.Controllers
 
         [HttpPost]
         [Route("mobileLogin")]
-        public async Task<IActionResult> MobileLogin([FromForm] LoginViewModel model)
+        public async Task<IActionResult> MobileLogin([FromBody] LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest("Invalid model state");
             }
             try
             {
@@ -57,11 +57,11 @@ namespace CollectIt.Api.GraphQL.Controllers
 
         [HttpPost]
         [Route("mobileRegister")]
-        public async Task<IActionResult> Register([FromForm] RegisterViewModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest("Invalid model state");
             }
             try
             {
@@ -72,7 +72,7 @@ namespace CollectIt.Api.GraphQL.Controllers
                     return Ok(user.Id);
                 }
                 else
-                    return BadRequest();
+                    return BadRequest("Unable to add user");
             }
             catch (Exception ex)
             {

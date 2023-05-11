@@ -44,7 +44,7 @@ fun HomeScreen(navController: NavHostController) {
             LazyColumn {
                 items(20) {
                     BasicImageComponent.BasicImage(
-                        onClick = {navController.navigate("${NavRoute.Image.path}{${NavRoute.Image.id}}")},
+                        onClick = {navController.navigate("${NavRoute.Image.path}1")},
                         url = "abstract_img.jpg",
                         title = "Bacon ipsum",
                         date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),

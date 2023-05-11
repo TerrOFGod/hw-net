@@ -4,8 +4,97 @@ schema {
 
 type Queries {
     readImages(where: ImageGQLTypeFilterInput): [ImageGQLType!]!
+    readImagesPaged(
+        """
+        Returns the first _n_ elements from the list.
+        """
+        first: Int
+
+        """
+        Returns the elements in the list that come after the specified cursor.
+        """
+        after: String
+
+        """
+        Returns the last _n_ elements from the list.
+        """
+        last: Int
+
+        """
+        Returns the elements in the list that come before the specified cursor.
+        """
+        before: String
+        where: ImageGQLTypeFilterInput
+    ): ReadImagesPagedConnection
     readVideos(where: VideoGQLTypeFilterInput): [VideoGQLType!]!
+    readVideosPaged(
+        """
+        Returns the first _n_ elements from the list.
+        """
+        first: Int
+
+        """
+        Returns the elements in the list that come after the specified cursor.
+        """
+        after: String
+
+        """
+        Returns the last _n_ elements from the list.
+        """
+        last: Int
+
+        """
+        Returns the elements in the list that come before the specified cursor.
+        """
+        before: String
+        where: VideoGQLTypeFilterInput
+    ): ReadVideosPagedConnection
     readMusic(where: MusicGQLTypeFilterInput): [MusicGQLType!]!
+    readMusicPaged(
+        """
+        Returns the first _n_ elements from the list.
+        """
+        first: Int
+
+        """
+        Returns the elements in the list that come after the specified cursor.
+        """
+        after: String
+
+        """
+        Returns the last _n_ elements from the list.
+        """
+        last: Int
+
+        """
+        Returns the elements in the list that come before the specified cursor.
+        """
+        before: String
+        where: MusicGQLTypeFilterInput
+    ): ReadMusicPagedConnection
+    readComments(where: CommentGQLTypeFilterInput): [CommentGQLType!]!
+    readCommentsPaged(
+        """
+        Returns the first _n_ elements from the list.
+        """
+        first: Int
+
+        """
+        Returns the elements in the list that come after the specified cursor.
+        """
+        after: String
+
+        """
+        Returns the last _n_ elements from the list.
+        """
+        last: Int
+
+        """
+        Returns the elements in the list that come before the specified cursor.
+        """
+        before: String
+        where: CommentGQLTypeFilterInput
+    ): ReadCommentsPagedConnection
 }
 
 input ImageGQLTypeFilterInput {
@@ -44,6 +133,97 @@ input MusicGQLTypeFilterInput {
     extension: StringOperationFilterInput
     tags: ListStringOperationFilterInput
     uploadDate: DateTimeOperationFilterInput
+}
+
+input CommentGQLTypeFilterInput {
+    and: [CommentGQLTypeFilterInput!]
+    or: [CommentGQLTypeFilterInput!]
+    commentId: IntOperationFilterInput
+    ownerId: IntOperationFilterInput
+    content: StringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+    targetId: IntOperationFilterInput
+    target: ResourceGQLTypeFilterInput
+}
+
+"""
+A connection to a list of items.
+"""
+type ReadImagesPagedConnection {
+    """
+    Information to aid in pagination.
+    """
+    pageInfo: PageInfo!
+
+    """
+    A list of edges.
+    """
+    edges: [ReadImagesPagedEdge!]
+
+    """
+    A flattened list of the nodes.
+    """
+    nodes: [ImageGQLType!]
+}
+
+"""
+A connection to a list of items.
+"""
+type ReadVideosPagedConnection {
+    """
+    Information to aid in pagination.
+    """
+    pageInfo: PageInfo!
+
+    """
+    A list of edges.
+    """
+    edges: [ReadVideosPagedEdge!]
+
+    """
+    A flattened list of the nodes.
+    """
+    nodes: [VideoGQLType!]
+}
+
+"""
+A connection to a list of items.
+"""
+type ReadMusicPagedConnection {
+    """
+    Information to aid in pagination.
+    """
+    pageInfo: PageInfo!
+
+    """
+    A list of edges.
+    """
+    edges: [ReadMusicPagedEdge!]
+
+    """
+    A flattened list of the nodes.
+    """
+    nodes: [MusicGQLType!]
+}
+
+"""
+A connection to a list of items.
+"""
+type ReadCommentsPagedConnection {
+    """
+    Information to aid in pagination.
+    """
+    pageInfo: PageInfo!
+
+    """
+    A list of edges.
+    """
+    edges: [ReadCommentsPagedEdge!]
+
+    """
+    A flattened list of the nodes.
+    """
+    nodes: [CommentGQLType!]
 }
 
 input IntOperationFilterInput {
@@ -98,10 +278,42 @@ input DateTimeOperationFilterInput {
     nlte: DateTime
 }
 
+input ResourceGQLTypeFilterInput {
+    and: [ResourceGQLTypeFilterInput!]
+    or: [ResourceGQLTypeFilterInput!]
+    id: IntOperationFilterInput
+    ownerId: IntOperationFilterInput
+    name: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    extension: StringOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
 """
-The `DateTime` scalar represents an ISO-8601 compliant date time type.
+Information about pagination in a connection.
 """
-scalar DateTime
+type PageInfo {
+    """
+    Indicates whether more edges exist following the set defined by the clients arguments.
+    """
+    hasNextPage: Boolean!
+
+    """
+    Indicates whether more edges exist prior the set defined by the clients arguments.
+    """
+    hasPreviousPage: Boolean!
+
+    """
+    When paginating backwards, the cursor to continue.
+    """
+    startCursor: String
+
+    """
+    When paginating forwards, the cursor to continue.
+    """
+    endCursor: String
+}
 
 type ImageGQLType {
     id: Int!
@@ -111,6 +323,21 @@ type ImageGQLType {
     extension: String!
     tags: [String!]!
     uploadDate: DateTime!
+}
+
+"""
+An edge in a connection.
+"""
+type ReadImagesPagedEdge {
+    """
+    A cursor for use in pagination.
+    """
+    cursor: String!
+
+    """
+    The item at the end of the edge.
+    """
+    node: ImageGQLType!
 }
 
 type VideoGQLType {
@@ -124,8 +351,77 @@ type VideoGQLType {
     uploadDate: DateTime!
 }
 
+"""
+An edge in a connection.
+"""
+type ReadVideosPagedEdge {
+    """
+    A cursor for use in pagination.
+    """
+    cursor: String!
+
+    """
+    The item at the end of the edge.
+    """
+    node: VideoGQLType!
+}
+
 type MusicGQLType {
     duration: Int!
+    id: Int!
+    ownerId: Int!
+    name: String!
+    fileName: String!
+    extension: String!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+"""
+An edge in a connection.
+"""
+type ReadMusicPagedEdge {
+    """
+    A cursor for use in pagination.
+    """
+    cursor: String!
+
+    """
+    The item at the end of the edge.
+    """
+    node: MusicGQLType!
+}
+
+type CommentGQLType {
+    commentId: Int!
+    ownerId: Int!
+    content: String!
+    uploadDate: DateTime!
+    targetId: Int!
+    target: ResourceGQLType!
+}
+
+"""
+An edge in a connection.
+"""
+type ReadCommentsPagedEdge {
+    """
+    A cursor for use in pagination.
+    """
+    cursor: String!
+
+    """
+    The item at the end of the edge.
+    """
+    node: CommentGQLType!
+}
+
+"""
+The `DateTime` scalar represents an ISO-8601 compliant date time type.
+"""
+scalar DateTime
+
+type ResourceGQLType {
     id: Int!
     ownerId: Int!
     name: String!

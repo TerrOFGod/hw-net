@@ -1,0 +1,10 @@
+query Video{
+    readVideos{
+        id,
+        name,
+        fileName,
+        extension,
+        uploadDate,
+        tags
+    }
+}

@@ -1,0 +1,10 @@
+query Music{
+    readMusic{
+        id,
+        name,
+        fileName,
+        extension,
+        uploadDate,
+        tags
+    }
+}

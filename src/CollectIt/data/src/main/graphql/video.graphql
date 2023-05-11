@@ -1,9 +1,0 @@
-query video{
-    readVideos{
-        name,
-        fileName,
-        extension,
-        uploadDate,
-        tags
-    }
-}

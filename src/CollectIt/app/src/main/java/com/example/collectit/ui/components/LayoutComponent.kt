@@ -1,5 +1,7 @@
 package com.example.collectit.ui.components
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -9,6 +11,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.collectit.AppModule
+import com.example.collectit.infrastructure.AppState
 import com.example.collectit.navigation.CollectItNavHost
 import com.example.collectit.navigation.NavRoute
 import com.example.collectit.ui.components.navigation.NavButtonWithIconComponent.Companion.NavButtonWithIcon
@@ -16,6 +20,7 @@ import com.example.collectit.ui.components.navigation.NavButtonWithoutIconCompon
 
 class LayoutComponent {
     companion object {
+        @RequiresApi(Build.VERSION_CODES.O)
         @ExperimentalMaterial3Api
         @Composable
         fun Layout(
@@ -47,7 +52,8 @@ class LayoutComponent {
 
 
                     }
-                }) {innerPadding ->
+                }
+            ) {innerPadding ->
                 Box(modifier = Modifier.padding(innerPadding)){
                     CollectItNavHost(navController)
                 }

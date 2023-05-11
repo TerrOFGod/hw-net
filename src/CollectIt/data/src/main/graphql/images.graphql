@@ -1,9 +1,0 @@
-query images{
-    readImages{
-        name,
-        fileName,
-        extension,
-        uploadDate,
-        tags
-    }
-}

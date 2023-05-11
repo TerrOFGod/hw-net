@@ -19,12 +19,18 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.collectit.navigation.NavRoute
+import com.example.collectit.screens.account.login.LoginViewModel
 import com.example.collectit.ui.theme.CollectItTheme
 
 @Composable
-fun LoginScreen(navController: NavHostController) {
+fun LoginScreen(
+    navController: NavHostController,
+    viewModel: LoginViewModel = hiltViewModel()
+) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
     ) {
@@ -34,7 +40,7 @@ fun LoginScreen(navController: NavHostController) {
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(20.dp),
-                onClick = { },
+                onClick = { navController.navigate(NavRoute.SignUp.path) },
                 style = TextStyle(
                     fontSize = 14.sp,
                     textDecoration = TextDecoration.Underline,
@@ -47,8 +53,8 @@ fun LoginScreen(navController: NavHostController) {
             verticalArrangement = Arrangement.Center
         ) {
 
-            val email = remember { mutableStateOf(TextFieldValue()) }
-            val password = remember { mutableStateOf(TextFieldValue()) }
+            val email = remember { mutableStateOf("") }
+            val password = remember { mutableStateOf("") }
             val rememberMe = remember { mutableStateOf(false) }
 
             Text(
@@ -83,7 +89,9 @@ fun LoginScreen(navController: NavHostController) {
             Spacer(modifier = Modifier.height(20.dp))
             Box(modifier = Modifier.padding(40.dp, 0.dp, 40.dp, 0.dp)) {
                 Button(
-                    onClick = { },
+                    onClick = {
+                        viewModel.login(email.value, password.value, rememberMe.value)
+                    },
                     shape = RoundedCornerShape(50.dp),
                     modifier = Modifier
                         .fillMaxWidth()

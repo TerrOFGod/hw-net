@@ -8,6 +8,7 @@ import com.example.core.dtos.resources.music.list.ReadMusicList
 import com.example.core.dtos.resources.videos.item.ReadVideoNode
 import com.example.core.dtos.resources.videos.list.ReadVideoList
 import com.example.core.managers.GraphQLManager
+import com.example.data.ImageQuery
 import com.example.data.ImagesQuery
 import com.example.data.MusicQuery
 import com.example.data.VideoQuery
@@ -27,6 +28,7 @@ class GraphQLManagerImpl @Inject constructor(
         val imagesList = ReadImagesList(mutableListOf())
         responseList.forEach {
             val image = ReadImageNode(
+                it.id,
                 it.name,
                 it.fileName,
                 it.extension,
@@ -38,8 +40,22 @@ class GraphQLManagerImpl @Inject constructor(
         return imagesList
     }
 
-    override suspend fun getImage(id: String): ReadImageNode {
-        TODO("Not yet implemented")
+    override suspend fun getImage(id: Int): ReadImageNode {
+        val response = apolloClient.query(ImageQuery(id)).execute()
+        var responseData = response.data?.readImages ?: emptyList()
+        val imagesList = ReadImagesList(mutableListOf())
+        responseData.forEach {
+            val image = ReadImageNode(
+                it.id,
+                it.name,
+                it.fileName,
+                it.extension,
+                it.uploadDate,
+                it.tags
+            )
+            imagesList.list.add(image)
+        }
+        return imagesList.list.first()
     }
 
     override suspend fun getMusicList(): ReadMusicList {
@@ -48,6 +64,7 @@ class GraphQLManagerImpl @Inject constructor(
         val musicList = ReadMusicList(mutableListOf())
         responseList.forEach {
             val music = ReadMusicNode(
+                it.id,
                 it.name,
                 it.fileName,
                 it.extension,
@@ -59,7 +76,7 @@ class GraphQLManagerImpl @Inject constructor(
         return musicList
     }
 
-    override suspend fun getMusic(id: String): ReadMusicNode {
+    override suspend fun getMusic(id: Int): ReadMusicNode {
         TODO("Not yet implemented")
     }
 
@@ -69,6 +86,7 @@ class GraphQLManagerImpl @Inject constructor(
         val videoList = ReadVideoList(mutableListOf())
         responseList.forEach {
             val video = ReadVideoNode(
+                it.id,
                 it.name,
                 it.fileName,
                 it.extension,
@@ -80,7 +98,7 @@ class GraphQLManagerImpl @Inject constructor(
         return videoList
     }
 
-    override suspend fun getVideo(id: String): ReadVideoNode {
+    override suspend fun getVideo(id: Int): ReadVideoNode {
         TODO("Not yet implemented")
     }
 }

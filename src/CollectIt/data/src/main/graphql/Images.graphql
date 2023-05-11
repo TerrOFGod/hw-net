@@ -1,0 +1,10 @@
+query Images{
+    readImages{
+        id,
+        name,
+        fileName,
+        extension,
+        uploadDate,
+        tags
+    }
+}

@@ -41,7 +41,7 @@ fun MusicListScreen(
             dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
             val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
             BasicMusic(
-                onClick = {navController.navigate("${NavRoute.Music.path}/{${NavRoute.Music.id}}")},
+                onClick = {navController.navigate("${NavRoute.Music.path}1")},
                 modifier = Modifier.padding(16.dp),
                 music = it,
                 date = date

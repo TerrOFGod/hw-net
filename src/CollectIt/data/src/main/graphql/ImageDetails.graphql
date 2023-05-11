@@ -1,0 +1,10 @@
+query Image($id: Int!) {
+    readImages(where: {id: {eq: $id}}){
+        id,
+        name,
+        fileName,
+        extension,
+        uploadDate,
+        tags
+    }
+}

@@ -19,12 +19,18 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.collectit.navigation.NavRoute
+import com.example.collectit.screens.account.signup.SignUpViewModel
 import com.example.collectit.ui.theme.CollectItTheme
 
 @Composable
-fun SignUpScreen(navController: NavHostController) {
+fun SignUpScreen(
+    navController: NavHostController,
+    viewModel: SignUpViewModel = hiltViewModel()
+) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
     ) {
@@ -34,7 +40,7 @@ fun SignUpScreen(navController: NavHostController) {
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(20.dp),
-                onClick = { },
+                onClick = { navController.navigate(NavRoute.Login.path) },
                 style = TextStyle(
                     fontSize = 14.sp,
                     textDecoration = TextDecoration.Underline,
@@ -47,9 +53,10 @@ fun SignUpScreen(navController: NavHostController) {
             verticalArrangement = Arrangement.Center
         ) {
 
-            val username = remember { mutableStateOf(TextFieldValue()) }
-            val email = remember { mutableStateOf(TextFieldValue()) }
-            val password = remember { mutableStateOf(TextFieldValue()) }
+            val username = remember { mutableStateOf("") }
+            val email = remember { mutableStateOf("") }
+            val password = remember { mutableStateOf("") }
+            val confirm = remember { mutableStateOf("") }
 
             Text(
                 text = "Регистрация",
@@ -79,15 +86,17 @@ fun SignUpScreen(navController: NavHostController) {
             Spacer(modifier = Modifier.height(20.dp))
             TextField(
                 label = { Text(text = "Подтверждение пароля") },
-                value = password.value,
+                value = confirm.value,
                 visualTransformation = PasswordVisualTransformation(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                onValueChange = { password.value = it })
+                onValueChange = { confirm.value = it })
 
             Spacer(modifier = Modifier.height(20.dp))
             Box(modifier = Modifier.padding(40.dp, 0.dp, 40.dp, 0.dp)) {
                 Button(
-                    onClick = { },
+                    onClick = {
+                        viewModel.register(username.value, email.value, password.value, confirm.value)
+                    },
                     shape = RoundedCornerShape(50.dp),
                     modifier = Modifier
                         .fillMaxWidth()

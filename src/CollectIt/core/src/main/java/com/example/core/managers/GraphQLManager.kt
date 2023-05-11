@@ -9,11 +9,11 @@ import com.example.core.dtos.resources.videos.list.ReadVideoList
 
 interface GraphQLManager {
     suspend fun getImagesList() : ReadImagesList
-    suspend fun getImage(id: String): ReadImageNode
+    suspend fun getImage(id: Int): ReadImageNode
 
     suspend fun getMusicList() : ReadMusicList
-    suspend fun getMusic(id: String): ReadMusicNode
+    suspend fun getMusic(id: Int): ReadMusicNode
 
     suspend fun getVideoList() : ReadVideoList
-    suspend fun getVideo(id: String): ReadVideoNode
+    suspend fun getVideo(id: Int): ReadVideoNode
 }

@@ -1,9 +1,0 @@
-query music{
-    readMusic{
-        name,
-        fileName,
-        extension,
-        uploadDate,
-        tags
-    }
-}

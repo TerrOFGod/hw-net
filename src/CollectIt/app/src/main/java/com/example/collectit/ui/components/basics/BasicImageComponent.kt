@@ -96,7 +96,7 @@ class BasicImageComponent {
             CollectItTheme {
                 val navController = rememberNavController()
                 BasicImage(
-                    onClick = { navController.navigate("${NavRoute.Image.path}/{${NavRoute.Image.id}}")},
+                    onClick = { navController.navigate("${NavRoute.Image.path}1")},
                     url = "//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
                     title = "Bacon ipsum",
                     date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),

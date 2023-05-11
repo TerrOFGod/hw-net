@@ -16,6 +16,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.navigation.NavRoute
+import com.example.collectit.navigation.destination.resources.images.navigateToImage
 import com.example.collectit.ui.components.basics.BasicImageComponent.Companion.BasicImage
 import com.example.collectit.ui.theme.CollectItTheme
 import java.text.SimpleDateFormat
@@ -44,7 +45,7 @@ fun ImagesScreen(
             dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
             val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
             BasicImage(
-                onClick = {navController.navigate("${NavRoute.Image.path}/{${NavRoute.Image.id}}")},
+                onClick = {navController.navigateToImage(it.id)},
                 url = "${it.fileName}",
                 title = it.name,
                 date = date,
