@@ -50,11 +50,6 @@ namespace CollectIt.Api.GraphQL
                 options.UseOpenIddict<int>();
             });
 
-            builder.Services
-                .AddGraphQLServer()
-                .AddQueryType<Queries>()
-                .AddProjections()
-                .AddFiltering();
 
             builder.Services.AddIdentity<User, Role>(config =>
             {
@@ -101,8 +96,8 @@ namespace CollectIt.Api.GraphQL
 
 
             app.MapControllers();
-            app.MapGraphQL();
-            
+            app.MapGraphQL("/graphql");
+
 
             app.Run();
         }
