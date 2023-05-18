@@ -1,11 +1,14 @@
 package com.example.collectit.screens.account
 
+import android.util.Log
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -22,6 +25,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import coil.request.SuccessResult
 import com.example.collectit.navigation.NavRoute
 import com.example.collectit.screens.account.login.LoginViewModel
 import com.example.collectit.ui.theme.CollectItTheme
@@ -29,11 +33,22 @@ import com.example.collectit.ui.theme.CollectItTheme
 @Composable
 fun LoginScreen(
     navController: NavHostController,
+    onSuccessResult: () -> Unit,
     viewModel: LoginViewModel = hiltViewModel()
 ) {
+    Log.v("Login", "Start observe state")
+    // State
+    val observeState = viewModel.success.observeAsState()
+
+    if (observeState.value!!){
+        onSuccessResult
+    }
+
     Scaffold(
         modifier = Modifier.fillMaxSize(),
     ) {
+
+
         Box(modifier = Modifier.fillMaxSize()) {
             ClickableText(
                 text = AnnotatedString("Зарегестрироваться здесь"),
@@ -90,7 +105,11 @@ fun LoginScreen(
             Box(modifier = Modifier.padding(40.dp, 0.dp, 40.dp, 0.dp)) {
                 Button(
                     onClick = {
+                        Log.v("Login", "API Call")
+                        // API call
                         viewModel.login(email.value, password.value, rememberMe.value)
+
+
                     },
                     shape = RoundedCornerShape(50.dp),
                     modifier = Modifier
@@ -101,14 +120,5 @@ fun LoginScreen(
                 }
             }
         }
-    }
-}
-
-@ExperimentalMaterial3Api
-@Preview(showBackground = true)
-@Composable
-fun prevLoginScreen(){
-    CollectItTheme {
-        LoginScreen(navController = rememberNavController())
     }
 }

@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
+import coil.request.SuccessResult
 import com.example.collectit.navigation.NavRoute
 
 class NavButtonWithoutIconComponent {
@@ -13,8 +14,7 @@ class NavButtonWithoutIconComponent {
         @Composable
         fun NavButtonWithoutIcon(
             navController: NavHostController,
-            NavRoute: NavRoute
-
+            NavRoute: NavRoute,
         ){
 
             AssistChip(

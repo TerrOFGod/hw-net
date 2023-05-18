@@ -80,6 +80,10 @@ dependencies {
     implementation "androidx.compose.animation:animation-graphics:$compose_version"
 
 
+    //compose livedata
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+
+
     //compose test
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
 

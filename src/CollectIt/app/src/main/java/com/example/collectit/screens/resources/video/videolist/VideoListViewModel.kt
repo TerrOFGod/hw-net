@@ -1,5 +1,6 @@
 package com.example.collectit.screens.resources.video.videolist
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -16,15 +17,14 @@ import javax.inject.Inject
 class VideoListViewModel @Inject constructor(
     private val graphQLManager: GraphQLManager
 ) : ViewModel() {
-    val videoList = MutableLiveData(ArrayList<ReadVideoNode>())
+    private val _videoList = MutableLiveData(ArrayList<ReadVideoNode>())
+    val videoList: LiveData<ArrayList<ReadVideoNode>> get() = _videoList
 
-    fun getMusics() {
-        viewModelScope.launch(Dispatchers.Main) {
-            val videos = runBlocking (Dispatchers.IO){
-                graphQLManager.getVideoList().list
-            }
+    fun getVideos() {
+        viewModelScope.launch {
+            val videos = graphQLManager.getVideoList().list
 
-            videoList.value = ArrayList(videos)
+            _videoList.value = ArrayList(videos)
         }
     }
 }

@@ -1,0 +1,10 @@
+query VideoDetails($id: Int!) {
+    readVideos(where: {id: {eq: $id}}){
+        id,
+        name,
+        fileName,
+        extension,
+        uploadDate,
+        tags
+    }
+}

@@ -4,6 +4,7 @@ import android.content.SharedPreferences
 import com.example.core.Constants
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -11,13 +12,16 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.key
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.infrastructure.AppState
 import com.example.collectit.navigation.CollectItNavHost
@@ -33,8 +37,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    @Inject
-    lateinit var sharedPreferences: SharedPreferences
+    @Inject lateinit var sharedPreferences: SharedPreferences
 
     @RequiresApi(Build.VERSION_CODES.O)
     @ExperimentalMaterial3Api
@@ -51,54 +54,61 @@ class MainActivity : AppCompatActivity() {
             CollectItTheme {
                 // A surface container using the 'background' color from the theme
                 val navController = rememberNavController()
-                val machine = AppModule.appStateMachine;
-                val at = sharedPreferences.getString(
-                    Constants.SharedPreferences.ACCESS_TOKEN,
-                    ""
-                )
-                val isAuthenticated = remember {
-                    mutableStateOf(
-                        at!!.isNotEmpty())
+                val machine = AppModule.appStateMachine
+                val isAuthorized = ConstantsModule.isAuthorized
+                val isAuthorizedState = isAuthorized.observeAsState()
+                isAuthorized.value = remember {
+                        sharedPreferences.getString(
+                            Constants.SharedPreferences.ACCESS_TOKEN,
+                            ""
+                        )!!.isNotEmpty()
                 }
                 Scaffold(
                     bottomBar = {
                         BottomAppBar(
                             contentPadding = PaddingValues(20.dp, 0.dp)
                         ) {
-                            key(isAuthenticated) {
+                            key(isAuthorizedState) {
                                 Column(
                                     horizontalAlignment = Alignment.CenterHorizontally,
                                     modifier = Modifier
                                         .fillMaxWidth()
                                         .wrapContentHeight()
                                 ) {
-                                    Row(
-
-                                    ) {
+                                    Row{
                                         routes.forEach {
                                             if (it.icon != null) {
                                                 NavButtonWithIcon(navController, it)
                                             } else {
-
-                                                if (isAuthenticated.value) {
-                                                    AssistChip(
+                                                if (isAuthorizedState.value!!) {
+                                                    NavButtonWithIcon(navController, NavRoute.Chat)
+                                                    IconButton(
                                                         onClick = {
-                                                            isAuthenticated.value = false
+                                                            isAuthorized.value = false
                                                             sharedPreferences.edit()
                                                                 .remove(Constants.SharedPreferences.ACCESS_TOKEN)
                                                                 .apply()
-                                                            navController.navigate(NavRoute.Home.path)
-                                                        },
-                                                        modifier = Modifier
-                                                            .weight(1f)
-                                                            .padding(horizontal = 8.dp),
-                                                        label = {
-                                                            Text(
-                                                                text = NavRoute.LogOut.title,
-                                                                fontSize = 25.sp,
-                                                            )
+                                                            navController.navigate(NavRoute.LogOut.path) {
+                                                                // Pop up to the start destination of the graph to
+                                                                // avoid building up a large stack of destinations
+                                                                // on the back stack as users select items
+                                                                popUpTo(navController.graph.findStartDestination().id) {
+                                                                    saveState = true
+                                                                }
+                                                                // Avoid multiple copies of the same destination when
+                                                                // reselecting the same item
+                                                                launchSingleTop = true
+                                                                // Restore state when reselecting a previously selected item
+                                                                restoreState = true
+                                                            }
                                                         }
-                                                    )
+                                                    ) {
+                                                        Icon(
+                                                            painter = painterResource(id = NavRoute.LogOut.icon!!),
+                                                            contentDescription = null,
+                                                            modifier = Modifier.size(35.dp,35.dp)
+                                                        )
+                                                    }
                                                 } else {
                                                     NavButtonWithoutIcon(navController, it)
                                                 }
@@ -111,7 +121,9 @@ class MainActivity : AppCompatActivity() {
                     }
                 ) {innerPadding ->
                     Box(modifier = Modifier.padding(innerPadding)){
-                        CollectItNavHost(navController)
+                        CollectItNavHost(navController) {
+                            isAuthorized.value = true
+                        }
                     }
                     machine.currentState.observe(this) { newState ->
                         when (newState) {

@@ -3,11 +3,17 @@ package com.example.collectit.screens.resources.images.list
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.livedata.observeAsState
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -31,26 +37,37 @@ fun ImagesScreen(
     navController: NavHostController,
     viewModel: ImagesListViewModel = hiltViewModel()
 ) {
-    Log.v("ImagesList", "images list")
-    if (!viewModel.imagesList.value!!.any()) {
+    Log.v("ImagesList", "Start observe state")
+    // State
+    val observeState = viewModel.imagesList.observeAsState()
+
+    Log.v("ImagesList", "API Call")
+    // API call
+    LaunchedEffect(key1 = Unit) {
         viewModel.getImages()
     }
-    viewModel.imagesList.value!!.forEach{
-        Log.v("ReadImage", it.uploadDate.toString())
-    }
 
-    LazyColumn {
-        items(viewModel.imagesList.value!!) {
-            var dateStr = it.uploadDate.toString()
-            dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
-            val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
-            BasicImage(
-                onClick = {navController.navigateToImage(it.id)},
-                url = "${it.fileName}",
-                title = it.name,
-                date = date,
-                modifier = Modifier.padding(16.dp)
-            )
+    if (observeState.value == null) {
+        Box(modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            CircularProgressIndicator()
+        }
+    }
+    else{
+        LazyColumn {
+            items(observeState.value!!) {
+                var dateStr = it.uploadDate.toString()
+                dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
+                val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
+                BasicImage(
+                    onClick = {navController.navigateToImage(it.id)},
+                    url = "${it.fileName}",
+                    title = it.name,
+                    date = date,
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
         }
     }
 }

@@ -11,19 +11,24 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.ShoppingCart
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.LifecycleOwner
 import coil.compose.rememberAsyncImagePainter
 import com.example.collectit.ui.components.CustomTagComponent.Companion.CustomTag
 import com.example.collectit.ui.theme.CollectItTheme
+import com.example.core.dtos.resources.images.item.ReadImageNode
 import com.google.accompanist.flowlayout.FlowRow
 import com.google.accompanist.flowlayout.SizeMode
 import java.text.SimpleDateFormat
@@ -39,33 +44,55 @@ fun ImageCard(
     modifier: Modifier = Modifier,
     viewModel: ImageViewModel = hiltViewModel()
 ) {
-    Log.v("Image_$id", "get image")
-    viewModel.getImage(id)
+    Log.v("Image_$id", "Start observe state")
+    // State
+    val observeState = viewModel.image.observeAsState()
 
-    val a = 0;
-    Log.v("ReadImage", viewModel.image.value!!.uploadDate.toString())
-
-    var dateStr = viewModel.image.value!!.uploadDate.toString()
-    dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
-    val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
-
-    var temp = viewModel.image.value!!.fileName.replace('-', '_')
-    val name = temp.subSequence(0, viewModel.image.value!!.fileName.length - 4).toString().lowercase()
-    val context = LocalContext.current
-    val drawableId = remember(name) {
-        context.resources.getIdentifier(
-            name,
-            "drawable",
-            context.packageName
-        )
+    Log.v("Image_$id", "API Call")
+    // API call
+    LaunchedEffect(key1 = Unit) {
+        viewModel.getImage(id)
     }
 
+    if (observeState.value == null) {
+        Box(modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            CircularProgressIndicator()
+        }
+    }
+    else{
+        val date = viewModel.parseDate()
+
+        val name = viewModel.parseName()
+
+        val context = LocalContext.current
+        val drawableId = remember(name) {
+            context.resources.getIdentifier(
+                name,
+                "drawable",
+                context.packageName
+            )
+        }
+        MyImage(image = observeState.value!!, drawableId = drawableId, date = date, modifier = modifier)
+    }
+}
+
+@RequiresApi(Build.VERSION_CODES.O)
+@ExperimentalMaterial3Api
+@Composable
+fun MyImage(
+    image: ReadImageNode,
+    drawableId: Int,
+    date: String,
+    modifier: Modifier = Modifier,
+){
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant,
 
-        ),
+            ),
         shape = MaterialTheme.shapes.large
     ) {
         Image(
@@ -82,12 +109,12 @@ fun ImageCard(
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = viewModel.image.value!!.name,
+                text = image.name,
                 style = MaterialTheme.typography.titleLarge
             )
 
             Spacer(modifier = Modifier.height(8.dp))
-            Row (
+            Row(
                 horizontalArrangement = Arrangement.Center,
                 modifier = Modifier
                     .padding(horizontal = 25.dp, vertical = 0.dp)
@@ -96,7 +123,7 @@ fun ImageCard(
                         shape = RoundedCornerShape(5.dp)
                     ),
 
-            ){
+                ) {
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(5.dp),
@@ -132,7 +159,7 @@ fun ImageCard(
                 mainAxisSpacing = 8.dp,
                 mainAxisSize = SizeMode.Wrap
             ) {
-                viewModel.image.value!!.tags.forEach {
+                image.tags.forEach {
                     CustomTag(onClick = {}, text = it)
                 }
             }
@@ -156,11 +183,12 @@ fun ImageCard(
     }
 }
 
+
 @RequiresApi(Build.VERSION_CODES.O)
 @ExperimentalMaterial3Api
 @Preview(showBackground = true)
 @Composable
-fun prevImageCard(){
+fun prevImageCard() {
     CollectItTheme {
         ImageCard(1)
     }

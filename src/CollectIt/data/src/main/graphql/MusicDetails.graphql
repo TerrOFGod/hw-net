@@ -1,0 +1,10 @@
+query MusicDetails($id: Int!) {
+    readMusic(where: {id: {eq: $id}}){
+        id,
+        name,
+        fileName,
+        extension,
+        uploadDate,
+        tags
+    }
+}

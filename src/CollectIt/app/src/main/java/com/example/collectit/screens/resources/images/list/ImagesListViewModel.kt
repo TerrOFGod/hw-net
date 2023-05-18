@@ -1,5 +1,6 @@
 package com.example.collectit.screens.resources.images.list
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -15,15 +16,14 @@ import javax.inject.Inject
 class ImagesListViewModel @Inject constructor(
     private val graphQLManager: GraphQLManager
 ) : ViewModel() {
-    val imagesList = MutableLiveData(ArrayList<ReadImageNode>())
+    private val _imagesList = MutableLiveData(ArrayList<ReadImageNode>())
+    val imagesList: LiveData<ArrayList<ReadImageNode>> get() = _imagesList
 
     fun getImages() {
-        viewModelScope.launch(Dispatchers.Main) {
-            val images = runBlocking (Dispatchers.IO){
-                graphQLManager.getImagesList().list
-            }
+        viewModelScope.launch{
+            val images = graphQLManager.getImagesList().list
 
-            imagesList.value = ArrayList(images)
+            _imagesList.value = ArrayList(images)
         }
     }
 }

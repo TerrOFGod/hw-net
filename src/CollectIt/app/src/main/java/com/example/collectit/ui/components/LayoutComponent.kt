@@ -55,7 +55,7 @@ class LayoutComponent {
                 }
             ) {innerPadding ->
                 Box(modifier = Modifier.padding(innerPadding)){
-                    CollectItNavHost(navController)
+                    CollectItNavHost(navController, {})
                 }
             }
         }

@@ -10,15 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39eb9029-3ee9-4faf-b333-880fda76894c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/auth/LoginUserItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/auth/RegisterUserItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/auth/Result.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/errors/UnreachableError.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/managers/UserManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/api/RetrofitModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/api/UsersApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/UserManagerImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,64 +22,32 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ConstantsModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/Navigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/Navigation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/resources/images/ImageDestination.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/resources/images/ImageDestination.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/Home.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/account/LoginDestination.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/account/LoginDestination.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/Login.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/Login.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/LoginViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/Image.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/Image.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/Music.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/Music.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/MusicViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/MusicViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/Video.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/Video.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/VideoViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/VideoViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoListViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/LayoutComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/LayoutComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/basics/BasicImageComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/basics/BasicImageComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/basics/BasicVideoComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/basics/BasicVideoComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/resources/images/item/ReadImageNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/resources/images/item/ReadImageNode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/resources/music/item/ReadMusicNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/resources/music/item/ReadMusicNode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/resources/videos/item/ReadVideoNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/dtos/resources/videos/item/ReadVideoNode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/core/managers/GraphQLManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/managers/GraphQLManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/graphql/images.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/graphql/Images.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/graphql/music.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/graphql/Music.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/graphql/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/graphql/schema.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/graphql/video.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/graphql/Video.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/navigation/NavButtonWithoutIconComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/navigation/NavButtonWithoutIconComponent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/GraphQLManagerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/GraphQLManagerImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/.idea/.idea.CollectIt/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/.idea/.idea.CollectIt/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/bin/Debug/net6.0/CollectIt.Api.GraphQL.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/bin/Debug/net6.0/CollectIt.Api.GraphQL.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/bin/Debug/net6.0/CollectIt.Api.GraphQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/bin/Debug/net6.0/CollectIt.Api.GraphQL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/bin/Debug/net6.0/CollectIt.Api.GraphQL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/bin/Debug/net6.0/CollectIt.Api.GraphQL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/CollectIt.Api.GraphQL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/CollectIt.Api.GraphQL.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/CollectIt.Api.GraphQL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/ref/CollectIt.Api.GraphQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/ref/CollectIt.Api.GraphQL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/refint/CollectIt.Api.GraphQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/refint/CollectIt.Api.GraphQL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Api.GraphQL/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/UserManagerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/UserManagerImpl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,12 +164,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Object" />
         <option value="GraphQL File" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -226,20 +189,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/LordVT/Desktop/dotnet/hw-net/src/CollectIt/app/src/main/res/drawable&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
+    "last_opened_file_path": "C:/Users/LordVT/Desktop/dotnet/hw-net/src/CollectIt/data/src/main/graphql",
+    "settings.editor.selected.configurable": "project.propDebugger"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LordVT\Desktop\dotnet\hw-net\src\CollectIt\data\src\main\graphql" />
       <recent name="C:\Users\LordVT\Desktop\dotnet\hw-net\src\CollectIt\app\src\main\res\drawable" />
       <recent name="C:\Users\LordVT\Desktop\dotnet\hw-net\src\CollectIt" />
       <recent name="C:\Users\LordVT\Desktop\dotnet\hw-net\src\CollectIt\app" />
@@ -337,69 +301,59 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/Image.kt</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt</url>
-          <line>20</line>
+          <line>30</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt</url>
-          <line>21</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt</url>
-          <line>26</line>
+          <line>34</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/Image.kt</url>
-          <line>44</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt</url>
-          <line>22</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt</url>
           <line>24</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt</url>
+          <line>26</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/data/src/main/java/com/example/data/managers/UserManagerImpl.kt</url>
-          <line>23</line>
+          <line>27</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt</url>
-          <line>82</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt</url>
-          <line>81</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/LoginViewModel.kt</url>
-          <line>25</line>
+          <line>32</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/LoginViewModel.kt</url>
-          <line>29</line>
+          <line>38</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt</url>
-          <line>116</line>
+          <line>128</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt</url>
+          <line>124</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/Login.kt</url>
+          <line>109</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

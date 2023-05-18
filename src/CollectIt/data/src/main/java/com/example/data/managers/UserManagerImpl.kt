@@ -11,39 +11,45 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
 class UserManagerImpl @Inject constructor(
     private val usersApi: UsersApi
 ) : UserManager {
-    override suspend fun register(username: String,email: String, password: String, confirm: String): Result<String, String> {
+    override suspend fun register(username: String,email: String,
+                                  password: String, confirm: String)
+    : Result<String, String>  = withContext(Dispatchers.IO) {
         val body = RegisterUserItem(username, email, password, confirm)
         val response = usersApi.register(body)
 
         if (response.isSuccessful) {
-            return Result.success(response.body()!!)
+            return@withContext Result.success(response.body()!!)
         }
 
         if (response.code() == 400) {
             val validationResponse = response.errorBody()
-            return Result.failure(validationResponse.toString())
+            return@withContext Result.failure(validationResponse.toString())
         }
 
         throw UnreachableError()
     }
 
-    override suspend fun login(email: String, password: String, remember: Boolean): Result<String, String> {
+    override suspend fun login(email: String, password: String,
+                               remember: Boolean)
+    : Result<String, String> = withContext(Dispatchers.IO) {
         val body = LoginUserItem(email, password, remember)
         val response = usersApi.login(body)
 
         if (response.isSuccessful) {
-            return Result.success(response.body()!!)
+            return@withContext Result.success(response.body()!!)
         }
 
         if (response.code() == 400) {
             val validationResponse = response.errorBody()
-            return Result.failure(validationResponse.toString())
+            return@withContext Result.failure(validationResponse.toString())
         }
 
         throw UnreachableError()

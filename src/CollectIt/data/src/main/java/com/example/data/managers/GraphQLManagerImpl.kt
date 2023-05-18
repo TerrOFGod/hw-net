@@ -8,10 +8,7 @@ import com.example.core.dtos.resources.music.list.ReadMusicList
 import com.example.core.dtos.resources.videos.item.ReadVideoNode
 import com.example.core.dtos.resources.videos.list.ReadVideoList
 import com.example.core.managers.GraphQLManager
-import com.example.data.ImageQuery
-import com.example.data.ImagesQuery
-import com.example.data.MusicQuery
-import com.example.data.VideoQuery
+import com.example.data.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -77,7 +74,21 @@ class GraphQLManagerImpl @Inject constructor(
     }
 
     override suspend fun getMusic(id: Int): ReadMusicNode {
-        TODO("Not yet implemented")
+        val response = apolloClient.query(MusicDetailsQuery(id)).execute()
+        var responseData = response.data?.readMusic ?: emptyList()
+        val musicList = ReadMusicList(mutableListOf())
+        responseData.forEach {
+            val music = ReadMusicNode(
+                it.id,
+                it.name,
+                it.fileName,
+                it.extension,
+                it.uploadDate,
+                it.tags
+            )
+            musicList.list.add(music)
+        }
+        return musicList.list.first()
     }
 
     override suspend fun getVideoList(): ReadVideoList {
@@ -99,7 +110,21 @@ class GraphQLManagerImpl @Inject constructor(
     }
 
     override suspend fun getVideo(id: Int): ReadVideoNode {
-        TODO("Not yet implemented")
+        val response = apolloClient.query(VideoDetailsQuery(id)).execute()
+        var responseData = response.data?.readVideos ?: emptyList()
+        val videoList = ReadVideoList(mutableListOf())
+        responseData.forEach {
+            val video = ReadVideoNode(
+                it.id,
+                it.name,
+                it.fileName,
+                it.extension,
+                it.uploadDate,
+                it.tags
+            )
+            videoList.list.add(video)
+        }
+        return videoList.list.first()
     }
 }
 
