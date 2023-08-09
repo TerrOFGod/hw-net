@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CollectIt.MVC.View.props" />
+</Project>

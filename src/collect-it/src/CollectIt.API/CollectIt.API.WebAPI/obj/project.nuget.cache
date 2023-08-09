@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LEOByl8bT+oWP6PftSxJ7QNBFsW8BfCkWFyMrL+kvMc3Yh7MKQSVa5S+Lhu2f7HwfMAZn7CxZyCd8+R7IFJtwA==",
+  "dgSpecHash": "nGvMsPtPvhHQ95CZhUQHSHhr6JcuG6K1FJx4oHR9ZfyQiKbnJIbaLcItmCWh9qdTXmqQlT5ZCOtV0wGhJKDfJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\entityframework.functions\\1.5.0\\entityframework.functions.1.5.0.nupkg.sha512",
-    "C:\\Users\\LordVT\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512",
+    "C:\\Users\\LordVT\\.nuget\\packages\\fsharp.core\\7.0.300\\fsharp.core.7.0.300.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

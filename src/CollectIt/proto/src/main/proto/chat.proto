@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import 'google/protobuf/empty.proto';
+
+option java_multiple_files = true;
+option java_package = 'com.example.data';
+option java_outer_classname = 'ChatProto';
+
+message SendMessageRequest {
+  // Мое сообщение
+  string message = 1;
+}
+
+message SendMessageResponse {  }
+
+message GetMessagesStreamResponse {
+  // Сообщение пользователя
+  string message = 1;
+  // Логин пользователя
+  string username = 2;
+}
+
+service ChatService {
+  // Отправить сообщение от лица пользователя
+  rpc SendMessage(SendMessageRequest) returns (SendMessageResponse);
+  // Подписка на все приходящие в чат сообщения
+  rpc GetMessagesStream(google.protobuf.Empty) returns (stream GetMessagesStreamResponse);
+}

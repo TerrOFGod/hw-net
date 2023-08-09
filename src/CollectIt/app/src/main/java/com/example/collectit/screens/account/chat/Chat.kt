@@ -13,18 +13,20 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.collectit.R
 import com.example.collectit.ui.theme.CollectItTheme
 
 @Composable
 fun ChatScreen(
     navController: NavHostController,
-    viewModel: ChatViewModel = hiltViewModel(),
-    modifier: Modifier
+    viewModel: ChatViewModel = hiltViewModel()
 ) {
     val context = LocalContext.current
 
@@ -41,7 +43,7 @@ fun ChatScreen(
         }
     }
 
-    Column(modifier = modifier) {
+    Column() {
         LazyColumn(
             modifier = Modifier
                 .padding(16.dp)
@@ -50,30 +52,35 @@ fun ChatScreen(
             verticalArrangement = Arrangement.spacedBy(8.dp),
             contentPadding = PaddingValues(bottom = 4.dp),
         ) {
-            items(observeState.value!!) {
-                ChatPageItem(username = it.username, message = it.message)
+            //items(observeState.value!!) {
+                //ChatPageItem(username = it.username, message = it.message)
+            //}
+        }
+        Row(
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
+        ){
+            Box {
+                TextField(
+                    label = { Text(text = "Сообщение...") },
+                    value = viewModel.inputMessage,
+                    onValueChange = { viewModel.inputMessage = it })
             }
-        }
-        Box {
-            TextField(
-                label = { Text(text = "Пароль") },
-                value = viewModel.inputMessage,
-                onValueChange = { viewModel.inputMessage = it })
-        }
-        Box {
-            Row(horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.fillMaxWidth()) {
-                Button(onClick = {},
-                    modifier = Modifier
-                        .weight(1f)
-                        .padding(end = 5.dp),
-                    enabled = viewModel.inputMessage.isNotEmpty()) {
-                    Text(text = "Отправить")
-                }
-                Button(onClick = {}) {
-                    Text(text = "П")
-                }
+            IconButton(onClick = { }) {
+                Icon(
+                    painter = painterResource(id = R.drawable.attach),
+                    contentDescription = null,
+                    modifier = Modifier.size(35.dp,35.dp)
+                )
+            }
+            IconButton(onClick = { },
+                enabled = viewModel.inputMessage.isNotEmpty()) {
+                Icon(
+                    painter = painterResource(id = R.drawable.send),
+                    contentDescription = null,
+                    modifier = Modifier.size(35.dp,35.dp)
+                )
             }
         }
     }

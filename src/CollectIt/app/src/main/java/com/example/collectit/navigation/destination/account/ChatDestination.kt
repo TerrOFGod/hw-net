@@ -9,7 +9,7 @@ import com.example.collectit.screens.account.LoginScreen
 import com.example.collectit.screens.account.chat.ChatScreen
 
 @ExperimentalMaterial3Api
-fun NavGraphBuilder.login(
+fun NavGraphBuilder.chat(
     navController: NavHostController
 ){
     composable(NavRoute.Chat.path){

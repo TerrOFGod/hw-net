@@ -8,10 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import coil.request.SuccessResult
 import com.example.collectit.R
-import com.example.collectit.navigation.destination.account.add
-import com.example.collectit.navigation.destination.account.login
-import com.example.collectit.navigation.destination.account.profile
-import com.example.collectit.navigation.destination.account.signup
+import com.example.collectit.navigation.destination.account.*
 import com.example.collectit.navigation.destination.home
 import com.example.collectit.navigation.destination.resources.images.image
 import com.example.collectit.navigation.destination.resources.images.images
@@ -39,6 +36,8 @@ fun CollectItNavHost(
         add(navController)
 
         login(navController, onSuccessResult)
+
+        chat(navController)
         signup(navController)
     }
 }

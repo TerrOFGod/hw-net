@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bLybDOzv3Ly6yhMons2J4ibIDZm+8v3C/AjtuDNNfMHD9xwZFX5aVWYHTY2NWFSeGn+tWYv1yVYRDd5HXRhLOw==",
+  "dgSpecHash": "aOyEVGLoJdmHmZcF2T/yN878kmv3eSmhccGbkrXbZZdyaLN00HxZjgq2olGiGUaQIKDP092cC+/4omlmgRnvEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LordVT\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512",
+    "C:\\Users\\LordVT\\.nuget\\packages\\fsharp.core\\7.0.300\\fsharp.core.7.0.300.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

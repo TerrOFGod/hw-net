@@ -31,7 +31,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectIt.API.WebAPI", "Col
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CollectIt.API.Tests.Integration.FSharp", "CollectIt.API\CollectIt.API.Tests.Integration.FSharp\CollectIt.API.Tests.Integration.FSharp.fsproj", "{86D18128-6094-4D6B-A0B9-472F7A316704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectIt.Api.GraphQL", "CollectIt.Api.GraphQL\CollectIt.Api.GraphQL.csproj", "{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CollectIt.Mobile.Server", "CollectIt.Mobile.Server", "{DDB0C007-C57D-4A9B-AEF6-C4293311C4D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectIt.Mobile.Server.GraphQL", "CollectIt.Mobile.Server\CollectIt.Api.GraphQL\CollectIt.Mobile.Server.GraphQL.csproj", "{4C871072-3A4F-40BD-A875-622D1B53918B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectIt.Mobile.Server.gRPC", "CollectIt.Mobile.Server\CollectIt.Mobile.Server.gRPC\CollectIt.Mobile.Server.gRPC.csproj", "{9E7B5123-B45D-4732-BC82-B152705679A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,10 +87,14 @@ Global
 		{86D18128-6094-4D6B-A0B9-472F7A316704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D18128-6094-4D6B-A0B9-472F7A316704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D18128-6094-4D6B-A0B9-472F7A316704}.Release|Any CPU.Build.0 = Release|Any CPU
-		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{484BAD75-1033-4DBF-8D60-8F080ECAF6A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C871072-3A4F-40BD-A875-622D1B53918B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C871072-3A4F-40BD-A875-622D1B53918B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C871072-3A4F-40BD-A875-622D1B53918B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C871072-3A4F-40BD-A875-622D1B53918B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E7B5123-B45D-4732-BC82-B152705679A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7B5123-B45D-4732-BC82-B152705679A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7B5123-B45D-4732-BC82-B152705679A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7B5123-B45D-4732-BC82-B152705679A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +111,8 @@ Global
 		{D0353937-6F4A-45F8-A442-4E31144CAF23} = {027C935A-1968-4A10-B94D-1325C344DC2F}
 		{1965878C-A608-4315-959F-90D4BAC62137} = {027C935A-1968-4A10-B94D-1325C344DC2F}
 		{86D18128-6094-4D6B-A0B9-472F7A316704} = {027C935A-1968-4A10-B94D-1325C344DC2F}
+		{4C871072-3A4F-40BD-A875-622D1B53918B} = {DDB0C007-C57D-4A9B-AEF6-C4293311C4D1}
+		{9E7B5123-B45D-4732-BC82-B152705679A8} = {DDB0C007-C57D-4A9B-AEF6-C4293311C4D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64C656DC-092E-4E17-9225-83A8D6DECE36}

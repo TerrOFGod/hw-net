@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CollectIt.Mobile.Server.GraphQL.props" />
+</Project>

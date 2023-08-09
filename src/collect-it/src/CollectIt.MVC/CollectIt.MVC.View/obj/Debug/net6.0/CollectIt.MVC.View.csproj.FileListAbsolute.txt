@@ -153,3 +153,8 @@ C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt
 C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\CollectIt.MVC.View.pdb
 C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\CollectIt.MVC.View.genruntimeconfig.cache
 C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\ref\CollectIt.MVC.View.dll
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\staticwebassets\msbuild.CollectIt.MVC.View.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\staticwebassets\msbuild.build.CollectIt.MVC.View.props
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CollectIt.MVC.View.props
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CollectIt.MVC.View.props
+C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.MVC\CollectIt.MVC.View\obj\Debug\net6.0\staticwebassets.pack.json

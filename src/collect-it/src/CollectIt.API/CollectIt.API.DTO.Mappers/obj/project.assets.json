@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FSharp.Core/6.0.7": {
+      "FSharp.Core/7.0.300": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -53,13 +53,6 @@
           },
           "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
-          }
-        },
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
           }
         }
       },
@@ -961,7 +954,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CollectIt.Database.Entities": "1.0.0",
-          "FSharp.Core": "6.0.7"
+          "FSharp.Core": "7.0.300"
         },
         "compile": {
           "bin/placeholder/CollectIt.API.DTO.dll": {}
@@ -991,17 +984,15 @@
     }
   },
   "libraries": {
-    "FSharp.Core/6.0.7": {
-      "sha512": "e6wGrq5smV3Yk2fBE/Y0nBG5oFyF59k5Je0a0QDydUpg6liyaafGjD3xvutciKepCP2knspZ/sWViC/F1OyyQQ==",
+    "FSharp.Core/7.0.300": {
+      "sha512": "8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
       "type": "package",
-      "path": "fsharp.core/6.0.7",
+      "path": "fsharp.core/7.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "contentFiles/any/netstandard2.0/FSharp.Core.xml",
-        "contentFiles/any/netstandard2.1/FSharp.Core.xml",
-        "fsharp.core.6.0.7.nupkg.sha512",
+        "fsharp.core.7.0.300.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -2108,7 +2099,7 @@
     "net6.0": [
       "CollectIt.API.DTO >= 1.0.0",
       "CollectIt.Database.Entities >= 1.0.0",
-      "FSharp.Core >= 6.0.7"
+      "FSharp.Core >= 7.0.300"
     ]
   },
   "packageFolders": {
@@ -2140,7 +2131,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\6.0.408\\FSharp\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\FSharp\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2164,7 +2155,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[6.0.7, )",
+            "version": "[7.0.300, )",
             "generatePathProperty": true
           }
         },
@@ -2184,7 +2175,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

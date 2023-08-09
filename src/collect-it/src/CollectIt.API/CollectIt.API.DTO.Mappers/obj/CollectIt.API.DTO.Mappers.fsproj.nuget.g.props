@@ -15,6 +15,6 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\LordVT\.nuget\packages\fsharp.core\6.0.7</PkgFSharp_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\LordVT\.nuget\packages\fsharp.core\7.0.300</PkgFSharp_Core>
   </PropertyGroup>
 </Project>

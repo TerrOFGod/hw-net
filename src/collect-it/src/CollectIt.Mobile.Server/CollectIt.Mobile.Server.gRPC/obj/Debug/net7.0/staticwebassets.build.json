@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OC75BAc8SbXyxllPbRjxxpwtL+YABRp7uOpU6Vi7ggg=",
+  "Source": "CollectIt.Mobile.Server.gRPC",
+  "BasePath": "_content/CollectIt.Mobile.Server.gRPC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

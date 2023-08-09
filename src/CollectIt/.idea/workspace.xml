@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39eb9029-3ee9-4faf-b333-880fda76894c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/chat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/proto/CollectIt.proto.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/proto/CollectIt.proto.unitTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
@@ -23,31 +26,214 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ConstantsModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/Navigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/Navigation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/account/LoginDestination.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/account/LoginDestination.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/Login.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/Login.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/login/LoginViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/signup/SignUpViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/Image.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/Image.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/item/ImageViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/images/list/ImagesListViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/Music.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/Music.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/MusicViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/music/MusicViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/music/musiclist/MusicListViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/Video.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/Video.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/VideoViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/video/VideoViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/resources/video/videolist/VideoListViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/LayoutComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/LayoutComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/navigation/NavButtonWithoutIconComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/ui/components/navigation/NavButtonWithoutIconComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/GraphQLManagerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/GraphQLManagerImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/UserManagerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/example/data/managers/UserManagerImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/account/ChatDestination.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/navigation/destination/account/ChatDestination.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/chat/Chat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/collectit/screens/account/chat/Chat.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/.idea/.idea.CollectIt/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/.idea/.idea.CollectIt/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/CollectIt.API.DTO.Mappers.fsproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/CollectIt.API.DTO.Mappers.fsproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/CollectIt.API.DTO.Mappers.fsproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/CollectIt.API.DTO.Mappers.fsproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/Debug/net6.0/CollectIt.API.DTO.Mappers.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/Debug/net6.0/CollectIt.API.DTO.Mappers.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/Debug/net6.0/CollectIt.API.DTO.Mappers.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/Debug/net6.0/CollectIt.API.DTO.Mappers.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO.Mappers/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/CollectIt.API.DTO.fsproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/CollectIt.API.DTO.fsproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/CollectIt.API.DTO.fsproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/CollectIt.API.DTO.fsproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/Debug/net6.0/CollectIt.API.DTO.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/Debug/net6.0/CollectIt.API.DTO.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/Debug/net6.0/CollectIt.API.DTO.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/Debug/net6.0/CollectIt.API.DTO.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.DTO/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/CollectIt.API.Tests.Integration.FSharp.fsproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/CollectIt.API.Tests.Integration.FSharp.fsproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/CollectIt.API.Tests.Integration.FSharp.fsproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/CollectIt.API.Tests.Integration.FSharp.fsproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/Debug/net6.0/CollectIt.API.Tests.Integration.FSharp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/Debug/net6.0/CollectIt.API.Tests.Integration.FSharp.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/Debug/net6.0/CollectIt.API.Tests.Integration.FSharp.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/Debug/net6.0/CollectIt.API.Tests.Integration.FSharp.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.Tests.Integration.FSharp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/CollectIt.API.WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/CollectIt.API.WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/CollectIt.API.WebAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/CollectIt.API.WebAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/CollectIt.API.WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/CollectIt.API.WebAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/CollectIt.API.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/Debug/net6.0/CollectIt.API.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.API/CollectIt.API.WebAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/CollectIt.Database.Abstractions.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/CollectIt.Database.Abstractions.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/CollectIt.Database.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/ref/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/ref/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/refint/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/Debug/net6.0/refint/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Abstractions/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/CollectIt.Database.Entities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/CollectIt.Database.Entities.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/ref/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/ref/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/refint/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/Debug/net6.0/refint/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Entities/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/CollectIt.Database.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/CollectIt.Database.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/ref/CollectIt.Database.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/ref/CollectIt.Database.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/refint/CollectIt.Database.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/Debug/net6.0/refint/CollectIt.Database.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.Database/CollectIt.Database.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/CollectIt.MVC.Abstractions.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/CollectIt.MVC.Abstractions.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/ref/CollectIt.MVC.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/ref/CollectIt.MVC.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/refint/CollectIt.MVC.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/Debug/net6.0/refint/CollectIt.MVC.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Abstractions/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/CollectIt.MVC.Entities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/CollectIt.MVC.Entities.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/CollectIt.MVC.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/ref/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/ref/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/refint/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/Debug/net6.0/refint/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Entities/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/CollectIt.MVC.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/CollectIt.MVC.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/CollectIt.MVC.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/ref/CollectIt.MVC.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/ref/CollectIt.MVC.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/refint/CollectIt.MVC.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/Debug/net6.0/refint/CollectIt.MVC.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.Database.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Abstractions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.View.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.View.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/CollectIt.MVC.View.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/FSharp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/FSharp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/cs/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/cs/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/de/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/de/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/es/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/es/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/fr/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/fr/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/it/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/it/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/ja/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/ja/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/ko/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/ko/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/pl/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/pl/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/pt-BR/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/pt-BR/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/ru/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/ru/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/tr/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/tr/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/CollectIt.MVC.View.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/CollectIt.MVC.View.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/CollectIt.MVC.View.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/ref/CollectIt.MVC.View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/ref/CollectIt.MVC.View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/refint/CollectIt.MVC.View.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/Debug/net6.0/refint/CollectIt.MVC.View.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.MVC/CollectIt.MVC.View/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collect-it/src/CollectIt.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../collect-it/src/CollectIt.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +259,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/proto">
           <activation />
         </task>
         <projects_view>
@@ -154,6 +343,24 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CollectIt" type="f1a62948:ProjectNode" />
+                <item name="proto" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CollectIt" type="f1a62948:ProjectNode" />
+                <item name="proto" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CollectIt" type="f1a62948:ProjectNode" />
+                <item name="proto" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -164,12 +371,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="GraphQL File" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -189,18 +396,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
-    "last_opened_file_path": "C:/Users/LordVT/Desktop/dotnet/hw-net/src/CollectIt/data/src/main/graphql",
-    "settings.editor.selected.configurable": "project.propDebugger"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LordVT/Desktop/Liwimus2-master/src/mobile&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;experimental&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LordVT\Desktop\dotnet\hw-net\src\CollectIt\data\src\main\graphql" />
@@ -215,7 +425,7 @@
       <recent name="com.example.core.dtos.resources.music.list" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="CollectIt.app.main" />
       <option name="DEPLOY" value="true" />
@@ -274,6 +484,90 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="proto" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="CollectIt.proto.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectIt:proto [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/proto" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CollectIt:proto [test]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -337,12 +631,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt</url>
-          <line>128</line>
+          <line>116</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/collectit/MainActivity.kt</url>
-          <line>124</line>
+          <line>112</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
