@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aOyEVGLoJdmHmZcF2T/yN878kmv3eSmhccGbkrXbZZdyaLN00HxZjgq2olGiGUaQIKDP092cC+/4omlmgRnvEw==",
+  "dgSpecHash": "WJt73PnTYltrYFPCRr6FnY1ctYoaALL5fFckY0U4fvQYzaFSjlB/B7oOqiybMc7EXDaZX03Di1PzEuv8enNfYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
   "expectedPackageFiles": [

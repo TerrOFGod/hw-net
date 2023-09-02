@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gwxDdt9O6er9r8JlXoYDKEm+LYdL2H1maZjLn/NHj/IzRIGN6pUjkahNfWrLkpACsKoXMt0axwX928kgoa2FZw==",
+  "dgSpecHash": "VjpzgsPDkKcXaykxCxzceplccNShHqVKY8PjDG/2XrhwJ4mjbZz1FxQH2wM6zMH4LngVFf/Uxmrng/rcVJDPoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
   "expectedPackageFiles": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QX67G472holF3Ob6tqez6hdn8N9RzDUsWPLytj4vXXAQawsx+VMpLlWukazZOqVtB23yba1h3/uut6HPTHEg+w==",
+  "dgSpecHash": "ud66BDoOV7mJfIkdVKqPb5B2ZcejCXFLxqDrRvgOjxoEurUqrYcyC5tJZFTpODr5rpHIRQQ45szwfjXYHSNbvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
   "expectedPackageFiles": [

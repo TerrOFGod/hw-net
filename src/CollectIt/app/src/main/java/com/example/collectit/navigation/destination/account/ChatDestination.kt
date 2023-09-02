@@ -5,7 +5,6 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.example.collectit.navigation.NavRoute
-import com.example.collectit.screens.account.LoginScreen
 import com.example.collectit.screens.account.chat.ChatScreen
 
 @ExperimentalMaterial3Api

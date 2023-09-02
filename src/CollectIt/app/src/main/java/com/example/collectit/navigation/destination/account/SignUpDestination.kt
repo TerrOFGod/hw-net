@@ -5,7 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.example.collectit.navigation.NavRoute
-import com.example.collectit.screens.account.SignUpScreen
+import com.example.collectit.screens.account.signup.SignUpScreen
 
 @ExperimentalMaterial3Api
 fun NavGraphBuilder.signup(

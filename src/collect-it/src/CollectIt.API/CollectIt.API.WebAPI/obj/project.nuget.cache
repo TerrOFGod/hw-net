@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nGvMsPtPvhHQ95CZhUQHSHhr6JcuG6K1FJx4oHR9ZfyQiKbnJIbaLcItmCWh9qdTXmqQlT5ZCOtV0wGhJKDfJA==",
+  "dgSpecHash": "M5fJ72y9FuJDwcM0yaXaHmeHGtrC1T202Hbn+qm/ufWd8f7XiFgPWHv9uhI4QQdhHb/CkNdrNcjU/GZhMsLs2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj",
   "expectedPackageFiles": [

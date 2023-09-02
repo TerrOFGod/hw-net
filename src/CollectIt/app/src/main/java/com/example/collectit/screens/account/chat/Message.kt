@@ -8,7 +8,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun ChatPageItem(username: String, message: String) {
+fun Message(username: String, message: String) {
     Row {
         Text(text = "$username: ",  fontWeight = FontWeight.Bold, color = Color.Black)
         Text(text = message, color = Color.Black)
@@ -17,6 +17,6 @@ fun ChatPageItem(username: String, message: String) {
 
 @Preview
 @Composable
-fun ChatPageItemPreview() {
-    ChatPageItem(username = "sample", message = "message")
+fun MessagePreview() {
+    Message(username = "sample", message = "message")
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VbBThlIFrQA8IL3SEB+t55AgSYIse/Ln4rnRmB6PD/m2NbjF/gyoSU8ppSMitze83nkm2YQmXUagRy+UVAYVhg==",
+  "dgSpecHash": "QB2f7JBTb4Kwv2TY1Jz3ZeXhhvL8DUDgUXfvUf4KoQU8Fjbb4fCcG/SSwJ+pxh0t7UyEuk85xgmJV3JVFUahXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
   "expectedPackageFiles": [

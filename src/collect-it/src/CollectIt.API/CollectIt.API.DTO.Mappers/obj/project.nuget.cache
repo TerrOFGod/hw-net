@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IuCpumBtF+Retj87h+p5BRxDTCAbdepJPkYxtgM1eB3F0P0ofSBykjteftfakYaeyg5FH62Cs5QAmTjhP09JtA==",
+  "dgSpecHash": "JqErETwmdq7zv0aewKszXUxR4j8dh/s4jnemucrJSD9D6QfGAUOWCvZsbpesyEk1ZOY9Q2wkODhQGMjfPQh6Ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
   "expectedPackageFiles": [

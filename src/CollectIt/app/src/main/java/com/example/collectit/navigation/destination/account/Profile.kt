@@ -5,7 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.example.collectit.navigation.NavRoute
-import com.example.collectit.screens.account.ProfileScreen
+import com.example.collectit.screens.account.profile.ProfileScreen
 
 @ExperimentalMaterial3Api
 fun NavGraphBuilder.profile(

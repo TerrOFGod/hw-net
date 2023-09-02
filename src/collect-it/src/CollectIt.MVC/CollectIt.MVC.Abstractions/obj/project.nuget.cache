@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kB3T/Ab5KB0+os6DZFMfcd8u+g1QHqXG4pS1nCMSNndHTPDtppyfIfk1xvnQimltncO2WHIPa2gWF1qqz3KJKw==",
+  "dgSpecHash": "jAJJxN69apL1nJ6K61XuCh0Uazcr+FzBBylK79mzycq0frnsaLlUTIrMMyz3y0bbfuRhCuiwGNpL1MPz3WhJjA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
   "expectedPackageFiles": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JMM5guxzIGA6GO6L5eJ1LmA/pyuKbyuveNAkfI7WOe+lnASbsZgheguTTTdTmZ9ET8ROaY6urnQNbYCwl63OWA==",
+  "dgSpecHash": "R3IGKzMyvE4guxyqzmdXvmXAndbS5UVokygYwUzT842OkxvPrSgcHR0QaRIQUiJ4jysifki2rBTRLPLiWCO78w==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
   "expectedPackageFiles": [

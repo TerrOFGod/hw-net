@@ -1,4 +1,4 @@
-package com.example.collectit.screens.account
+package com.example.collectit.screens.account.login
 
 import android.util.Log
 import androidx.compose.foundation.layout.*

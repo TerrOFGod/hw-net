@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vp/BQC88FKGjhKPqgO9DEGBvSKiF9ikIfvmA4eZGx6+x6sThDrPHPlh9Y4DotrmXEK5LNby5Fw8W0pTCjlztZg==",
+  "dgSpecHash": "3BmqpGbpPzPwGw8zwRQjxjTe5qrnOuKNfo8eAqw6AYXGa7G8B0eVQ8Q+e4Dm8wi6rFLuXBnC1ANZapqrRpiPpQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
   "expectedPackageFiles": [

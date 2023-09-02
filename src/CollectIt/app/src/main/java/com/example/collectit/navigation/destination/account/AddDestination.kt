@@ -5,7 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.example.collectit.navigation.NavRoute
-import com.example.collectit.screens.account.AddScreen
+import com.example.collectit.screens.account.add.AddScreen
 
 @ExperimentalMaterial3Api
 fun NavGraphBuilder.add(
