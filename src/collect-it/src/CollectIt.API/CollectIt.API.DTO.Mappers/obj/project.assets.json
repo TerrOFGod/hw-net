@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FSharp.Core/7.0.300": {
+      "FSharp.Core/7.0.400": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -954,7 +954,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CollectIt.Database.Entities": "1.0.0",
-          "FSharp.Core": "7.0.300"
+          "FSharp.Core": "7.0.400"
         },
         "compile": {
           "bin/placeholder/CollectIt.API.DTO.dll": {}
@@ -984,15 +984,15 @@
     }
   },
   "libraries": {
-    "FSharp.Core/7.0.300": {
-      "sha512": "8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
+    "FSharp.Core/7.0.400": {
+      "sha512": "kJQ7TBQqd1d2VoODSgwFSAaApaBN0Fuu8mZt2XExmd3UzUxLjUsMn5Y5XhpsUWdnxOL8amp7VFg7cwhPllR4Qw==",
       "type": "package",
-      "path": "fsharp.core/7.0.300",
+      "path": "fsharp.core/7.0.400",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.7.0.300.nupkg.sha512",
+        "fsharp.core.7.0.400.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -2099,50 +2099,42 @@
     "net6.0": [
       "CollectIt.API.DTO >= 1.0.0",
       "CollectIt.Database.Entities >= 1.0.0",
-      "FSharp.Core >= 7.0.300"
+      "FSharp.Core >= 7.0.400"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LordVT\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\Bulat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
+      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
       "projectName": "CollectIt.API.DTO.Mappers",
-      "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
-      "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\obj\\",
+      "projectPath": "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
+      "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
-      ],
       "configFilePaths": [
-        "C:\\Users\\LordVT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.307\\FSharp\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.400\\FSharp\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj": {
-              "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj"
+            "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj": {
+              "projectPath": "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj"
             },
-            "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-              "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+            "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+              "projectPath": "C:\\Users\\Bulat\\Desktop\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
             }
           }
         }
@@ -2155,7 +2147,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[7.0.300, )",
+            "version": "[7.0.400, )",
             "generatePathProperty": true
           }
         },
@@ -2175,7 +2167,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
