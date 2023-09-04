@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CollectIt.Mobile.Server.gRPC.props" />
-</Project>
