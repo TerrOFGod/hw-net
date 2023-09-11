@@ -9,8 +9,8 @@
 
     <application
         android:name = ".MainApplication"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -27,15 +27,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data
-                    android:host="images/"
-                    android:scheme="collect_it_db"/>
             </intent-filter>
         </activity>
     </application>

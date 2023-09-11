@@ -15,7 +15,7 @@ object RetrofitModule {
     @Singleton
     fun provideUsersApi() : UsersApi = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
-        .baseUrl("http://10.0.2.2:5211/account/")
+        .baseUrl("http://10.0.2.2:5001/account/")
         .build()
         .create(UsersApi::class.java)
 }

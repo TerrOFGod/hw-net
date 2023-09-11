@@ -12,6 +12,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import io.grpc.Channel
+import io.grpc.ManagedChannel
 import io.grpc.ManagedChannelBuilder
 import javax.inject.Singleton
 
@@ -34,18 +35,19 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideGrpcChannel(): Channel {
+    fun provideGrpcChannel(): ManagedChannel {
         return ManagedChannelBuilder
-            .forAddress("10.0.2.2", 5001)
+            .forAddress("10.0.2.2", 5001
+            )
             .usePlaintext()
             .build()
     }
 
     @Singleton
     @Provides
-    fun provideChatManager(sp: SharedPreferences, channel: Channel): ChatManager {
+    fun provideChatManager(sp: SharedPreferences, channel: ManagedChannel): ChatManager {
         val token = sp.getString(Constants.SharedPreferences.ACCESS_TOKEN, null) ?: throw Exception(
-            "Нет токена в памяти! Шойгу, где токен, блять?"
+            "Нет токена в памяти!"
         )
         return GrpcChatManager(channel, token)
     }

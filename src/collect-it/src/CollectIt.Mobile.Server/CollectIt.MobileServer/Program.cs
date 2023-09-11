@@ -5,20 +5,32 @@ using CollectIt.MobileServer.GQL;
 using CollectIt.MVC.Infrastructure.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
 using CollectIt.MobileServer.Services;
+using Microsoft.OpenApi.Models;
 
 namespace CollectIt.MobileServer
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddGrpc();
-
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+            
+            builder.Services.AddCors(options => options
+                .AddDefaultPolicy(c => c
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials()
+                    .WithOrigins("http://localhost:3000")));
+            
             builder.Services.AddCors(o =>
-                o.AddPolicy("CorsPolicy", builder =>
+                o.AddPolicy("grpc-cors-policy", builder =>
                 {
                     builder
                         .AllowAnyOrigin()
@@ -75,13 +87,15 @@ namespace CollectIt.MobileServer
 
             var app = builder.Build();
 
+            app.UseGrpcWeb();
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            app.UseCors("CorsPolicy");
+            app.UseCors();
 
             app.UseRouting();
 
@@ -90,6 +104,7 @@ namespace CollectIt.MobileServer
             app.UseAuthorization();
 
             app.MapGrpcService<ChatService>()
+                .EnableGrpcWeb()
                 .RequireCors("grpc-cors-policy");
 
             app.MapControllers();
