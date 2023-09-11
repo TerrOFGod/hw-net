@@ -1,3 +1,4 @@
+using System.Net;
 using CollectIt.Database.Entities.Account;
 using CollectIt.Database.Infrastructure;
 using CollectIt.Database.Infrastructure.Account.Data;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using CollectIt.MobileServer.Services;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.OpenApi.Models;
 
 namespace CollectIt.MobileServer
@@ -17,22 +19,25 @@ namespace CollectIt.MobileServer
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Configuration.AddEnvironmentVariables();
+            
+            builder.Services.AddEndpointsApiExplorer();
+            
+            builder.WebHost.ConfigureKestrel(options =>
+            {
+                options.Listen(IPAddress.Any, 5000, listenOptions =>
+                {
+                    listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+                });
+            });
 
             builder.Services.AddGrpc();
-            builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            
-            builder.Services.AddCors(options => options
-                .AddDefaultPolicy(c => c
-                    .AllowAnyHeader()
-                    .AllowAnyMethod()
-                    .AllowCredentials()
-                    .WithOrigins("http://localhost:3000")));
-            
+
             builder.Services.AddCors(o =>
-                o.AddPolicy("grpc-cors-policy", builder =>
+                o.AddPolicy("grpc-cors-policy", corsPolicyBuilder =>
                 {
-                    builder
+                    corsPolicyBuilder
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader()
@@ -84,28 +89,29 @@ namespace CollectIt.MobileServer
         .AddUserManager<UserManager>()
         .AddDefaultTokenProviders()
         .AddErrorDescriber<RussianLanguageIdentityErrorDescriber>();
+            
 
             var app = builder.Build();
 
-            app.UseGrpcWeb();
-            
-            if (app.Environment.IsDevelopment())
+            if (!app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
             }
-
-            app.UseCors();
-
-            app.UseRouting();
 
             app.MapBananaCakePop();
 
             app.UseAuthorization();
 
-            app.MapGrpcService<ChatService>()
-                .EnableGrpcWeb()
-                .RequireCors("grpc-cors-policy");
+            app.UseRouting();
+
+            app.UseCors();
+            app.UseGrpcWeb();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGrpcService<GrpcChatService>().EnableGrpcWeb().RequireCors("grpc-cors-policy");
+            });
 
             app.MapControllers();
             app.MapGraphQL("/graphql");

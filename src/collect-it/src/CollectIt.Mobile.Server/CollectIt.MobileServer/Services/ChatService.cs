@@ -6,14 +6,14 @@ using Grpc.Core;
 
 namespace CollectIt.MobileServer.Services;
 
-public class ChatService : Chat.ChatBase
+public class GrpcChatService : ChatService.ChatServiceBase
 {
     private static readonly ConcurrentQueue<string> FreeAdmins = new();
     private static readonly ConcurrentDictionary<UserDto, UserDto> Rooms = new();
     private static readonly Empty Empty = new();
-    private readonly ILogger<ChatService> _logger;
+    private readonly ILogger<GrpcChatService> _logger;
 
-    public ChatService(ILogger<ChatService> logger)
+    public GrpcChatService(ILogger<GrpcChatService> logger)
     {
         _logger = logger;
     }

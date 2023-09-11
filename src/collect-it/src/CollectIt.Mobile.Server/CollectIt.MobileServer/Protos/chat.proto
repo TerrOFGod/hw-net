@@ -16,7 +16,7 @@ message GetMessagesStreamResponse {
   string username = 2;
 }
 
-service Chat {
+service ChatService {
   // Для админа
   rpc Join(google.protobuf.Empty) returns(google.protobuf.Empty);
   // Отправить сообщение от лица пользователя

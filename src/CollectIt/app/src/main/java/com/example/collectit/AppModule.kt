@@ -37,7 +37,7 @@ object AppModule {
     @Provides
     fun provideGrpcChannel(): ManagedChannel {
         return ManagedChannelBuilder
-            .forAddress("10.0.2.2", 5001
+            .forAddress("10.0.2.2", 5000
             )
             .usePlaintext()
             .build()

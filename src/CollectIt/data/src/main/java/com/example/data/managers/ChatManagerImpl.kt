@@ -26,10 +26,12 @@ import java.util.concurrent.Executor
 import javax.inject.Inject
 
 class GrpcChatManager @Inject() constructor(channel: ManagedChannel, private val token: String): ChatManager {
-    private val chatService: ChatServiceGrpcKt.ChatServiceCoroutineStub
+    private val chatService: ChatServiceGrpc.ChatServiceBlockingStub
+            //ChatServiceGrpcKt.ChatServiceCoroutineStub
 
     init {
-        chatService = ChatServiceGrpcKt.ChatServiceCoroutineStub(channel)
+        chatService = ChatServiceGrpc.newBlockingStub(channel)
+            //ChatServiceGrpcKt.ChatServiceCoroutineStub(channel)
     }
 
     override suspend fun sendMessage(message: String) {
@@ -46,12 +48,12 @@ class GrpcChatManager @Inject() constructor(channel: ManagedChannel, private val
         sendMessage("Даров, помоги по-братски")
         val response = chatService.getMessagesStream(Empty.getDefaultInstance())
         return callbackFlow {
-            response.collect{
+            //response.collect{
+            //    trySend(Message(username = it.username, message = it.message))
+            //}
+            response.forEach {
                 trySend(Message(username = it.username, message = it.message))
             }
-//            response.forEach {
-//                trySend(Message(username = it.username, message = it.message))
-//            }
 
             awaitClose {
 
