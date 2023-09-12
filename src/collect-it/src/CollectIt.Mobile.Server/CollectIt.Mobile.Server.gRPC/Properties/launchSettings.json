@@ -1,13 +1,14 @@
 ﻿{
   "profiles": {
-    "CollectIt.Mobile.Server.gRPC": {
+    "CollectIt.MobileServer": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": false,
-      "applicationUrl": "http://localhost:5034;https://localhost:7075",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5000;http://localhost:5001"
     }
   }
 }

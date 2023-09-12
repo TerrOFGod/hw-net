@@ -1,0 +1,1 @@
+npx protoc --ts_out ./src/proto --proto_path ./src/proto ./src/proto/chat.proto

@@ -32,7 +32,7 @@ fun ChatScreen(
         try {
             viewModel.observeMessages()
         } catch(e: Exception) {
-            Toast.makeText(context, "На сервере нет админов. Иди нахуй!!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "На сервере нет админов", Toast.LENGTH_SHORT).show()
         }
     }
 

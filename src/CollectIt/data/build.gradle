@@ -75,13 +75,7 @@ protobuf {
     generateProtoTasks {
         all().each { task ->
             task.builtins {
-                kotlin {
-                    option 'lite'
-                }
-                //java {
-                //    option 'lite'
-                //}
-                //remove java
+                kotlin { option 'lite' }
             }
             task.plugins {
                 java { option 'lite' }

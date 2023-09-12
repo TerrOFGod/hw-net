@@ -1,26 +1,26 @@
 ﻿using System.Collections.Concurrent;
+using ChatPackage;
 using CollectIt.Mobile.Server.gRPC.Dtos;
-using CollectIt.Mobile.Server.gRPC.Extentions;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
 namespace CollectIt.Mobile.Server.gRPC.Services;
 
-public class ChatService : Chat.ChatBase
+public class GrpcChatService : ChatService.ChatServiceBase
 {
     private static readonly ConcurrentQueue<string> FreeAdmins = new();
     private static readonly ConcurrentDictionary<UserDto, UserDto> Rooms = new();
     private static readonly Empty Empty = new();
-    private readonly ILogger<ChatService> _logger;
+    private readonly ILogger<GrpcChatService> _logger;
 
-    public ChatService(ILogger<ChatService> logger)
+    public GrpcChatService(ILogger<GrpcChatService> logger)
     {
         _logger = logger;
     }
 
-    public override Task<Empty> Join(Empty request, ServerCallContext context)
+    public override Task<Empty> Join(JoinRequest request, ServerCallContext context)
     {
-        var username = context.GetUsername();
+        var username = request.Username;
         FreeAdmins.Enqueue(username);
         return Task.FromResult(Empty);
     }
@@ -29,9 +29,9 @@ public class ChatService : Chat.ChatBase
     {
         try
         {
-            var username = context.GetUsername();
-            var isAdmin = context.IsAdmin();
-    
+            var username = request.Username;
+            var isAdmin = username.Contains("Admin");
+
             ValidateSendMessage(username, isAdmin);
             _logger.LogInformation("Получено сообщение от клиента");
             if (!isAdmin && Rooms.All(r => r.Value.Username != username))
@@ -41,6 +41,7 @@ public class ChatService : Chat.ChatBase
                 var admin = new UserDto(adminName!);
                 var message = new MessageDto(username, request.Message);
                 admin.Messages.Enqueue(message);
+                admin.Events.Enqueue("UserJoined");
                 user.Messages.Enqueue(message);
                 Rooms[admin] = user;
             }
@@ -48,27 +49,28 @@ public class ChatService : Chat.ChatBase
             {
                 var room = Rooms
                     .First(r => r.Key.Username == username || r.Value.Username == username);
-    
+
                 var message = new MessageDto(username, request.Message);
                 room.Key.Messages.Enqueue(message);
                 room.Value.Messages.Enqueue(message);
             }
             _logger.LogInformation("Сообщение от пользователя обработано");
-    
+
             return Task.FromResult(new SendMessageResponse());
-    
+
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Ошибка во время отправки сообщения");
             throw;
-        }    
+        }
     }
 
-    public override async Task GetMessagesStream(Empty request, IServerStreamWriter<GetMessagesStreamResponse> responseStream, ServerCallContext context)
+    public override async Task GetMessagesStream(GetMessagesStreamRequest request, IServerStreamWriter<GetMessagesStreamResponse> responseStream, ServerCallContext context)
     {
-        try {
-            var username = context.GetUsername();
+        try
+        {
+            var username = request.Username;
 
             if (Rooms.All(r => r.Key.Username != username && r.Value.Username != username))
             {
@@ -78,7 +80,7 @@ public class ChatService : Chat.ChatBase
             var room = Rooms
                 .First(r => r.Key.Username == username || r.Value.Username == username);
 
-            var isAdmin = context.IsAdmin();
+            var isAdmin = username.Contains("Admin");
 
             var user = isAdmin
                 ? room.Key
@@ -104,7 +106,7 @@ public class ChatService : Chat.ChatBase
             }
             catch (OperationCanceledException)
             {
-            
+
             }
             finally
             {
@@ -114,9 +116,35 @@ public class ChatService : Chat.ChatBase
 
                 Rooms.Remove(admin, out _);
             }
-        } catch (Exception ex)
+        }
+        catch (Exception ex)
         {
             _logger.LogError(ex, "Ошибка подписки на канал сообщений");
+        }
+    }
+
+    public override async Task GetInfo(GetInfoRequest request, IServerStreamWriter<GetInfoResponse> responseStream, ServerCallContext context)
+    {
+        var username = request.Username;
+
+        while (true)
+        {
+            var admin = Rooms.Select(e => e.Key).FirstOrDefault(e => e.Username == username);
+
+            if (admin is null)
+            {
+                continue;
+            }
+
+            while (admin.Events.TryDequeue(out var e))
+            {
+                await responseStream.WriteAsync(new GetInfoResponse
+                {
+                    EventText = e
+                });
+            }
+
+            await Task.Delay(1000);
         }
     }
 

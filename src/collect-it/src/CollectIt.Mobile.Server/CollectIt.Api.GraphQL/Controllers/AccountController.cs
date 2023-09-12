@@ -78,5 +78,25 @@ namespace CollectIt.Mobile.Server.GraphQL.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("getUsernameById")]
+        public async Task<IActionResult> GetUsernameById(string userId)
+        {
+            try
+            {
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user is not null)
+                {
+                    return Ok(user.UserName);
+                }
+                else
+                    return BadRequest("Unable to add user");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
     }
 }

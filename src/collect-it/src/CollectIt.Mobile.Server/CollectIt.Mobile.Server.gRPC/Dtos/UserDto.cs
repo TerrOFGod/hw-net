@@ -6,6 +6,7 @@ public class UserDto
 {
     public string Username { get; }
     public ConcurrentQueue<MessageDto> Messages { get; } = new();
+    public ConcurrentQueue<string> Events { get; } = new();
 
     public UserDto(string username)
     {

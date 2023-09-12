@@ -2,6 +2,8 @@ syntax = "proto3";
 
 import 'google/protobuf/empty.proto';
 
+package chatPackage;
+
 option java_multiple_files = true;
 option java_package = 'com.example.data';
 option java_outer_classname = 'ChatProto';
@@ -9,20 +11,36 @@ option java_outer_classname = 'ChatProto';
 message SendMessageRequest {
   // Мое сообщение
   string message = 1;
+  string username = 2;
+}
+
+message JoinRequest {
+  string username = 1;
 }
 
 message SendMessageResponse {  }
 
+message GetMessagesStreamRequest {
+  string username = 1;
+}
+
 message GetMessagesStreamResponse {
   // Сообщение пользователя
   string message = 1;
-  // Логин пользователя
+  // Имя (логин) пользователя
   string username = 2;
 }
 
+message GetInfoResponse {
+  string eventText = 1;
+}
+
 service ChatService {
+  // Для админа
+  rpc Join(JoinRequest) returns(google.protobuf.Empty);
   // Отправить сообщение от лица пользователя
   rpc SendMessage(SendMessageRequest) returns (SendMessageResponse);
   // Подписка на все приходящие в чат сообщения
-  rpc GetMessagesStream(google.protobuf.Empty) returns (stream GetMessagesStreamResponse);
+  rpc GetMessagesStream(GetMessagesStreamRequest) returns (stream GetMessagesStreamResponse);
+  rpc GetInfo(google.protobuf.Empty) returns (stream GetInfoResponse);
 }

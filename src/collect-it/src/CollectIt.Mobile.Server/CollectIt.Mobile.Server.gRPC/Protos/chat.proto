@@ -1,13 +1,23 @@
-syntax = "proto3";
+﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
 
-import 'google/protobuf/empty.proto';
+package chatPackage;
 
 message SendMessageRequest {
   // Мое сообщение
   string message = 1;
+  string username = 2;
+}
+
+message JoinRequest {
+	string username = 1;
 }
 
 message SendMessageResponse {  }
+
+message GetMessagesStreamRequest {
+	string username = 1;
+}
 
 message GetMessagesStreamResponse {
   // Сообщение пользователя
@@ -16,11 +26,20 @@ message GetMessagesStreamResponse {
   string username = 2;
 }
 
-service Chat {
+message GetInfoRequest {
+	string username = 1;
+}
+
+message GetInfoResponse {
+  string eventText = 1;
+}
+
+service ChatService {
   // Для админа
-  rpc Join(google.protobuf.Empty) returns(google.protobuf.Empty);
+  rpc Join(JoinRequest) returns(google.protobuf.Empty);
   // Отправить сообщение от лица пользователя
   rpc SendMessage(SendMessageRequest) returns (SendMessageResponse);
   // Подписка на все приходящие в чат сообщения
-  rpc GetMessagesStream(google.protobuf.Empty) returns (stream GetMessagesStreamResponse);
+  rpc GetMessagesStream(GetMessagesStreamRequest) returns (stream GetMessagesStreamResponse);
+  rpc GetInfo(GetInfoRequest) returns (stream GetInfoResponse);
 }

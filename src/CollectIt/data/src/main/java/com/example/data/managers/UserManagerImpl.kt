@@ -24,7 +24,6 @@ class UserManagerImpl @Inject constructor(
     : Result<String, String>  = withContext(Dispatchers.IO) {
         val body = RegisterUserItem(username, email, password, confirm)
         val response = usersApi.register(body)
-
         if (response.isSuccessful) {
             return@withContext Result.success(response.body()!!)
         }
@@ -36,13 +35,15 @@ class UserManagerImpl @Inject constructor(
 
         throw UnreachableError()
     }
+
+
 
     override suspend fun login(email: String, password: String,
                                remember: Boolean)
     : Result<String, String> = withContext(Dispatchers.IO) {
         val body = LoginUserItem(email, password, remember)
-        val response = usersApi.login(body)
 
+        val response = usersApi.login(body)
         if (response.isSuccessful) {
             return@withContext Result.success(response.body()!!)
         }
@@ -51,10 +52,8 @@ class UserManagerImpl @Inject constructor(
             val validationResponse = response.errorBody()
             return@withContext Result.failure(validationResponse.toString())
         }
-
         throw UnreachableError()
     }
-
 }
 
 @Module
