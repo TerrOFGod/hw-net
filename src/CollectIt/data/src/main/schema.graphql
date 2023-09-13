@@ -1,0 +1,307 @@
+# This file was generated. Do not edit manually.
+
+schema {
+    query: Queries
+}
+
+type CommentGQLType {
+    commentId: Int!
+    content: String!
+    ownerId: Int!
+    target: ResourceGQLType!
+    targetId: Int!
+    uploadDate: DateTime!
+}
+
+type ImageGQLType {
+    extension: String!
+    fileName: String!
+    id: Int!
+    name: String!
+    ownerId: Int!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+type MusicGQLType {
+    duration: Int!
+    extension: String!
+    fileName: String!
+    id: Int!
+    name: String!
+    ownerId: Int!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+"Information about pagination in a connection."
+type PageInfo {
+    "When paginating forwards, the cursor to continue."
+    endCursor: String
+    "Indicates whether more edges exist following the set defined by the clients arguments."
+    hasNextPage: Boolean!
+    "Indicates whether more edges exist prior the set defined by the clients arguments."
+    hasPreviousPage: Boolean!
+    "When paginating backwards, the cursor to continue."
+    startCursor: String
+}
+
+type Queries {
+    readComments(where: CommentGQLTypeFilterInput): [CommentGQLType!]!
+    readCommentsPaged(
+        "Returns the elements in the list that come after the specified cursor."
+        after: String,
+        "Returns the elements in the list that come before the specified cursor."
+        before: String,
+        "Returns the first _n_ elements from the list."
+        first: Int,
+        "Returns the last _n_ elements from the list."
+        last: Int,
+        where: CommentGQLTypeFilterInput
+    ): ReadCommentsPagedConnection
+    readImages(where: ImageGQLTypeFilterInput): [ImageGQLType!]!
+    readImagesPaged(
+        "Returns the elements in the list that come after the specified cursor."
+        after: String,
+        "Returns the elements in the list that come before the specified cursor."
+        before: String,
+        "Returns the first _n_ elements from the list."
+        first: Int,
+        "Returns the last _n_ elements from the list."
+        last: Int,
+        where: ImageGQLTypeFilterInput
+    ): ReadImagesPagedConnection
+    readMusic(where: MusicGQLTypeFilterInput): [MusicGQLType!]!
+    readMusicPaged(
+        "Returns the elements in the list that come after the specified cursor."
+        after: String,
+        "Returns the elements in the list that come before the specified cursor."
+        before: String,
+        "Returns the first _n_ elements from the list."
+        first: Int,
+        "Returns the last _n_ elements from the list."
+        last: Int,
+        where: MusicGQLTypeFilterInput
+    ): ReadMusicPagedConnection
+    readVideos(where: VideoGQLTypeFilterInput): [VideoGQLType!]!
+    readVideosPaged(
+        "Returns the elements in the list that come after the specified cursor."
+        after: String,
+        "Returns the elements in the list that come before the specified cursor."
+        before: String,
+        "Returns the first _n_ elements from the list."
+        first: Int,
+        "Returns the last _n_ elements from the list."
+        last: Int,
+        where: VideoGQLTypeFilterInput
+    ): ReadVideosPagedConnection
+}
+
+"A connection to a list of items."
+type ReadCommentsPagedConnection {
+    "A list of edges."
+    edges: [ReadCommentsPagedEdge!]
+    "A flattened list of the nodes."
+    nodes: [CommentGQLType!]
+    "Information to aid in pagination."
+    pageInfo: PageInfo!
+}
+
+"An edge in a connection."
+type ReadCommentsPagedEdge {
+    "A cursor for use in pagination."
+    cursor: String!
+    "The item at the end of the edge."
+    node: CommentGQLType!
+}
+
+"A connection to a list of items."
+type ReadImagesPagedConnection {
+    "A list of edges."
+    edges: [ReadImagesPagedEdge!]
+    "A flattened list of the nodes."
+    nodes: [ImageGQLType!]
+    "Information to aid in pagination."
+    pageInfo: PageInfo!
+}
+
+"An edge in a connection."
+type ReadImagesPagedEdge {
+    "A cursor for use in pagination."
+    cursor: String!
+    "The item at the end of the edge."
+    node: ImageGQLType!
+}
+
+"A connection to a list of items."
+type ReadMusicPagedConnection {
+    "A list of edges."
+    edges: [ReadMusicPagedEdge!]
+    "A flattened list of the nodes."
+    nodes: [MusicGQLType!]
+    "Information to aid in pagination."
+    pageInfo: PageInfo!
+}
+
+"An edge in a connection."
+type ReadMusicPagedEdge {
+    "A cursor for use in pagination."
+    cursor: String!
+    "The item at the end of the edge."
+    node: MusicGQLType!
+}
+
+"A connection to a list of items."
+type ReadVideosPagedConnection {
+    "A list of edges."
+    edges: [ReadVideosPagedEdge!]
+    "A flattened list of the nodes."
+    nodes: [VideoGQLType!]
+    "Information to aid in pagination."
+    pageInfo: PageInfo!
+}
+
+"An edge in a connection."
+type ReadVideosPagedEdge {
+    "A cursor for use in pagination."
+    cursor: String!
+    "The item at the end of the edge."
+    node: VideoGQLType!
+}
+
+type ResourceGQLType {
+    extension: String!
+    fileName: String!
+    id: Int!
+    name: String!
+    ownerId: Int!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+type VideoGQLType {
+    duration: Int!
+    extension: String!
+    fileName: String!
+    id: Int!
+    name: String!
+    ownerId: Int!
+    tags: [String!]!
+    uploadDate: DateTime!
+}
+
+"The `DateTime` scalar represents an ISO-8601 compliant date time type."
+scalar DateTime
+
+input CommentGQLTypeFilterInput {
+    and: [CommentGQLTypeFilterInput!]
+    commentId: IntOperationFilterInput
+    content: StringOperationFilterInput
+    or: [CommentGQLTypeFilterInput!]
+    ownerId: IntOperationFilterInput
+    target: ResourceGQLTypeFilterInput
+    targetId: IntOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input DateTimeOperationFilterInput {
+    eq: DateTime
+    gt: DateTime
+    gte: DateTime
+    in: [DateTime]
+    lt: DateTime
+    lte: DateTime
+    neq: DateTime
+    ngt: DateTime
+    ngte: DateTime
+    nin: [DateTime]
+    nlt: DateTime
+    nlte: DateTime
+}
+
+input ImageGQLTypeFilterInput {
+    and: [ImageGQLTypeFilterInput!]
+    extension: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    id: IntOperationFilterInput
+    name: StringOperationFilterInput
+    or: [ImageGQLTypeFilterInput!]
+    ownerId: IntOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input IntOperationFilterInput {
+    eq: Int
+    gt: Int
+    gte: Int
+    in: [Int]
+    lt: Int
+    lte: Int
+    neq: Int
+    ngt: Int
+    ngte: Int
+    nin: [Int]
+    nlt: Int
+    nlte: Int
+}
+
+input ListStringOperationFilterInput {
+    all: StringOperationFilterInput
+    any: Boolean
+    none: StringOperationFilterInput
+    some: StringOperationFilterInput
+}
+
+input MusicGQLTypeFilterInput {
+    and: [MusicGQLTypeFilterInput!]
+    duration: IntOperationFilterInput
+    extension: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    id: IntOperationFilterInput
+    name: StringOperationFilterInput
+    or: [MusicGQLTypeFilterInput!]
+    ownerId: IntOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input ResourceGQLTypeFilterInput {
+    and: [ResourceGQLTypeFilterInput!]
+    extension: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    id: IntOperationFilterInput
+    name: StringOperationFilterInput
+    or: [ResourceGQLTypeFilterInput!]
+    ownerId: IntOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}
+
+input StringOperationFilterInput {
+    and: [StringOperationFilterInput!]
+    contains: String
+    endsWith: String
+    eq: String
+    in: [String]
+    ncontains: String
+    nendsWith: String
+    neq: String
+    nin: [String]
+    nstartsWith: String
+    or: [StringOperationFilterInput!]
+    startsWith: String
+}
+
+input VideoGQLTypeFilterInput {
+    and: [VideoGQLTypeFilterInput!]
+    duration: IntOperationFilterInput
+    extension: StringOperationFilterInput
+    fileName: StringOperationFilterInput
+    id: IntOperationFilterInput
+    name: StringOperationFilterInput
+    or: [VideoGQLTypeFilterInput!]
+    ownerId: IntOperationFilterInput
+    tags: ListStringOperationFilterInput
+    uploadDate: DateTimeOperationFilterInput
+}

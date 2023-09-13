@@ -103,6 +103,7 @@ namespace CollectIt.MobileServer
 
             app.UseAuthorization();
 
+            app.UseWebSockets();
             app.UseRouting();
 
             app.UseCors();
@@ -110,11 +111,11 @@ namespace CollectIt.MobileServer
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapGraphQL();
                 endpoints.MapGrpcService<GrpcChatService>().EnableGrpcWeb().RequireCors("grpc-cors-policy");
             });
 
             app.MapControllers();
-            app.MapGraphQL("/graphql");
 
             app.Run();
         }

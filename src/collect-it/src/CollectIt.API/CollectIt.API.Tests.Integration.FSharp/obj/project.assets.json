@@ -11313,11 +11313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
+      "projectUniqueName": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
       "projectName": "CollectIt.API.Tests.Integration.FSharp",
-      "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
+      "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
       "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\obj\\",
+      "outputPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -11342,8 +11342,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj": {
-              "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj"
+            "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj": {
+              "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj"
             }
           }
         }

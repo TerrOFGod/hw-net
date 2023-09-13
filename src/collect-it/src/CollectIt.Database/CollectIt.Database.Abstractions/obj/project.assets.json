@@ -1993,11 +1993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
+      "projectUniqueName": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
       "projectName": "CollectIt.Database.Abstractions",
-      "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
+      "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
       "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\obj\\",
+      "outputPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -2020,8 +2020,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-              "projectPath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+            "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+              "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
             }
           }
         }

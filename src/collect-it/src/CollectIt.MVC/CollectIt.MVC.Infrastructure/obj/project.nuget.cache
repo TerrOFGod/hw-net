@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/4c6osJLK9jH9cruNXMafGRhuXYRjWl1tC1wTcVn+0VcgBD5a0s2i8hUm/EwHX8/9diF2Vd09opOWLjNp5ZkA==",
+  "dgSpecHash": "wh27x4tSOAWp6OvPh59g9yW2uJMkBs4+W42lam1YiApGJskbPbUzPnKUFPfVkhTqojwOJ+/QaghKC8BQ1AuTQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj",
+  "projectFilePath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\entityframework.functions\\1.5.0\\entityframework.functions.1.5.0.nupkg.sha512",

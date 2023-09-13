@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QB2f7JBTb4Kwv2TY1Jz3ZeXhhvL8DUDgUXfvUf4KoQU8Fjbb4fCcG/SSwJ+pxh0t7UyEuk85xgmJV3JVFUahXQ==",
+  "dgSpecHash": "E4i9rK6CLjpDqTK/hRDcQTW5Gsq27nsQXIs379cRN2aBL0SKdAn6c7DfFVhLTyeSPZ6FMHZ4hsHKAkBKyNApOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
+  "projectFilePath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
