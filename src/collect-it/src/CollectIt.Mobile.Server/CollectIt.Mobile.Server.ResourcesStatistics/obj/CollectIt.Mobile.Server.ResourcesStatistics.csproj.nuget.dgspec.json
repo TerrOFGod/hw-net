@@ -1,0 +1,317 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
+        "projectName": "CollectIt.Database.Abstractions",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
+        "projectName": "CollectIt.Database.Entities",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
+        "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "NodaTime": {
+              "target": "Package",
+              "version": "[3.0.10, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj",
+        "projectName": "CollectIt.Database.Infrastructure",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "EntityFramework.Functions": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "OpenIddict.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
+        "projectName": "CollectIt.Mobile.Server.ResourcesStatistics",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
+        "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.4, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

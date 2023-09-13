@@ -5,6 +5,7 @@ using CollectIt.Mobile.Server.GraphQL.GraphQL;
 using CollectIt.MVC.Infrastructure.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace CollectIt.Mobile.Server.GraphQL
 {
@@ -36,6 +37,7 @@ namespace CollectIt.Mobile.Server.GraphQL
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
             builder.Services.AddDbContext<PostgresqlCollectItDbContext>(options =>
             {
                 options.UseNpgsql("Host=localhost;User ID=postgres;Password=postgres;Port=5433;Database=postgres;",
