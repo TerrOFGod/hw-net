@@ -50,10 +50,11 @@ class GrpcChatManager @Inject() constructor(channel: ManagedChannel, private val
     }
 
     override suspend fun getChatMessages(): Flow<Message> {
+        val userName = usersApi.getUsernameById(token).body()
         Log.d("GrpcService", "Запрошено получение потока сообщений")
         sendMessage("Даров, помоги по-братски")
         val request = GetMessagesStreamRequest.newBuilder()
-            .setUsername("JeyKey")
+            .setUsername(userName)
             .build()
 
         val response = chatService.getMessagesStream(request)

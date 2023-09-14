@@ -12,3 +12,17 @@ C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt
 C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.dll
 C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.xml
 C:\Users\LordVT\Desktop\dotnet\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.pdb
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\bin\Debug\net6.0\CollectIt.API.DTO.deps.json
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\bin\Debug\net6.0\CollectIt.API.DTO.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\bin\Debug\net6.0\CollectIt.API.DTO.pdb
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\bin\Debug\net6.0\CollectIt.API.DTO.xml
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\bin\Debug\net6.0\CollectIt.Database.Entities.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\bin\Debug\net6.0\CollectIt.Database.Entities.pdb
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.fsproj.AssemblyReference.cache
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.AssemblyInfoInputs.cache
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.AssemblyInfo.fs
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.fsproj.CoreCompileInputs.cache
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.fsproj.CopyComplete
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.xml
+F:\repos\hw-net\src\collect-it\src\CollectIt.API\CollectIt.API.DTO\obj\Debug\net6.0\CollectIt.API.DTO.pdb

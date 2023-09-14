@@ -22,3 +22,15 @@ C:\Users\Bulat\Desktop\HW1\hw-net\src\collect-it\src\CollectIt.Database\CollectI
 C:\Users\Bulat\Desktop\HW1\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\refint\CollectIt.Database.Entities.dll
 C:\Users\Bulat\Desktop\HW1\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.pdb
 C:\Users\Bulat\Desktop\HW1\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\ref\CollectIt.Database.Entities.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\bin\Debug\net6.0\CollectIt.Database.Entities.deps.json
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\bin\Debug\net6.0\CollectIt.Database.Entities.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\bin\Debug\net6.0\CollectIt.Database.Entities.pdb
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.csproj.AssemblyReference.cache
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.GeneratedMSBuildEditorConfig.editorconfig
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.AssemblyInfoInputs.cache
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.AssemblyInfo.cs
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.csproj.CoreCompileInputs.cache
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\refint\CollectIt.Database.Entities.dll
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\CollectIt.Database.Entities.pdb
+F:\repos\hw-net\src\collect-it\src\CollectIt.Database\CollectIt.Database.Entities\obj\Debug\net6.0\ref\CollectIt.Database.Entities.dll
