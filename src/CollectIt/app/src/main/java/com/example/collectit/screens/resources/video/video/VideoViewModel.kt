@@ -31,7 +31,7 @@ class VideoViewModel @Inject constructor(
             val result = graphQLManager.getVideo(id)
 
             _video.value = result
-            statisticsManager.postVisitResource(id.toString())
+            statisticsManager.postVisitResource(id)
         }
     }
 

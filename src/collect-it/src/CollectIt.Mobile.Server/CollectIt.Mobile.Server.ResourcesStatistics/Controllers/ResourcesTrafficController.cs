@@ -13,12 +13,12 @@ namespace CollectIt.Mobile.Server.ResourcesStatistics.Controllers
     public class ResourcesTrafficController : ControllerBase
     {
         private readonly IMongoClient _mongoClient;
-        private readonly IProducer<Null, Guid> _producer;
+        private readonly IProducer<Null, int> _producer;
         private readonly MongoSettings _mongoSettings;
         private readonly KafkaSettings _kafkaSettings;
 
         public ResourcesTrafficController(IMongoClient mongoClient, IOptions<MongoSettings> mongoSettings,
-             IProducer<Null, Guid> producer, IOptions<KafkaSettings> kafkaSettings)
+             IProducer<Null, int> producer, IOptions<KafkaSettings> kafkaSettings)
         {
             _mongoClient = mongoClient;
             _mongoSettings = mongoSettings.Value;
@@ -48,10 +48,10 @@ namespace CollectIt.Mobile.Server.ResourcesStatistics.Controllers
         }
 
         [HttpPost]
-        [Route("/resource/{resourceId:guid}")]
-        public async Task<IActionResult> RegisterResourceTrafficAsync(Guid resourceId)
+        [Route("/resource/{resourceId:int}")]
+        public async Task<IActionResult> RegisterResourceTrafficAsync(int resourceId)
         {
-            await _producer.ProduceAsync(_kafkaSettings.Topic, new Message<Null, Guid>()
+            await _producer.ProduceAsync(_kafkaSettings.Topic, new Message<Null, int>()
             {
                 Value = resourceId
             });

@@ -15,7 +15,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 var kafkaSettings = sp.GetRequiredService<IOptions<KafkaSettings>>().Value;
                 var config = new ProducerConfig { BootstrapServers = kafkaSettings.Host };
 
-                return new ProducerBuilder<Null, Guid>(config)
+                return new ProducerBuilder<Null, int>(config)
                     .SetValueSerializer(new TrafficSerializer())
                     .Build();
             });
@@ -34,7 +34,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     AutoOffsetReset = AutoOffsetReset.Earliest
                 };
 
-                return new ConsumerBuilder<Ignore, Guid>(config)
+                return new ConsumerBuilder<Ignore, int>(config)
                     .SetValueDeserializer(new TrafficSerializer())
                     .Build();
             });

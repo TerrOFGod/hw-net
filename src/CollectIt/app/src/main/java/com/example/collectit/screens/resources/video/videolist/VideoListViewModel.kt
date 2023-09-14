@@ -26,7 +26,7 @@ class VideoListViewModel @Inject constructor(
 ) : ViewModel() {
     private val _videoList = MutableLiveData(ArrayList<ReadVideoNode>())
     val videoList: LiveData<ArrayList<ReadVideoNode>> get() = _videoList
-    val statistics = MutableLiveData<Map<String, Int>>(HashMap())
+    val statistics = MutableLiveData<Map<Int, Int>>(HashMap())
 
     private val statisticsManager: StatManager by lazy {
         RabbitmqStatisticsManagerProvider.provideStatisticsManager()
@@ -49,13 +49,13 @@ class VideoListViewModel @Inject constructor(
 
     suspend fun subscribeToStatistics() {
         viewModelScope.launch {
-            val f = statisticsManager.getMusicStatistics()
+            val f = statisticsManager.getResourceStatistics()
             f.collect {
                 Log.i("ViewModel", "Получил новый словарь")
                 it.forEach {
                     Log.d("Elem", "${it.key}: ${it.value}")
                 }
-                statistics.value = it
+                statistics.value =it
             }
         }
     }

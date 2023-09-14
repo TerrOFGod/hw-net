@@ -26,7 +26,7 @@ class StatManagerImpl(private val connectionFactory: ConnectionFactory,
                       private val routingKey: String = ""): StatManager {
 
 
-    override suspend fun getMusicStatistics(): Flow<Map<String, Int>> {
+    override suspend fun getResourceStatistics(): Flow<Map<Int, Int>> {
         return suspendCoroutine {
             Log.i(LogTag, "Создаю соединение")
 //            connectionFactory.setThreadFactory(ThreadFactory)
@@ -73,8 +73,8 @@ class StatManagerImpl(private val connectionFactory: ConnectionFactory,
     companion object {
         val LogTag = StatManagerImpl::class.simpleName
         val gson = Gson()
-        private val mapType = object: TypeToken<Map<String, Int>>(){}.type
-        fun deserializeStatisticsRecord(payload: ByteArray): Map<String, Int> {
+        private val mapType = object: TypeToken<Map<Int, Int>>(){}.type
+        fun deserializeStatisticsRecord(payload: ByteArray): Map<Int, Int> {
             val str = payload.decodeToString()
             return gson.fromJson(str, mapType)
         }

@@ -31,7 +31,7 @@ class MusicViewModel @Inject constructor(
             val result = graphQLManager.getMusic(id)
 
             _music.value = result
-            statisticsManager.postVisitResource(id.toString())
+            statisticsManager.postVisitResource(id)
         }
     }
 

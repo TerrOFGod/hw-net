@@ -34,7 +34,7 @@ class ImageViewModel @Inject constructor(
             val result = graphQLManager.getImage(id)
 
             _image.value = result
-            statisticsManager.postVisitResource(id.toString())
+            statisticsManager.postVisitResource(id)
         }
     }
 
