@@ -21,13 +21,10 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.navigation.NavRoute
-import com.example.collectit.navigation.destination.resources.images.navigateToImage
+import com.example.collectit.navigation.destination.resources.musics.navigateToMusic
 import com.example.collectit.screens.resources.music.musiclist.MusicListViewModel
-import com.example.collectit.ui.components.basics.BasicImageComponent
 import com.example.collectit.ui.components.basics.BasicMusicComponent.Companion.BasicMusic
 import com.example.collectit.ui.theme.CollectItTheme
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 @ExperimentalMaterial3Api
 @RequiresApi(Build.VERSION_CODES.O)
@@ -64,7 +61,7 @@ fun MusicListScreen(
                     Log.d("MusicListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
                     var date = viewModel.parseDate(it)
                     BasicMusic(
-                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        onClick = {navController.navigateToMusic(it.id)},
                         modifier = Modifier.padding(16.dp),
                         music = it,
                         date = date,
@@ -76,7 +73,7 @@ fun MusicListScreen(
                 items(musicList.value!!) {
                     var date = viewModel.parseDate(it)
                     BasicMusic(
-                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        onClick = {navController.navigateToMusic(it.id)},
                         modifier = Modifier.padding(16.dp),
                         music = it,
                         date = date,

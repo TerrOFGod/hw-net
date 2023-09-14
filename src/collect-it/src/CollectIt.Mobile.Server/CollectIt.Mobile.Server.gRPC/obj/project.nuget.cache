@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6j5GFtezeN5rF7j5XnbtVMQGQd7u8z4KqHtFStOtRMs6vSLFir5pUeBapRrQbTYIccID9HaN0AWwcfsfCDRMRw==",
+  "dgSpecHash": "5IOfjwmEjYzO4o2T31l5uGd/f3RzokMQ7RVuIyVMOXD1p+vgCnxkKEABP9W8LeWxe+x0OVUJG9CLH4g+4dDcSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
+  "projectFilePath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bulat\\.nuget\\packages\\google.protobuf\\3.22.0\\google.protobuf.3.22.0.nupkg.sha512",
     "C:\\Users\\Bulat\\.nuget\\packages\\grpc.aspnetcore\\2.54.0-pre1\\grpc.aspnetcore.2.54.0-pre1.nupkg.sha512",

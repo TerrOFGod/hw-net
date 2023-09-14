@@ -25,16 +25,16 @@ import java.util.*
 @Composable
 fun HomeScreen(navController: NavHostController) {
     Scaffold(
-        modifier = Modifier.fillMaxSize(),
-        floatingActionButton = {
-            FloatingActionButton(onClick = {navController.navigate(NavRoute.Add.path)}) {
-                Icon(
-                    imageVector = Icons.Default.Add,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onPrimaryContainer
-                )
-            }
-        }
+        modifier = Modifier.fillMaxSize()
+//        floatingActionButton = {
+//            FloatingActionButton(onClick = {navController.navigate(NavRoute.Add.path)}) {
+//                Icon(
+//                    imageVector = Icons.Default.Add,
+//                    contentDescription = null,
+//                    tint = MaterialTheme.colorScheme.onPrimaryContainer
+//                )
+//            }
+//        }
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -44,7 +44,7 @@ fun HomeScreen(navController: NavHostController) {
             LazyColumn {
                 items(20) {
                     BasicImageComponent.BasicImage(
-                        onClick = {navController.navigate("${NavRoute.Image.path}1")},
+                        onClick = {navController.navigate("${NavRoute.Images.path}1")},
                         url = "abstract_img.jpg",
                         title = "Bacon ipsum",
                         date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),

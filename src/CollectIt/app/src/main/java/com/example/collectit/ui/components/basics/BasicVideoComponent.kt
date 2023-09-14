@@ -65,7 +65,7 @@ class BasicVideoComponent {
             CollectItTheme {
                 val navController = rememberNavController()
                 BasicVideo(
-                    onClick = { navController.navigate("${NavRoute.Image.path}1")},
+                    onClick = { navController.navigate("${NavRoute.Images.path}1")},
                     date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),
                     video = ReadVideoNode(
                         1,

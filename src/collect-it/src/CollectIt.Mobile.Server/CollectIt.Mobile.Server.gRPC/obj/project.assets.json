@@ -852,11 +852,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
+      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
       "projectName": "CollectIt.Mobile.Server.gRPC",
-      "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
+      "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\CollectIt.Mobile.Server.gRPC.csproj",
       "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\obj\\",
+      "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.gRPC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",

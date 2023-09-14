@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VmXgBhDitJzv9YY9Ruc2dnTj0hDeuWCtQfpOHPVHaKoVetvUzEVCfhy95mXgyGu85c2XTJchrSeBtrITPExn9w==",
+  "dgSpecHash": "DxSfY4bV6bwzLtAq0KstCGp4nuRIotMciEr14MKBwztCMKnQM3gz/xedeydKAYCYrMVMtRw9hxUfu5UbqFffTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
+  "projectFilePath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bulat\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Bulat\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

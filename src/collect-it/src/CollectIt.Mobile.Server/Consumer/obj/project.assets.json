@@ -4731,11 +4731,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\Consumer\\Consumer.csproj",
+      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\Consumer\\Consumer.csproj",
       "projectName": "Consumer",
-      "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\Consumer\\Consumer.csproj",
+      "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\Consumer\\Consumer.csproj",
       "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\Consumer\\obj\\",
+      "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\Consumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4752,8 +4752,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
+            "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
             }
           }
         }

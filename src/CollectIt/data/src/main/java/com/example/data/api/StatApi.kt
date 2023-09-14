@@ -7,6 +7,6 @@ interface StatApi {
     @GET("traffic")
     suspend fun getStatistics(): Response<Map<Int, Int>>
 
-    @POST("traffic/resource/{resourceId}")
+    @POST("/resource/{resourceId}")
     suspend fun postVisitResource(@Path("resourceId") resourceId: Int)
 }

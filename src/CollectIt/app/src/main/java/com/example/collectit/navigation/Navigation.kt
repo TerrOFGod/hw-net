@@ -10,7 +10,8 @@ import com.example.collectit.navigation.destination.account.*
 import com.example.collectit.navigation.destination.home
 import com.example.collectit.navigation.destination.resources.images.image
 import com.example.collectit.navigation.destination.resources.images.images
-import com.example.collectit.navigation.destination.resources.music.music
+import com.example.collectit.navigation.destination.resources.musics.musics
+import com.example.collectit.navigation.destination.resources.musics.music
 import com.example.collectit.navigation.destination.resources.video.video
 import com.example.collectit.navigation.destination.statistics.stat
 
@@ -27,6 +28,7 @@ fun CollectItNavHost(
         images(navController)
         image(navController)
 
+        musics(navController)
         music(navController)
 
         video(navController)

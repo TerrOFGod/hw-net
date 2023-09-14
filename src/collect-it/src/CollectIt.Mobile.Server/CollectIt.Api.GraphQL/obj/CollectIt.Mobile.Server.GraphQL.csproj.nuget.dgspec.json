@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj": {}
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
         "projectName": "CollectIt.API.DTO.Mappers",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
         "projectName": "CollectIt.API.DTO",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,8 +95,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
               }
             }
           }
@@ -133,14 +133,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
         "projectName": "CollectIt.Database.Abstractions",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -157,8 +157,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
               }
             }
           }
@@ -192,14 +192,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
         "projectName": "CollectIt.Database.Entities",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -273,14 +273,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj",
         "projectName": "CollectIt.Database.Infrastructure",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -297,8 +297,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
               }
             }
           }
@@ -358,14 +358,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
         "projectName": "CollectIt.Mobile.Server.GraphQL",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -382,20 +382,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj"
               }
             }
           }
@@ -454,14 +454,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
         "projectName": "CollectIt.MVC.Abstractions",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -478,8 +478,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj"
               }
             }
           }
@@ -513,14 +513,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj",
         "projectName": "CollectIt.MVC.Entities",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -537,8 +537,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
               }
             }
           }
@@ -572,14 +572,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj",
         "projectName": "CollectIt.MVC.Infrastructure",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -596,11 +596,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj"
               }
             }
           }
@@ -640,14 +640,14 @@
         }
       }
     },
-    "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj": {
+    "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj",
+        "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj",
         "projectName": "CollectIt.MVC.View",
-        "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj",
+        "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj",
         "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\obj\\",
+        "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -664,11 +664,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO.Mappers\\CollectIt.API.DTO.Mappers.fsproj"
               },
-              "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj"
+              "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj"
               }
             }
           }

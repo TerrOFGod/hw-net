@@ -1973,11 +1973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
       "projectName": "CollectIt.Database.Entities",
-      "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
+      "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj",
       "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\obj\\",
+      "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",

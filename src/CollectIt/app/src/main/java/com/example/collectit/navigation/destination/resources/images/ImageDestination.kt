@@ -14,7 +14,7 @@ fun NavGraphBuilder.image(
     navController: NavHostController
 ){
     composable(
-        route = "${NavRoute.Image.path}{id}",
+        route = "${NavRoute.Images.path}{id}",
         arguments = listOf(navArgument("id") { type = NavType.IntType })
     ) { backStackEntry ->
         val arguments = requireNotNull(backStackEntry.arguments)
@@ -27,5 +27,5 @@ fun NavGraphBuilder.image(
 fun NavController.navigateToImage(
     imageId: Int
 ){
-    navigate("${NavRoute.Image.path}$imageId")
+    navigate("${NavRoute.Images.path}$imageId")
 }

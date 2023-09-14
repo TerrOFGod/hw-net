@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YiYluBi/QzN9xYGo+go90KuXVEERg573V72Uf0tKQlNg7dGakuoAL99IDrxh7gO37vNm0tgvqQZCXHXxCqtT8g==",
+  "dgSpecHash": "+QnHgz90MM8AULzyeJ0TOvafs8dLcIs4zHIyNyiAicz87xRIwqxlRtuJG+CC89ZifIv9C0K9YT+0HULXjOTH0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
+  "projectFilePath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bulat\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Bulat\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

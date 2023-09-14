@@ -1,25 +1,27 @@
 package com.example.data.managers
 
-import android.util.Log
-import com.example.core.managers.StatManager
-import com.google.gson.reflect.TypeToken
-import com.google.gson.Gson
-
 
 //rabbit
+
+
+//coroutines
+import android.os.StrictMode
+import android.os.StrictMode.ThreadPolicy
+import android.util.Log
+import com.example.core.managers.StatManager
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.rabbitmq.client.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-
-
-//coroutines
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
+
 
 class StatManagerImpl(private val connectionFactory: ConnectionFactory,
                       private val exchangeName: String,
@@ -29,6 +31,8 @@ class StatManagerImpl(private val connectionFactory: ConnectionFactory,
     override suspend fun getResourceStatistics(): Flow<Map<Int, Int>> {
         return suspendCoroutine {
             Log.i(LogTag, "Создаю соединение")
+            val policy = ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
 //            connectionFactory.setThreadFactory(ThreadFactory)
             val connection = connectionFactory.newConnection()
             Log.i(LogTag, "Создаю канал")
