@@ -112,7 +112,7 @@
           "lib/netstandard2.1/EntityFramework.Functions.dll": {}
         }
       },
-      "FSharp.Core/7.0.300": {
+      "FSharp.Core/7.0.400": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -4313,7 +4313,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CollectIt.Database.Entities": "1.0.0",
-          "FSharp.Core": "7.0.300"
+          "FSharp.Core": "7.0.400"
         },
         "compile": {
           "bin/placeholder/CollectIt.API.DTO.dll": {}
@@ -4328,7 +4328,7 @@
         "dependencies": {
           "CollectIt.API.DTO": "1.0.0",
           "CollectIt.Database.Entities": "1.0.0",
-          "FSharp.Core": "7.0.300"
+          "FSharp.Core": "7.0.400"
         },
         "compile": {
           "bin/placeholder/CollectIt.API.DTO.Mappers.dll": {}
@@ -4674,15 +4674,15 @@
         "lib/netstandard2.1/EntityFramework.Functions.dll"
       ]
     },
-    "FSharp.Core/7.0.300": {
-      "sha512": "8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
+    "FSharp.Core/7.0.400": {
+      "sha512": "kJQ7TBQqd1d2VoODSgwFSAaApaBN0Fuu8mZt2XExmd3UzUxLjUsMn5Y5XhpsUWdnxOL8amp7VFg7cwhPllR4Qw==",
       "type": "package",
-      "path": "fsharp.core/7.0.300",
+      "path": "fsharp.core/7.0.400",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.7.0.300.nupkg.sha512",
+        "fsharp.core.7.0.400.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -11873,7 +11873,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "CollectIt.API.WebAPI >= 1.0.0",
-      "FSharp.Core >= 7.0.300",
+      "FSharp.Core >= 7.0.400",
       "Microsoft.AspNetCore.Mvc.Testing >= 6.0.3",
       "Microsoft.Extensions.Configuration.UserSecrets >= 6.0.1",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
@@ -11883,44 +11883,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LordVT\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\Bulat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
+      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
       "projectName": "CollectIt.API.Tests.Integration.FSharp",
-      "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
-      "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-      "outputPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\obj\\",
+      "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\CollectIt.API.Tests.Integration.FSharp.fsproj",
+      "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.Tests.Integration.FSharp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
-      ],
       "configFilePaths": [
-        "C:\\Users\\LordVT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.308\\FSharp\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.400\\FSharp\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj": {
-              "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj"
+            "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj": {
+              "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.WebAPI\\CollectIt.API.WebAPI.csproj"
             }
           }
         }
@@ -11933,7 +11924,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[7.0.300, )",
+            "version": "[7.0.400, )",
             "generatePathProperty": true
           },
           "Microsoft.AspNetCore.Mvc.Testing": {
@@ -11990,7 +11981,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

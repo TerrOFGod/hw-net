@@ -5,14 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\LordVT\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Bulat\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\LordVT\.nuget\packages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+    <SourceRoot Include="C:\Users\Bulat\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.props')" />
@@ -24,17 +22,17 @@
     <Import Project="$(NuGetPackageRoot)entityframework\6.4.0\buildTransitive\netcoreapp3.0\EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework\6.4.0\buildTransitive\netcoreapp3.0\EntityFramework.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_runner_visualstudio Condition=" '$(Pkgxunit_runner_visualstudio)' == '' ">C:\Users\LordVT\.nuget\packages\xunit.runner.visualstudio\2.4.3</Pkgxunit_runner_visualstudio>
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\LordVT\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
-    <Pkgxunit Condition=" '$(Pkgxunit)' == '' ">C:\Users\LordVT\.nuget\packages\xunit\2.4.1</Pkgxunit>
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\LordVT\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
-    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\LordVT\.nuget\packages\awssdk.core\3.7.100.14</PkgAWSSDK_Core>
-    <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\LordVT\.nuget\packages\awssdk.securitytoken\3.7.100.14</PkgAWSSDK_SecurityToken>
-    <PkgMicrosoft_NET_Test_Sdk Condition=" '$(PkgMicrosoft_NET_Test_Sdk)' == '' ">C:\Users\LordVT\.nuget\packages\microsoft.net.test.sdk\16.11.0</PkgMicrosoft_NET_Test_Sdk>
-    <PkgMicrosoft_Extensions_Configuration_UserSecrets Condition=" '$(PkgMicrosoft_Extensions_Configuration_UserSecrets)' == '' ">C:\Users\LordVT\.nuget\packages\microsoft.extensions.configuration.usersecrets\6.0.1</PkgMicrosoft_Extensions_Configuration_UserSecrets>
-    <PkgMicrosoft_AspNetCore_Mvc_Testing Condition=" '$(PkgMicrosoft_AspNetCore_Mvc_Testing)' == '' ">C:\Users\LordVT\.nuget\packages\microsoft.aspnetcore.mvc.testing\6.0.3</PkgMicrosoft_AspNetCore_Mvc_Testing>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\LordVT\.nuget\packages\fsharp.core\7.0.300</PkgFSharp_Core>
-    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\LordVT\.nuget\packages\entityframework\6.4.0</PkgEntityFramework>
-    <Pkgcoverlet_collector Condition=" '$(Pkgcoverlet_collector)' == '' ">C:\Users\LordVT\.nuget\packages\coverlet.collector\3.1.0</Pkgcoverlet_collector>
+    <Pkgxunit_runner_visualstudio Condition=" '$(Pkgxunit_runner_visualstudio)' == '' ">C:\Users\Bulat\.nuget\packages\xunit.runner.visualstudio\2.4.3</Pkgxunit_runner_visualstudio>
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Bulat\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
+    <Pkgxunit Condition=" '$(Pkgxunit)' == '' ">C:\Users\Bulat\.nuget\packages\xunit\2.4.1</Pkgxunit>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Bulat\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Bulat\.nuget\packages\awssdk.core\3.7.100.14</PkgAWSSDK_Core>
+    <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\Bulat\.nuget\packages\awssdk.securitytoken\3.7.100.14</PkgAWSSDK_SecurityToken>
+    <PkgMicrosoft_NET_Test_Sdk Condition=" '$(PkgMicrosoft_NET_Test_Sdk)' == '' ">C:\Users\Bulat\.nuget\packages\microsoft.net.test.sdk\16.11.0</PkgMicrosoft_NET_Test_Sdk>
+    <PkgMicrosoft_Extensions_Configuration_UserSecrets Condition=" '$(PkgMicrosoft_Extensions_Configuration_UserSecrets)' == '' ">C:\Users\Bulat\.nuget\packages\microsoft.extensions.configuration.usersecrets\6.0.1</PkgMicrosoft_Extensions_Configuration_UserSecrets>
+    <PkgMicrosoft_AspNetCore_Mvc_Testing Condition=" '$(PkgMicrosoft_AspNetCore_Mvc_Testing)' == '' ">C:\Users\Bulat\.nuget\packages\microsoft.aspnetcore.mvc.testing\6.0.3</PkgMicrosoft_AspNetCore_Mvc_Testing>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Bulat\.nuget\packages\fsharp.core\7.0.400</PkgFSharp_Core>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\Bulat\.nuget\packages\entityframework\6.4.0</PkgEntityFramework>
+    <Pkgcoverlet_collector Condition=" '$(Pkgcoverlet_collector)' == '' ">C:\Users\Bulat\.nuget\packages\coverlet.collector\3.1.0</Pkgcoverlet_collector>
   </PropertyGroup>
 </Project>
