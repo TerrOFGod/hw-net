@@ -14,4 +14,5 @@ sealed class NavRoute(var path: String, var icon: Int?, var title: String) {
     object SignUp : NavRoute("signup/", null, "Sign Up")
     object LogOut : NavRoute("logout/", R.drawable.logout, "Log Out")
     object Chat : NavRoute("chat/", R.drawable.chat, "Chat")
+    object Stat : NavRoute("stat/", R.drawable.stat, "Stat")
 }

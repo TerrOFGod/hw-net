@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             NavRoute.Images,
             NavRoute.Music,
             NavRoute.Video,
+            NavRoute.Stat,
             NavRoute.Login
         )
         setContent {

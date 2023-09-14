@@ -15,17 +15,10 @@ class CommonStatManagerImpl @Inject constructor(val api: StatApi): CommonStatMan
         return response.body()!!
     }
 
-    override suspend fun postVisitImage(id: String) {
-        api.postVisitImage(id)
+    override suspend fun postVisitResource(id: String) {
+        api.postVisitResource(id)
     }
 
-    override suspend fun postVisitMusic(id: String) {
-        api.postVisitMusic(id)
-    }
-
-    override suspend fun postVisitVideo(id: String) {
-        api.postVisitVideo(id)
-    }
 }
 
 @Module

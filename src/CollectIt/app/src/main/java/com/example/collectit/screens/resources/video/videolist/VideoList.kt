@@ -22,6 +22,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.navigation.NavRoute
 import com.example.collectit.screens.resources.video.videolist.VideoListViewModel
+import com.example.collectit.ui.components.basics.BasicMusicComponent
 import com.example.collectit.ui.components.basics.BasicVideoComponent.Companion.BasicVideo
 import com.example.collectit.ui.theme.CollectItTheme
 import java.time.LocalDateTime
@@ -37,14 +38,16 @@ fun VideoListScreen(
 
     Log.v("VideoList", "Start observe state")
     // State
-    val observeState = viewModel.videoList.observeAsState()
+    val videoList = viewModel.videoList.observeAsState()
+    val statistics = viewModel.statistics.observeAsState()
 
     Log.v("VideoList", "API Call")
     // API call
     LaunchedEffect(key1 = Unit) {
         viewModel.getVideos()
+        viewModel.subscribeToStatistics()
     }
-    if (observeState.value == null) {
+    if (videoList.value == null) {
         Box(modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
@@ -53,16 +56,33 @@ fun VideoListScreen(
     }
     else{
         LazyColumn {
-            items(observeState.value!!) {
-                var dateStr = it.uploadDate.toString()
-                dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
-                val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
-                BasicVideo(
-                    onClick = {navController.navigate("${NavRoute.Music.path}1")},
-                    date = date,
-                    video = it,
-                    modifier = Modifier.padding(16.dp)
-                )
+            val map = statistics.value
+            if (map != null) {
+                Log.e("ImagesList", "Словарь не null")
+                items(videoList.value!!) {
+                    val traffic = map.getOrDefault(it.id.toString(), 0)
+                    Log.d("MusicListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
+                    var date = viewModel.parseDate(it)
+                    BasicVideo(
+                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        date = date,
+                        video = it,
+                        modifier = Modifier.padding(16.dp),
+                        traffic = traffic
+                    )
+                }
+            } else {
+                Log.e("MusicListPage", "Словарь null")
+                items(videoList.value!!) {
+                    var date = viewModel.parseDate(it)
+                    BasicVideo(
+                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        date = date,
+                        video = it,
+                        modifier = Modifier.padding(16.dp),
+                        traffic = 0
+                    )
+                }
             }
         }
     }

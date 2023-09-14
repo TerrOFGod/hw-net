@@ -21,7 +21,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.navigation.NavRoute
+import com.example.collectit.navigation.destination.resources.images.navigateToImage
 import com.example.collectit.screens.resources.music.musiclist.MusicListViewModel
+import com.example.collectit.ui.components.basics.BasicImageComponent
 import com.example.collectit.ui.components.basics.BasicMusicComponent.Companion.BasicMusic
 import com.example.collectit.ui.theme.CollectItTheme
 import java.time.LocalDateTime
@@ -36,14 +38,16 @@ fun MusicListScreen(
 ) {
     Log.v("MusicList", "Start observe state")
     // State
-    val observeState = viewModel.musicList.observeAsState()
-
+    val musicList = viewModel.musicList.observeAsState()
+    val statistics = viewModel.statistics.observeAsState()
+    
     Log.v("MusicList", "API Call")
     // API call
     LaunchedEffect(key1 = Unit) {
         viewModel.getMusics()
+        viewModel.subscribeToStatistics()
     }
-    if (observeState.value == null) {
+    if (musicList.value == null) {
         Box(modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
@@ -52,16 +56,33 @@ fun MusicListScreen(
     }
     else{
         LazyColumn {
-            items(observeState.value!!) {
-                var dateStr = it.uploadDate.toString()
-                dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
-                val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
-                BasicMusic(
-                    onClick = {navController.navigate("${NavRoute.Music.path}1")},
-                    modifier = Modifier.padding(16.dp),
-                    music = it,
-                    date = date
-                )
+            val map = statistics.value
+            if (map != null) {
+                Log.e("ImagesList", "Словарь не null")
+                items(musicList.value!!) {
+                    val traffic = map.getOrDefault(it.id.toString(), 0)
+                    Log.d("MusicListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
+                    var date = viewModel.parseDate(it)
+                    BasicMusic(
+                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        modifier = Modifier.padding(16.dp),
+                        music = it,
+                        date = date,
+                        traffic = traffic
+                    )
+                }
+            } else {
+                Log.e("MusicListPage", "Словарь null")
+                items(musicList.value!!) {
+                    var date = viewModel.parseDate(it)
+                    BasicMusic(
+                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        modifier = Modifier.padding(16.dp),
+                        music = it,
+                        date = date,
+                        traffic = 0
+                    )
+                }
             }
         }
     }

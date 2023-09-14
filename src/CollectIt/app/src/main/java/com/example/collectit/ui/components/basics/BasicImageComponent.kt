@@ -38,7 +38,8 @@ class BasicImageComponent {
             modifier: Modifier,
             url: String,
             title: String,
-            date: String
+            date: String,
+            traffic: Int
         ){
             var temp = url.replace('-', '_')
             val name = temp.subSequence(0, url.length - 4).toString().lowercase()
@@ -85,6 +86,10 @@ class BasicImageComponent {
                         text = date,
                         style = MaterialTheme.typography.bodyMedium
                     )
+                    Text(
+                        text = "Visits - $traffic",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
                 }
             }
         }
@@ -100,7 +105,8 @@ class BasicImageComponent {
                     url = "//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
                     title = "Bacon ipsum",
                     date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(16.dp),
+                    traffic = 0
                 )
             }
         }

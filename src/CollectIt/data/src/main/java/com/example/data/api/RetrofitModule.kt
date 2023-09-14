@@ -25,4 +25,12 @@ object RetrofitModule {
             .build()
             .create(UsersApi::class.java)
     }
+
+    @Provides
+    @Singleton
+    fun provideStatisticsApi(): StatApi = Retrofit.Builder()
+        .addConverterFactory(GsonConverterFactory.create())
+        .baseUrl("http://10.0.2.2:7222")
+        .build()
+        .create(StatApi::class.java)
 }

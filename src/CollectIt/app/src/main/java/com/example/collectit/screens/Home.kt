@@ -48,7 +48,8 @@ fun HomeScreen(navController: NavHostController) {
                         url = "abstract_img.jpg",
                         title = "Bacon ipsum",
                         date = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date()),
-                        modifier = Modifier.padding(16.dp)
+                        modifier = Modifier.padding(16.dp),
+                        traffic = 0
                     )
                 }
             }

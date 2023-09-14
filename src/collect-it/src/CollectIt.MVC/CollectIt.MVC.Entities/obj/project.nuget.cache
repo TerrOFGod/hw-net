@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tgZ4KUfQ61+FGI25Npz3Qs+xJdTbnXzLAT/3t/h4G+uXyIXUxrFgSRdTyHATWMtOmwDsWvtzdKWQB3Hfbm9RXg==",
+  "dgSpecHash": "8gJ1UswPmu/7Vz0vnSzl7VjOISC2Q6kCj/UWspJuNJ65/LY/xglqCbdpvYi8MMyIYd2Igy0L1G12lGCVpD9Kyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj",
+  "projectFilePath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

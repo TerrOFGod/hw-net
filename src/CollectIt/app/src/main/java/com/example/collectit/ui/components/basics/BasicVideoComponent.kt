@@ -29,7 +29,8 @@ class BasicVideoComponent {
             onClick: () -> Unit,
             modifier: Modifier,
             video: ReadVideoNode,
-            date: String
+            date: String,
+            traffic: Int
         ){
             Card(
                 modifier = modifier,
@@ -49,6 +50,9 @@ class BasicVideoComponent {
                 ){
                     Text(
                         text = "${video.name} - $date"
+                    )
+                    Text(
+                        text = "Visits - $traffic"
                     )
                 }
             }
@@ -71,7 +75,8 @@ class BasicVideoComponent {
                         "",
                         emptyList()
                     ),
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(16.dp),
+                    traffic = 0
                 )
             }
         }

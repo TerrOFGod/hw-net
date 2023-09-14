@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WJt73PnTYltrYFPCRr6FnY1ctYoaALL5fFckY0U4fvQYzaFSjlB/B7oOqiybMc7EXDaZX03Di1PzEuv8enNfYQ==",
+  "dgSpecHash": "BJXZpKI+PoVxAVEzxQpkM5XjjhbOJipEF4vEJvurhbKGDAd1I5faKBs0DXvEPAk1T+PcpeqzHtEPwxZCAoWs4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\dotnet\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
+  "projectFilePath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.API\\CollectIt.API.DTO\\CollectIt.API.DTO.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\fsharp.core\\7.0.300\\fsharp.core.7.0.300.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

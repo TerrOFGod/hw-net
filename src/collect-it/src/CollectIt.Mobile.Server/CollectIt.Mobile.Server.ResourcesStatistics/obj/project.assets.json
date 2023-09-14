@@ -4295,34 +4295,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bulat\\.nuget\\packages\\": {}
+    "C:\\Users\\LordVT\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
+      "projectUniqueName": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
       "projectName": "CollectIt.Mobile.Server.ResourcesStatistics",
-      "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
-      "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\obj\\",
+      "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\CollectIt.Mobile.Server.ResourcesStatistics.csproj",
+      "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
+      "outputPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Mobile.Server.ResourcesStatistics\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\LordVT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\HW1\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
+            "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+              "projectPath": "F:\\repos\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
             }
           }
         }
@@ -4377,7 +4386,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }

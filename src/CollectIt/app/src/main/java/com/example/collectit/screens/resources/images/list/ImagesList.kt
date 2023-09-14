@@ -18,14 +18,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.collectit.navigation.NavRoute
 import com.example.collectit.navigation.destination.resources.images.navigateToImage
 import com.example.collectit.ui.components.basics.BasicImageComponent.Companion.BasicImage
 import com.example.collectit.ui.theme.CollectItTheme
-import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
@@ -39,15 +36,17 @@ fun ImagesScreen(
 ) {
     Log.v("ImagesList", "Start observe state")
     // State
-    val observeState = viewModel.imagesList.observeAsState()
+    val images = viewModel.imagesList.observeAsState()
+    val statistics = viewModel.statistics.observeAsState()
 
     Log.v("ImagesList", "API Call")
     // API call
     LaunchedEffect(key1 = Unit) {
         viewModel.getImages()
+        viewModel.subscribeToStatistics()
     }
 
-    if (observeState.value == null) {
+    if (images.value == null) {
         Box(modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
@@ -56,17 +55,35 @@ fun ImagesScreen(
     }
     else{
         LazyColumn {
-            items(observeState.value!!) {
-                var dateStr = it.uploadDate.toString()
-                dateStr = dateStr.subSequence(0, dateStr.length - 5).toString()
-                val date = LocalDateTime.parse(dateStr).format(DateTimeFormatter.ofPattern("dd/M/yyyy hh:mm:ss"))
-                BasicImage(
-                    onClick = {navController.navigateToImage(it.id)},
-                    url = "${it.fileName}",
-                    title = it.name,
-                    date = date,
-                    modifier = Modifier.padding(16.dp)
-                )
+            val map = statistics.value
+            if (map != null) {
+                Log.e("ImagesList", "Словарь не null")
+                items(images.value!!) {
+                    val traffic = map.getOrDefault(it.id.toString(), 0)
+                    Log.d("MusicListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
+                    var date = viewModel.parseDate(it)
+                    BasicImage(
+                        onClick = {navController.navigateToImage(it.id)},
+                        url = "${it.fileName}",
+                        title = it.name,
+                        date = date,
+                        modifier = Modifier.padding(16.dp),
+                        traffic = traffic
+                    )
+                }
+            } else {
+                Log.e("MusicListPage", "Словарь null")
+                items(images.value!!) {
+                    var date = viewModel.parseDate(it)
+                    BasicImage(
+                        onClick = {navController.navigateToImage(it.id)},
+                        url = "${it.fileName}",
+                        title = it.name,
+                        date = date,
+                        modifier = Modifier.padding(16.dp),
+                        traffic = 0
+                    )
+                }
             }
         }
     }

@@ -13,6 +13,6 @@ object ApolloModule {
     @Provides
     @Singleton
     fun provideGraphQLApi() : ApolloClient = ApolloClient.Builder()
-        .serverUrl("http://10.0.2.2:5000/graphql")
+        .serverUrl("http://10.0.2.2:7211/graphql")
         .build()
 }

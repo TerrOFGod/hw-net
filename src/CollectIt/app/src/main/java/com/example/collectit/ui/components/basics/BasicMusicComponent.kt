@@ -19,7 +19,8 @@ class BasicMusicComponent {
             onClick: () -> Unit,
             modifier: Modifier,
             music: ReadMusicNode,
-            date: String
+            date: String,
+            traffic: Int
         ){
             Card(
                 modifier = modifier,
@@ -39,6 +40,9 @@ class BasicMusicComponent {
                 ){
                     Text(
                         text = "${music.name} - $date"
+                    )
+                    Text(
+                        text = "Visits - $traffic"
                     )
                 }
             }
