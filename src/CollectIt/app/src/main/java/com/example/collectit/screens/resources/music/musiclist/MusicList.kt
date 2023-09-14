@@ -60,7 +60,7 @@ fun MusicListScreen(
             if (map != null) {
                 Log.e("ImagesList", "Словарь не null")
                 items(musicList.value!!) {
-                    val traffic = map.getOrDefault(it.id.toString(), 0)
+                    val traffic = map.getOrDefault(it.id, 0)
                     Log.d("MusicListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
                     var date = viewModel.parseDate(it)
                     BasicMusic(

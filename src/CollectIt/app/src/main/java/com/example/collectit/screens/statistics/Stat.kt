@@ -38,7 +38,7 @@ fun StatPage(viewModel: StatViewModel = hiltViewModel()) {
 }
 
 @Composable
-fun StatisticsPageInner(map: Map<String, Int>?) {
+fun StatisticsPageInner(map: Map<Int, Int>?) {
     LazyColumn(
         modifier = Modifier.padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),

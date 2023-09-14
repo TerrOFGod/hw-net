@@ -26,7 +26,7 @@ class MusicListViewModel @Inject constructor(
 ) : ViewModel() {
     private val _musicList = MutableLiveData(ArrayList<ReadMusicNode>())
     val musicList: LiveData<ArrayList<ReadMusicNode>> get() = _musicList
-    val statistics = MutableLiveData<Map<String, Int>>(HashMap())
+    val statistics = MutableLiveData<Map<Int, Int>>(HashMap())
 
     private val statisticsManager: StatManager by lazy {
         RabbitmqStatisticsManagerProvider.provideStatisticsManager()
@@ -49,7 +49,7 @@ class MusicListViewModel @Inject constructor(
 
     suspend fun subscribeToStatistics() {
         viewModelScope.launch {
-            val f = statisticsManager.getMusicStatistics()
+            val f = statisticsManager.getResourceStatistics()
             f.collect {
                 Log.i("ViewModel", "Получил новый словарь")
                 it.forEach {

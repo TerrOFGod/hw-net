@@ -12,7 +12,7 @@ namespace Consumer
     public sealed class RegisterResourceTrafficConsumer : BackgroundService
     {
         private readonly KafkaSettings _kafkaSettings;
-        private readonly IConsumer<Ignore, Guid> _consumer;
+        private readonly IConsumer<Ignore, int> _consumer;
         private readonly ILogger<RegisterResourceTrafficConsumer> _logger;
         private readonly IAdminClient _adminClient;
         private readonly IMongoClient _mongoClient;
@@ -20,7 +20,7 @@ namespace Consumer
 
         public RegisterResourceTrafficConsumer(
             IOptions<KafkaSettings> kafkaSettings,
-            IConsumer<Ignore, Guid> consumer,
+            IConsumer<Ignore, int> consumer,
             ILogger<RegisterResourceTrafficConsumer> logger,
             IAdminClient adminClient,
             IMongoClient mongoClient,

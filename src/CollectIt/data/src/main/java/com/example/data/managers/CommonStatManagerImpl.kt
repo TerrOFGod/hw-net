@@ -10,12 +10,12 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 class CommonStatManagerImpl @Inject constructor(val api: StatApi): CommonStatManager {
-    override suspend fun getStatistics(): Map<String, Int> {
+    override suspend fun getStatistics(): Map<Int, Int> {
         val response = api.getStatistics()
         return response.body()!!
     }
 
-    override suspend fun postVisitResource(id: String) {
+    override suspend fun postVisitResource(id: Int) {
         api.postVisitResource(id)
     }
 

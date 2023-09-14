@@ -12,8 +12,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class StatViewModel @Inject constructor(private val manager: CommonStatManager): ViewModel() {
-    private val _stat = MutableLiveData<Map<String, Int>>()
-    val statistics: LiveData<Map<String, Int>> = _stat
+    private val _stat = MutableLiveData<Map<Int, Int>>()
+    val statistics: LiveData<Map<Int, Int>> = _stat
 
     fun getStatistics() {
         viewModelScope.launch {

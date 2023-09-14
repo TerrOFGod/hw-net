@@ -5,8 +5,8 @@ import retrofit2.http.*
 
 interface StatApi {
     @GET("traffic")
-    suspend fun getStatistics(): Response<Map<String, Int>>
+    suspend fun getStatistics(): Response<Map<Int, Int>>
 
-    @POST("traffic/resource/{id}")
-    suspend fun postVisitResource(@Path("id") id: String)
+    @POST("traffic/resource/{resourceId}")
+    suspend fun postVisitResource(@Path("resourceId") resourceId: Int)
 }

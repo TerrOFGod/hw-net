@@ -28,7 +28,7 @@ class ImagesListViewModel @Inject constructor(
 
     val imagesList: LiveData<ArrayList<ReadImageNode>> get() = _imagesList
 
-    val statistics = MutableLiveData<Map<String, Int>>(HashMap())
+    val statistics = MutableLiveData<Map<Int, Int>>(HashMap())
 
     private val statisticsManager: StatManager by lazy {
         RabbitmqStatisticsManagerProvider.provideStatisticsManager()
@@ -51,7 +51,7 @@ class ImagesListViewModel @Inject constructor(
 
     suspend fun subscribeToStatistics() {
         viewModelScope.launch {
-            val f = statisticsManager.getMusicStatistics()
+            val f = statisticsManager.getResourceStatistics()
             f.collect {
                 Log.i("ViewModel", "Получил новый словарь")
                 it.forEach {
