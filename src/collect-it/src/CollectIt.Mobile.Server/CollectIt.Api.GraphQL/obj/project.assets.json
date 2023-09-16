@@ -106,7 +106,7 @@
           "lib/netstandard2.1/EntityFramework.Functions.dll": {}
         }
       },
-      "FSharp.Core/7.0.400": {
+      "FSharp.Core/7.0.300": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -4082,7 +4082,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CollectIt.Database.Entities": "1.0.0",
-          "FSharp.Core": "7.0.400"
+          "FSharp.Core": "7.0.300"
         },
         "compile": {
           "bin/placeholder/CollectIt.API.DTO.dll": {}
@@ -4097,7 +4097,7 @@
         "dependencies": {
           "CollectIt.API.DTO": "1.0.0",
           "CollectIt.Database.Entities": "1.0.0",
-          "FSharp.Core": "7.0.400"
+          "FSharp.Core": "7.0.300"
         },
         "compile": {
           "bin/placeholder/CollectIt.API.DTO.Mappers.dll": {}
@@ -4392,15 +4392,15 @@
         "lib/netstandard2.1/EntityFramework.Functions.dll"
       ]
     },
-    "FSharp.Core/7.0.400": {
-      "sha512": "kJQ7TBQqd1d2VoODSgwFSAaApaBN0Fuu8mZt2XExmd3UzUxLjUsMn5Y5XhpsUWdnxOL8amp7VFg7cwhPllR4Qw==",
+    "FSharp.Core/7.0.300": {
+      "sha512": "8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
       "type": "package",
-      "path": "fsharp.core/7.0.400",
+      "path": "fsharp.core/7.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.7.0.400.nupkg.sha512",
+        "fsharp.core.7.0.300.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -11239,46 +11239,55 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bulat\\.nuget\\packages\\": {}
+    "C:\\Users\\LordVT\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
+      "projectUniqueName": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
       "projectName": "CollectIt.Mobile.Server.GraphQL",
-      "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
-      "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\obj\\",
+      "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\CollectIt.Mobile.Server.GraphQL.csproj",
+      "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
+      "outputPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Mobile.Server\\CollectIt.Api.GraphQL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\LordVT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
+            "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj": {
+              "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Abstractions\\CollectIt.Database.Abstractions.csproj"
             },
-            "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
+            "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj": {
+              "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Entities\\CollectIt.Database.Entities.csproj"
             },
-            "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
+            "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj": {
+              "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.Database\\CollectIt.Database.Infrastructure\\CollectIt.Database.Infrastructure.csproj"
             },
-            "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj"
+            "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj": {
+              "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Infrastructure\\CollectIt.MVC.Infrastructure.csproj"
             },
-            "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\net\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj"
+            "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj": {
+              "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.View\\CollectIt.MVC.View.csproj"
             }
           }
         }
@@ -11333,7 +11342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -21,6 +21,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.collectit.navigation.NavRoute
+import com.example.collectit.navigation.destination.resources.video.navigateToVideo
 import com.example.collectit.screens.resources.video.videolist.VideoListViewModel
 import com.example.collectit.ui.components.basics.BasicMusicComponent
 import com.example.collectit.ui.components.basics.BasicVideoComponent.Companion.BasicVideo
@@ -61,10 +62,10 @@ fun VideoListScreen(
                 Log.e("ImagesList", "Словарь не null")
                 items(videoList.value!!) {
                     val traffic = map.getOrDefault(it.id, 0)
-                    Log.d("MusicListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
+                    Log.d("VideoListPage", "Кол-во просмотров для ${it.id} = ${traffic}")
                     var date = viewModel.parseDate(it)
                     BasicVideo(
-                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        onClick = {navController.navigateToVideo(it.id)},
                         date = date,
                         video = it,
                         modifier = Modifier.padding(16.dp),
@@ -76,7 +77,7 @@ fun VideoListScreen(
                 items(videoList.value!!) {
                     var date = viewModel.parseDate(it)
                     BasicVideo(
-                        onClick = {navController.navigate("${NavRoute.Music.path}1")},
+                        onClick = {navController.navigateToVideo(it.id)},
                         date = date,
                         video = it,
                         modifier = Modifier.padding(16.dp),

@@ -2004,20 +2004,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bulat\\.nuget\\packages\\": {}
+    "C:\\Users\\LordVT\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
+      "projectUniqueName": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
       "projectName": "CollectIt.MVC.Abstractions",
-      "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
-      "packagesPath": "C:\\Users\\Bulat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\obj\\",
+      "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\CollectIt.MVC.Abstractions.csproj",
+      "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
+      "outputPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Abstractions\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Bulat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\LordVT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2030,8 +2038,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj": {
-              "projectPath": "C:\\Users\\Bulat\\Desktop\\HW\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj"
+            "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj": {
+              "projectPath": "F:\\repo\\hw-net\\src\\collect-it\\src\\CollectIt.MVC\\CollectIt.MVC.Entities\\CollectIt.MVC.Entities.csproj"
             }
           }
         }
@@ -2061,7 +2069,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }

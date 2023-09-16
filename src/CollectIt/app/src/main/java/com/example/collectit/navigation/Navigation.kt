@@ -13,6 +13,7 @@ import com.example.collectit.navigation.destination.resources.images.images
 import com.example.collectit.navigation.destination.resources.musics.musics
 import com.example.collectit.navigation.destination.resources.musics.music
 import com.example.collectit.navigation.destination.resources.video.video
+import com.example.collectit.navigation.destination.resources.video.videos
 import com.example.collectit.navigation.destination.statistics.stat
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -31,6 +32,7 @@ fun CollectItNavHost(
         musics(navController)
         music(navController)
 
+        videos(navController)
         video(navController)
 
         login(navController, onSuccessResult)

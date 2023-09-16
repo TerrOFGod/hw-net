@@ -52,9 +52,9 @@ class MusicListViewModel @Inject constructor(
             val f = statisticsManager.getResourceStatistics()
             f.collect {
                 Log.i("ViewModel", "Получил новый словарь")
-                it.forEach {
-                    Log.d("Elem", "${it.key}: ${it.value}")
-                }
+                //it.forEach {
+                //    Log.d("Elem", "${it.key}: ${it.value}")
+                //}
                 statistics.value = it
             }
         }

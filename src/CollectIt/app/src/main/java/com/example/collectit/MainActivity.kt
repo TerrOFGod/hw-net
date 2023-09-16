@@ -114,6 +114,16 @@ class MainActivity : AppCompatActivity() {
                             isAuthorized.value = true
                         }
                     }
+                    machine.currentState.observe(this) { newState ->
+                        when (newState) {
+                            AppState.Home -> navController.navigate(NavRoute.Home.path)
+                            AppState.Images -> navController.navigate(NavRoute.Images.path)
+                            AppState.Music -> navController.navigate(NavRoute.Music.path)
+                            AppState.Video -> navController.navigate(NavRoute.Video.path)
+                            AppState.Login -> navController.navigate(NavRoute.Login.path)
+                            AppState.SignUp -> navController.navigate(NavRoute.SignUp.path)
+                        }
+                    }
                 }
             }
         }
